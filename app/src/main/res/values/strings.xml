@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CyberElectronics</string>
+    <string name="TOPSELLERS"/>
+    <string name="hyper_x_cloud_stinger">HYPER X CLOUD STINGER</string>
+    <string name="headphones_and_headsets">Headphones and headsets</string>
+    <string name="_24795tg">24795tg</string>
+    <string name="topsellers">TOPSELLERS</string>
+    <string name="CATEGORIES" />
+    <string name="categories1">CATEGORIES</string>
+    <string name="view_all">View All</string>
+
 </resources>

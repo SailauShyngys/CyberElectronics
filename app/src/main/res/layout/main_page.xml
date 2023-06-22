@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TOPSELLERS" />
+
+
+    <LinearLayout
+        android:id="@+id/TopLine"
+        android:layout_width="154dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:background="@drawable/prod_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvType">
+
+        <TextView
+            android:id="@+id/FFtext1"
+            android:layout_width="110dp"
+            android:layout_height="9dp"
+            android:layout_marginRight="0.5dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="HYPER X CLOUD STINGER"
+            android:textColor="@color/purple"
+            android:textSize="7dp"/>
+        <TextView
+            android:id="@+id/FFtext2"
+            android:layout_width="95dp"
+            android:layout_height="9dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Headphones and headsets"
+            android:textColor="@color/black"
+            android:textSize="6dp"
+            app:layout_constraintTop_toTopOf="@id/FFtext1" />
+        <TextView
+            android:id="@+id/FFtext3"
+            android:layout_width="95dp"
+            android:layout_height="6dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="24795tg"
+            android:textColor="@color/black"
+            android:textSize="7sp"
+            app:layout_constraintTop_toTopOf="@id/FFtext2" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0sp"
+            android:backgroundTint="@color/orange"
+            android:text="Buy Now"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/FFtext3" />
+
+
+
+    </LinearLayout>
+
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/ibtnFFirst"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="112dp"-->
+    <!--        android:layout_marginHorizontal="25dp"-->
+    <!--        android:layout_marginTop="9dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:src="@drawable/prod1"
+    app:layout_constraintTop_toTopOf="@id/ibtnFFirst"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
