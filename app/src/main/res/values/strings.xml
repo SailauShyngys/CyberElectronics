@@ -8,5 +8,8 @@
     <string name="CATEGORIES" />
     <string name="categories1">CATEGORIES</string>
     <string name="view_all">View All</string>
+    <string name="cyberelectronics">CYBERELECTRONICS</string>
+    <string name="power_units">Power Units</string>
+    <string name="lamps">Lamps</string>
 
 </resources>

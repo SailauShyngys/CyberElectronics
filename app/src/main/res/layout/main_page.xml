@@ -1,98 +1,402 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="310dp"
+        android:layout_height="20dp"
+        android:layout_marginHorizontal="52dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Htext"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="68dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/cyberelectronics"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/Himage1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@null"
+                android:src="@drawable/search" />
+
+            <ImageButton
+                android:id="@+id/Himage2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@null"
+                android:src="@drawable/person" />
+        </LinearLayout>
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tvType"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:layout_height="30dp"
         android:layout_marginHorizontal="25dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/montserrat_semibold"
-        android:textColor="@color/white"
-        android:textSize="15sp"
+        android:text="@string/topsellers"
+        android:textColor="@color/orange"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="TOPSELLERS" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/TopLine"
-        android:layout_width="154dp"
-        android:layout_height="171dp"
-        android:layout_marginTop="25dp"
-        android:orientation="vertical"
-        android:background="@drawable/prod_background"
+        android:id="@+id/TopSellers"
+        android:layout_width="310dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/tvType">
 
-        <TextView
-            android:id="@+id/FFtext1"
-            android:layout_width="110dp"
-            android:layout_height="9dp"
-            android:layout_marginRight="0.5dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="HYPER X CLOUD STINGER"
-            android:textColor="@color/purple"
-            android:textSize="7dp"/>
-        <TextView
-            android:id="@+id/FFtext2"
-            android:layout_width="95dp"
-            android:layout_height="9dp"
-            android:layout_marginRight="8dp"
-            android:fontFamily="@font/montserrat_light"
-            android:text="Headphones and headsets"
-            android:textColor="@color/black"
-            android:textSize="6dp"
-            app:layout_constraintTop_toTopOf="@id/FFtext1" />
-        <TextView
-            android:id="@+id/FFtext3"
-            android:layout_width="95dp"
-            android:layout_height="6dp"
-            android:layout_marginRight="8dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="24795tg"
-            android:textColor="@color/black"
-            android:textSize="7sp"
-            app:layout_constraintTop_toTopOf="@id/FFtext2" />
+        <LinearLayout
+            android:id="@+id/TopLine"
+            android:layout_width="154dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/prod_background"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvType">
 
-        <Button
-            android:id="@+id/btnReset"
-            android:layout_width="40dp"
+            <ImageButton
+                android:id="@+id/ibtnFFirst"
+                android:layout_width="110dp"
+                android:layout_height="112dp"
+                android:layout_marginHorizontal="21dp"
+                android:layout_marginTop="9dp"
+                android:gravity="center"
+                android:src="@drawable/prod1" />
+
+            <TextView
+                android:id="@+id/FFtext1"
+                android:layout_width="110dp"
+                android:layout_height="9dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/hyper_x_cloud_stinger"
+                android:textColor="@color/purple"
+                android:textSize="7dp"
+                app:layout_constraintTop_toTopOf="@id/ibtnFFirst" />
+
+            <TextView
+                android:id="@+id/FFtext2"
+                android:layout_width="95dp"
+                android:layout_height="9dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/headphones_and_headsets"
+                android:textColor="@color/black"
+                android:textSize="6dp"
+                app:layout_constraintTop_toTopOf="@id/FFtext1" />
+
+            <TextView
+                android:id="@+id/FFtext3"
+                android:layout_width="95dp"
+                android:layout_height="9dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/_24795tg"
+                android:textColor="@color/black"
+                android:textSize="7sp"
+                app:layout_constraintTop_toTopOf="@id/FFtext2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TopLine2"
+            android:layout_width="154dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/prod_background"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/TopLine"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/ibtnFFirst2"
+                android:layout_width="110dp"
+                android:layout_height="112dp"
+                android:layout_marginHorizontal="21dp"
+                android:layout_marginTop="9dp"
+                android:gravity="center"
+                android:src="@drawable/prod1" />
+
+            <TextView
+                android:id="@+id/FFtext12"
+                android:layout_width="110dp"
+                android:layout_height="9dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/hyper_x_cloud_stinger"
+                android:textColor="@color/purple"
+                android:textSize="7dp"
+                app:layout_constraintTop_toTopOf="@id/ibtnFFirst2" />
+
+            <TextView
+                android:id="@+id/FFtext22"
+                android:layout_width="95dp"
+                android:layout_height="9dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/headphones_and_headsets"
+                android:textColor="@color/black"
+                android:textSize="6dp"
+                app:layout_constraintTop_toTopOf="@id/FFtext12" />
+
+            <TextView
+                android:id="@+id/FFtext32"
+                android:layout_width="95dp"
+                android:layout_height="9dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/_24795tg"
+                android:textColor="@color/black"
+                android:textSize="7sp"
+                app:layout_constraintTop_toTopOf="@id/FFtext22" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TopSecond"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="220dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/TopSellers">
+
+        <TextView
+            android:id="@+id/tvCategoties"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/categories1"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvViewAll"
+            android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="0sp"
-            android:backgroundTint="@color/orange"
-            android:text="Buy Now"
-            android:textColor="@color/black"
+            android:layout_marginLeft="128dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/view_all"
+            android:textColor="@color/white"
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.1"
+            app:layout_constraintHorizontal_bias="0.3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/FFtext3" />
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/llFirstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/TopSecond">
 
+        <LinearLayout
+            android:layout_width="204dp"
+            android:layout_height="100dp"
+            android:background="@drawable/categ_block">
+
+            <TextView
+                android:id="@+id/FLT1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/power_units"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="2dp" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/categ_block_small">
+
+            <TextView
+                android:id="@+id/FLT2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="@string/lamps"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+        </LinearLayout>
 
     </LinearLayout>
 
+    <View
+        android:id="@+id/view_divider_first"
+        android:layout_width="0dp"
+        android:layout_height="7dp"
+        app:layout_constraintEnd_toEndOf="@id/llFirstLine"
+        app:layout_constraintStart_toStartOf="@id/llFirstLine"
+        app:layout_constraintTop_toBottomOf="@id/llFirstLine" />
 
-    <!--    <ImageButton-->
-    <!--        android:id="@+id/ibtnFFirst"-->
-    <!--        android:layout_width="110dp"-->
-    <!--        android:layout_height="112dp"-->
-    <!--        android:layout_marginHorizontal="25dp"-->
-    <!--        android:layout_marginTop="9dp"-->
-    <!--        android:gravity="center"-->
-    <!--        android:src="@drawable/prod1"
-    app:layout_constraintTop_toTopOf="@id/ibtnFFirst"/>-->
+    <LinearLayout
+        android:id="@+id/llSecondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_divider_first">
+
+        <ImageButton
+            android:id="@+id/ibtnSFirst"
+            android:layout_width="204dp"
+            android:layout_height="100dp"
+            android:background="@drawable/categ_block"
+            tools:ignore="contentDescription" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="2dp" />
+
+        <ImageButton
+            android:id="@+id/ibtnSThird"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/categ_block_small"
+            tools:ignore="contentDescription" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider_second"
+        android:layout_width="0dp"
+        android:layout_height="7dp"
+        app:layout_constraintEnd_toEndOf="@id/llFirstLine"
+        app:layout_constraintStart_toStartOf="@id/llFirstLine"
+        app:layout_constraintTop_toBottomOf="@id/llSecondLine" />
+
+    <LinearLayout
+        android:id="@+id/llThirdLine"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_divider_second">
+
+        <ImageButton
+            android:id="@+id/ibtnTFirst"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/categ_block_small"
+            tools:ignore="contentDescription" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="2dp" />
+
+        <ImageButton
+            android:id="@+id/ibtnTThird"
+            android:layout_width="204dp"
+            android:layout_height="100dp"
+            android:background="@drawable/categ_block"
+            tools:ignore="contentDescription" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider_third"
+        android:layout_width="0dp"
+        android:layout_height="7dp"
+        app:layout_constraintEnd_toEndOf="@id/llFirstLine"
+        app:layout_constraintStart_toStartOf="@id/llFirstLine"
+        app:layout_constraintTop_toBottomOf="@id/llThirdLine" />
+
+    <LinearLayout
+        android:id="@+id/llFourthLine"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_divider_third">
+
+        <ImageButton
+            android:id="@+id/ibtnFoFirst"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/categ_block_small"
+            tools:ignore="contentDescription" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="2dp" />
+
+        <ImageButton
+            android:id="@+id/ibtnFoThird"
+            android:layout_width="204dp"
+            android:layout_height="100dp"
+            android:background="@drawable/categ_block"
+            tools:ignore="contentDescription" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
