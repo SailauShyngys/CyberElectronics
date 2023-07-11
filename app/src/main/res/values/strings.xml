@@ -11,5 +11,11 @@
     <string name="cyberelectronics">CYBERELECTRONICS</string>
     <string name="power_units">Power Units</string>
     <string name="lamps">Lamps</string>
+    <string name="keyboards">Keyboards</string>
+    <string name="stands">Stands</string>
+    <string name="humidifiers">Humidifiers</string>
+    <string name="mouses">Mouses</string>
+    <string name="watches">Watches</string>
+    <string name="rgb_collection">RGB Collection</string>
 
 </resources>
