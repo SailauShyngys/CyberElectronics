@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluegray"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/search_line"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="54dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/search_line_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/inner_search_line"
+            android:layout_width="322dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/search_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:id="@+id/arrow_back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/arrow_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageButton
+                    android:id="@+id/arrow"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="9dp"
+                    android:src="@drawable/arrow_background"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/Search_type"
+                android:layout_width="250dp"
+                android:layout_height="36dp"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:hint="Type here..."
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="2dp"
+                android:textSize="15sp"/>
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@null"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/search_page"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/TopSellers1"
+        android:layout_width="320dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_line">
+
+        <LinearLayout
+            android:id="@+id/TopLine1"
+            android:layout_width="162dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/prod_background"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/search_line">
+
+            <ImageButton
+                android:id="@+id/ibtnFFirst1"
+                android:layout_width="110dp"
+                android:layout_height="112dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/prod1" />
+
+            <TextView
+                android:id="@+id/FFtext1_1"
+                android:layout_width="110dp"
+                android:layout_height="10dp"
+                android:layout_marginHorizontal="23.5dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/hyper_x_cloud_stinger"
+                android:textColor="@color/purple"
+                android:textSize="8sp"
+                app:layout_constraintTop_toTopOf="@id/ibtnFFirst1" />
+
+            <TextView
+                android:id="@+id/FFtext2_1"
+                android:layout_width="95dp"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="23.5dp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/headphones_and_headsets"
+                android:textColor="@color/black"
+                android:textSize="6sp"
+                app:layout_constraintTop_toTopOf="@id/FFtext1_1" />
+
+            <TextView
+                android:id="@+id/FFtext3_1"
+                android:layout_width="95dp"
+                android:layout_height="9.5dp"
+                android:layout_marginHorizontal="23.5dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/_24795tg"
+                android:textColor="@color/black"
+                android:textSize="7sp"
+                app:layout_constraintTop_toTopOf="@id/FFtext2_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TopLine2"
+            android:layout_width="162dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/prod_background"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/TopLine"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/ibtnFFirst2_2"
+                android:layout_width="110dp"
+                android:layout_height="112dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/prod1" />
+
+            <TextView
+                android:id="@+id/FFtext12_2"
+                android:layout_width="110dp"
+                android:layout_height="10dp"
+                android:layout_marginHorizontal="23.5dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/hyper_x_cloud_stinger"
+                android:textColor="@color/purple"
+                android:textSize="8sp"
+                app:layout_constraintTop_toTopOf="@id/ibtnFFirst2_2" />
+
+            <TextView
+                android:id="@+id/FFtext22_2"
+                android:layout_width="95dp"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="23.5dp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/headphones_and_headsets"
+                android:textColor="@color/black"
+                android:textSize="6sp"
+                app:layout_constraintTop_toTopOf="@id/FFtext12_2" />
+
+            <TextView
+                android:id="@+id/FFtext32_2"
+                android:layout_width="95dp"
+                android:layout_height="9.5dp"
+                android:layout_marginHorizontal="23.5dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/_24795tg"
+                android:textColor="@color/black"
+                android:textSize="7sp"
+                app:layout_constraintTop_toTopOf="@id/FFtext22_2" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
