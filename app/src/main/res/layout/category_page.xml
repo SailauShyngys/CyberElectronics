@@ -8,79 +8,57 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/search_line"
-        android:layout_width="332dp"
-        android:layout_height="50dp"
+        android:id="@+id/categ"
+        android:layout_width="310dp"
+        android:layout_height="30dp"
         android:layout_marginTop="54dp"
-        android:background="@drawable/search_line_background"
-        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/inner_search_line"
-            android:layout_width="322dp"
-            android:layout_height="36dp"
-            android:background="@drawable/search_line"
-            android:gravity="center"
-            android:orientation="horizontal"
+            android:id="@+id/arrow_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/arrow_background2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:id="@+id/arrow_back"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/arrow_background"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageButton
-                    android:id="@+id/arrow"
-                    android:layout_width="8dp"
-                    android:layout_height="14dp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="9dp"
-                    android:src="@drawable/arrow_back" />
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/Search_type"
-                android:layout_width="250dp"
-                android:layout_height="36dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="7dp"
-                android:hint="Type here..."
-                android:inputType="textMultiLine"
-                android:lines="4"
-                android:textSize="15sp" />
-
             <ImageButton
-                android:id="@+id/search_button"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:layout_marginEnd="5dp"
-                android:background="@null"
-                android:src="@drawable/search_page" />
+                android:id="@+id/arrow"
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="9dp"
+                android:src="@drawable/arrow_back" />
         </LinearLayout>
+        <TextView
+            android:id="@+id/Htext"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="50dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/power_units1"
+            android:textColor="@color/purple"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/TopSellers1"
         android:layout_width="320dp"
         android:layout_height="190dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_line">
+        app:layout_constraintTop_toTopOf="@id/categ">
 
         <LinearLayout
             android:id="@+id/TopLine1"
