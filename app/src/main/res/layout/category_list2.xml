@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/categ"
+        android:layout_width="325dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="54dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/arrow_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/arrow_background2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/arrow"
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="9dp"
+                android:src="@drawable/arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Htext"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/categories12"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results1"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/categ">
+
+        <TextView
+            android:id="@+id/SRTW1"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/chairs"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results2"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results1">
+
+        <TextView
+            android:id="@+id/SRTW2"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/game_consoles"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results3"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results2">
+
+        <TextView
+            android:id="@+id/SRTW3"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Joysticicks"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results4"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results3">
+
+        <TextView
+            android:id="@+id/SRTW4"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Accessories"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results5"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results4">
+
+        <TextView
+            android:id="@+id/SRTW5"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/tables"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results6"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results5">
+
+        <TextView
+            android:id="@+id/SRTW6"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/tvs"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results7"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results6">
+
+        <TextView
+            android:id="@+id/SRTW7"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/drones"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results8"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results7">
+
+        <TextView
+            android:id="@+id/SRTW8"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/mats"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results9"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results8">
+
+        <TextView
+            android:id="@+id/SRTW9"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/loudspeakers"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results10"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results9">
+
+        <TextView
+            android:id="@+id/SRTW10"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/charges"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results11"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results10">
+
+        <TextView
+            android:id="@+id/SRTW11"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/microphones"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/search_results12"
+        android:layout_width="332dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/search_results"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_results11">
+
+        <TextView
+            android:id="@+id/SRTW12"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/wires"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

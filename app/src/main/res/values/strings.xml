@@ -19,5 +19,29 @@
     <string name="rgb_collection">RGB Collection</string>
     <string name="hyper_x_12345">Hyper X 12345</string>
     <string name="power_units1">POWER UNITS</string>
+    <string name="characteristics">CHARACTERISTICS</string>
+    <string name="categories12">CATEGORIES</string>
+    <string name="power_units2">Power Units</string>
+    <string name="lamps2">Lamps</string>
+    <string name="stands2">Stands</string>
+    <string name="keyboards2">Keyboards</string>
+    <string name="humidifiers2">Humidifiers</string>
+    <string name="watches2">Watches</string>
+    <string name="monitors">Monitors</string>
+    <string name="laptops">Laptops</string>
+    <string name="mouses2">Mouses</string>
+    <string name="rgb_collection2">RGB Collection</string>
+    <string name="headphones_and_headsets2">Headphones And Headsets</string>
+    <string name="table">Table</string>
+    <string name="wires">Wires</string>
+    <string name="microphones">Microphones</string>
+    <string name="chairs">Chairs</string>
+    <string name="game_consoles">Game Consoles</string>
+    <string name="tables">Tables</string>
+    <string name="tvs">TVs</string>
+    <string name="drones">Drones</string>
+    <string name="mats">Mats</string>
+    <string name="loudspeakers">Loudspeakers</string>
+    <string name="charges">Charges</string>
 
 </resources>
