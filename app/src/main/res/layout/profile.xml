@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bluegray">
+    <LinearLayout
+        android:id="@+id/Image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/backgroud_around"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintHorizontal_bias="0."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/backArrow"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/FirstText"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Image">
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profile"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Buttons"
+        android:layout_width="380dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/FirstText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.05"
+            android:text="Nikita"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:letterSpacing="0.05"
+            android:text="name"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Buttons1"
+        android:layout_width="380dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Buttons">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.05"
+            android:text="Nikitonis"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:letterSpacing="0.05"
+            android:text="surname"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Buttons2"
+        android:layout_width="380dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Buttons1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.05"
+            android:text="Nikita23@mail.ru"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:letterSpacing="0.05"
+            android:text="email"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons2" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Buttons3"
+        android:layout_width="380dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Buttons2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.05"
+            android:text="******************"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:letterSpacing="0.05"
+            android:text="password"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Edit"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="125dp"
+        android:gravity="center"
+        android:background="@drawable/edit_arround"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Buttons3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.05"
+            android:text="Edit profile"
+            android:textColor="@color/purple"
+            android:textSize="22sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Exit"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="57dp"
+        android:gravity="center"
+        android:background="@drawable/edit_arround"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Edit">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.05"
+            android:text="Exit account"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
