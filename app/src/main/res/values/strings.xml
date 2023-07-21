@@ -92,5 +92,7 @@
     <string name="repeat_password">Repeat password</string>
     <string name="email">Email</string>
     <string name="name">Name</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login1">Login</string>
 
 </resources>
