@@ -4,91 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="800dp"
-    tools:context=".MainActivity"
-    android:background="@color/purple">
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
-
-        <!-- Другие элементы разметки -->
-
-        <!-- Горизонтальная линия -->
-        <View
-            android:layout_width="520dp"
-            android:layout_height="2dp"
-            android:background="@color/orange"
-            android:layout_marginTop="200dp"
-            android:layout_marginStart="-150dp"
-            android:rotation="-45"/>
-        <View
-            android:layout_width="520dp"
-            android:layout_height="2dp"
-            android:background="@color/orange"
-            android:layout_marginTop="-50dp"
-            android:layout_marginStart="-50dp"
-            android:rotation="-45"/>
-        <View
-            android:layout_width="520dp"
-            android:layout_height="2dp"
-            android:background="@color/orange"
-            android:layout_marginTop="230dp"
-            android:layout_marginStart="-220dp"
-            android:rotation="-45"/>
-        <View
-            android:layout_width="520dp"
-            android:layout_height="2dp"
-            android:background="@color/orange"
-            android:layout_marginTop="-280dp"
-            android:layout_marginStart="130dp"
-            android:rotation="-45"/>
-        <View
-            android:layout_width="520dp"
-            android:layout_height="2dp"
-            android:background="@color/orange"
-            android:layout_marginTop="280dp"
-            android:layout_marginStart="130dp"
-            android:rotation="-45"/>
-        <View
-            android:layout_width="520dp"
-            android:layout_height="2dp"
-            android:background="@color/orange"
-            android:layout_marginTop="280dp"
-            android:layout_marginStart="130dp"
-            android:rotation="-45"/>
-        <View
-            android:layout_width="520dp"
-            android:layout_height="2dp"
-            android:background="@color/orange"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="1dp"
-            android:rotation="-45"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/Image"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:background="@drawable/backgroud_around"
-        android:layout_marginTop="54dp"
-        android:layout_marginStart="14dp"
-        app:layout_constraintHorizontal_bias="0."
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        <ImageButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:background="@drawable/backArrow"
-            />
+
+        <ImageView
+            android:layout_width="520dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="-150dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/line_9"
+            android:rotation="-38" />
+
+        <ImageView
+            android:layout_width="520dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/line_9"
+            android:rotation="-38" />
+
+        <ImageView
+            android:layout_width="520dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="-220dp"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/line_9"
+            android:rotation="-38" />
+
+        <ImageView
+            android:layout_width="520dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="-280dp"
+            android:background="@drawable/line_9"
+            android:rotation="-38" />
+
+        <ImageView
+            android:layout_width="520dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/line_9"
+            android:rotation="-38" />
+
+        <ImageView
+            android:layout_width="520dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="-290dp"
+            android:background="@drawable/line_9"
+            android:rotation="-38" />
+
+
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arrow_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/arrow_background2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/arrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-5dp"
+            android:background="@null"
+            android:contentDescription="@string/back_button"
+            android:src="@drawable/arrow_back" />
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/FirstText"
         android:layout_width="323dp"
@@ -97,19 +98,20 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Image">
+        app:layout_constraintTop_toTopOf="@id/arrow_back">
 
         <TextView
             android:id="@+id/MainText"
             android:layout_width="323dp"
             android:layout_height="52dp"
             android:fontFamily="@font/lilita_one"
-            android:text="@string/welcome"
-            android:textColor="@color/white"
+            android:letterSpacing="0.05"
             android:shadowColor="@color/black"
             android:shadowDx="0"
             android:shadowDy="5"
             android:shadowRadius="20"
+            android:text="@string/welcome"
+            android:textColor="@color/white"
             android:textSize="45sp"
             app:layout_constraintTop_toTopOf="@id/FirstText" />
 
@@ -119,69 +121,76 @@
             android:layout_height="53dp"
             android:layout_marginTop="-4dp"
             android:fontFamily="@font/lilita_one"
-            android:text="@string/back"
+            android:letterSpacing="0.05"
             android:shadowColor="@color/black"
             android:shadowDx="0"
             android:shadowDy="5"
             android:shadowRadius="20"
+            android:text="@string/back"
             android:textColor="@color/white"
             android:textSize="45sp"
             app:layout_constraintTop_toTopOf="@id/FirstText" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/Buttons"
         android:layout_width="match_parent"
         android:layout_height="541dp"
         android:layout_marginTop="145dp"
         android:background="@drawable/buttons_arround"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/FirstText">
+
         <EditText
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:background="@drawable/edit_text_arround"
+            android:fontFamily="@font/montserrat_medium"
+            android:letterSpacing="0.05"
             android:paddingStart="15dp"
             android:text="@string/login"
-            android:textSize="16sp"
             android:textColor="@color/purple"
-            android:fontFamily="@font/montserrat_medium"
-            app:layout_constraintTop_toTopOf="@id/Buttons"
-            />
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons" />
 
         <EditText
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_text_arround"
-            android:paddingStart="15dp"
             android:fontFamily="@font/montserrat_medium"
+            android:letterSpacing="0.05"
+            android:paddingStart="15dp"
             android:text="@string/password"
             android:textColor="@color/purple"
             android:textSize="16sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons"/>
+            app:layout_constraintTop_toTopOf="@id/Buttons" />
+
         <TextView
             android:layout_width="290dp"
             android:layout_height="20dp"
             android:layout_marginTop="5dp"
+            android:letterSpacing="0.05"
             android:text="@string/forgot_your_password"
-
             android:textAlignment="textEnd"
             android:textColor="@color/grey"
             android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons"/>
+            app:layout_constraintTop_toTopOf="@id/Buttons" />
+
         <Button
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:layout_marginTop="130dp"
             android:backgroundTint="@color/purple"
-            android:text="@string/sign_in"
-            android:textSize="16sp"
-            android:textColor="@color/white"
             android:fontFamily="@font/montserrat_medium"
-            app:layout_constraintTop_toTopOf="@id/Buttons"/>
+            android:letterSpacing="0.05"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/Buttons" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

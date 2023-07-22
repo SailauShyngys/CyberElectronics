@@ -9,8 +9,8 @@
 
     <LinearLayout
         android:id="@+id/categ"
-        android:layout_width="310dp"
-        android:layout_height="30dp"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
         android:layout_marginTop="54dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,9 +19,9 @@
 
         <LinearLayout
             android:id="@+id/arrow_back"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:layout_marginEnd="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="0dp"
             android:background="@drawable/arrow_background2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,25 +29,30 @@
 
             <ImageButton
                 android:id="@+id/arrow"
-                android:layout_width="8dp"
-                android:layout_height="14dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
-                android:layout_marginHorizontal="9dp"
-                android:src="@drawable/arrow_back" />
+                android:layout_marginStart="-10dp"
+                android:background="@null"
+                android:contentDescription="@string/back_button"
+                android:src="@drawable/arrow_back1" />
         </LinearLayout>
+
         <TextView
             android:id="@+id/Htext"
             android:layout_width="wrap_content"
             android:layout_height="38dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="-1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/power_units1"
             android:textColor="@color/purple"
-            android:textSize="18sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
     <LinearLayout
@@ -77,6 +82,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -130,6 +136,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -201,6 +208,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -253,6 +261,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -324,6 +333,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -376,6 +386,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -415,11 +426,10 @@
 
     <LinearLayout
         android:id="@+id/cart"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="640dp"
-        android:background="@drawable/cart_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="650dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="0.1"
@@ -427,10 +437,11 @@
 
         <ImageButton
             android:id="@+id/CButton"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginStart="2dp"
-            android:background="@drawable/cart" />
+            android:background="@drawable/cart1"
+            android:contentDescription="@string/image_button" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

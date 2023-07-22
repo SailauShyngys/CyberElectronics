@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/Header"
         android:layout_width="310dp"
-        android:layout_height="20dp"
+        android:layout_height="35dp"
         android:layout_marginHorizontal="47dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
@@ -25,43 +25,47 @@
             android:layout_width="wrap_content"
             android:layout_height="38dp"
             android:layout_marginTop="7dp"
-            android:layout_marginEnd="35dp"
+            android:layout_marginEnd="11dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/cyberelectronics"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
         <LinearLayout
-            android:layout_width="85dp"
-            android:layout_height="25dp"
+            android:id="@+id/Nav_menu"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
                 android:id="@+id/Himage1"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="-20dp"
                 android:background="@null"
-                android:src="@drawable/cart"/>
-            <View
-                android:layout_width="6dp"
-                android:layout_height="wrap_content"/>
+                android:contentDescription="@string/image_button"
+                android:src="@drawable/cart3" />
+
             <ImageButton
                 android:id="@+id/Himage2"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="-20dp"
                 android:background="@null"
-                android:src="@drawable/search"/>
-            <View
-                android:layout_width="6dp"
-                android:layout_height="wrap_content"/>
+                android:contentDescription="@string/image_button"
+                android:src="@drawable/search" />
+
             <ImageButton
                 android:id="@+id/Himage3"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="-20dp"
                 android:background="@null"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/person" />
         </LinearLayout>
     </LinearLayout>
@@ -71,8 +75,9 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginHorizontal="23dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
         android:text="@string/topsellers"
         android:textColor="@color/orange"
         android:textSize="18sp"
@@ -108,6 +113,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -161,6 +167,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -213,6 +220,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/categories1"
             android:textColor="@color/orange"
             android:textSize="18sp"
@@ -225,8 +233,9 @@
             android:id="@+id/tvViewAll"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_marginStart="135dp"
+            android:layout_marginStart="125dp"
             android:fontFamily="@font/montserrat_medium"
+            android:letterSpacing="0.05"
             android:text="@string/view_all"
             android:textColor="@color/white"
             android:textSize="12sp"
@@ -249,10 +258,10 @@
         app:layout_constraintTop_toTopOf="@id/TopSecond">
 
         <LinearLayout
-            android:layout_width="204dp"
+            android:layout_width="209dp"
             android:layout_height="100dp"
-            android:orientation="horizontal"
-            android:background="@drawable/categ_block">
+            android:background="@drawable/categ_block"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/FLT1"
@@ -261,16 +270,19 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/montserrat_semibold"
+                android:letterSpacing="0.05"
                 android:text="@string/power_units"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
+
             <ImageButton
                 android:id="@+id/FLBT1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginStart="8dp"
                 android:layout_gravity="center"
-                android:background="@drawable/main_img1"/>
+                android:layout_marginStart="5dp"
+                android:background="@drawable/main_img1"
+                android:contentDescription="@string/image_button" />
 
         </LinearLayout>
 
@@ -282,8 +294,8 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:orientation="vertical"
-            android:background="@drawable/categ_block">
+            android:background="@drawable/categ_block"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/FLT2"
@@ -293,16 +305,19 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:gravity="center"
+                android:letterSpacing="0.05"
                 android:text="@string/lamps"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
+
             <ImageButton
                 android:id="@+id/FLBT2"
                 android:layout_width="56dp"
                 android:layout_height="76dp"
-                android:layout_marginStart="1dp"
                 android:layout_gravity="center"
-                android:background="@drawable/lamps"/>
+                android:layout_marginStart="1dp"
+                android:background="@drawable/lamps"
+                android:contentDescription="@string/image_button" />
         </LinearLayout>
 
     </LinearLayout>
@@ -329,8 +344,8 @@
         <LinearLayout
             android:layout_width="204dp"
             android:layout_height="100dp"
-            android:orientation="vertical"
-            android:background="@drawable/categ_block">
+            android:background="@drawable/categ_block"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/SLT1"
@@ -339,15 +354,18 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/montserrat_semibold"
+                android:letterSpacing="0.05"
                 android:text="@string/keyboards"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
+
             <ImageButton
                 android:id="@+id/SLBT1"
                 android:layout_width="123dp"
                 android:layout_height="65dp"
                 android:layout_marginStart="40dp"
-                android:background="@drawable/keyboard"/>
+                android:background="@drawable/keyboard"
+                android:contentDescription="@string/image_button" />
         </LinearLayout>
 
         <View
@@ -358,8 +376,8 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:orientation="vertical"
-            android:background="@drawable/categ_block">
+            android:background="@drawable/categ_block"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/SLT2"
@@ -369,16 +387,20 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:gravity="center"
+                android:letterSpacing="0.05"
                 android:text="@string/stands"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
+
             <ImageButton
                 android:id="@+id/SLBT2"
                 android:layout_width="87dp"
                 android:layout_height="39dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="7dp"
-                android:background="@drawable/stands"/>
+                android:layout_marginTop="10dp"
+                android:background="@drawable/stands"
+                android:contentDescription="@string/image_button"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
     </LinearLayout>
@@ -405,8 +427,8 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:orientation="vertical"
-            android:background="@drawable/categ_block">
+            android:background="@drawable/categ_block"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/TLT1"
@@ -415,16 +437,20 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/montserrat_semibold"
+                android:letterSpacing="0.05"
                 android:text="@string/humidifiers"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
+
             <ImageButton
                 android:id="@+id/TLBT1"
                 android:layout_width="38dp"
                 android:layout_height="60dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginStart="33dp"
-                android:background="@drawable/humidifiers"/>
+                android:layout_marginTop="5dp"
+                android:background="@drawable/humidifiers"
+                android:contentDescription="@string/image_button"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <View
@@ -445,16 +471,19 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:gravity="center"
+                android:letterSpacing="0.05"
                 android:text="@string/mouses"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
+
             <ImageButton
                 android:id="@+id/TLBT2"
                 android:layout_width="113dp"
                 android:layout_height="71dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="29dp"
-                android:background="@drawable/mouses"/>
+                android:background="@drawable/mouses"
+                android:contentDescription="@string/image_button" />
         </LinearLayout>
     </LinearLayout>
 
@@ -480,8 +509,8 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:orientation="vertical"
-            android:background="@drawable/categ_block">
+            android:background="@drawable/categ_block"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/FTLT1"
@@ -490,16 +519,20 @@
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/montserrat_semibold"
+                android:letterSpacing="0.05"
                 android:text="@string/watches"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
+
             <ImageButton
                 android:id="@+id/FTLBT1"
                 android:layout_width="73dp"
                 android:layout_height="43dp"
-                android:layout_marginTop="9dp"
                 android:layout_marginStart="12dp"
-                android:background="@drawable/watches"/>
+                android:layout_marginTop="9dp"
+                android:background="@drawable/watches"
+                android:contentDescription="@string/image_button"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <View
@@ -510,8 +543,8 @@
         <LinearLayout
             android:layout_width="204dp"
             android:layout_height="100dp"
-            android:orientation="vertical"
-            android:background="@drawable/categ_block">
+            android:background="@drawable/categ_block"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/FTLT2"
@@ -521,16 +554,19 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:gravity="center"
+                android:letterSpacing="0.05"
                 android:text="@string/rgb_collection"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
+
             <ImageButton
                 android:id="@+id/FTLBT2"
                 android:layout_width="83dp"
                 android:layout_height="76dp"
-                android:layout_marginTop="-7dp"
                 android:layout_marginStart="60dp"
-                android:background="@drawable/rgb"/>
+                android:layout_marginTop="-7dp"
+                android:background="@drawable/rgb"
+                android:contentDescription="@string/image_button" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

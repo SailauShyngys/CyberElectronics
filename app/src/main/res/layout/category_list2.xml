@@ -10,7 +10,8 @@
     <LinearLayout
         android:id="@+id/categ"
         android:layout_width="325dp"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-10dp"
         android:layout_marginTop="54dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,35 +20,37 @@
 
         <LinearLayout
             android:id="@+id/arrow_back"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/arrow_background2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/arrow_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
                 android:id="@+id/arrow"
-                android:layout_width="8dp"
-                android:layout_height="14dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
-                android:layout_marginHorizontal="9dp"
-                android:src="@drawable/arrow_back" />
+                android:layout_marginStart="-10dp"
+                android:background="@null"
+                android:contentDescription="@string/back_button"
+                android:src="@drawable/arrow_back1" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/Htext"
             android:layout_width="wrap_content"
             android:layout_height="38dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="0dp"
-            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="-2dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/categories12"
             android:textColor="@color/orange"
-            android:textSize="18sp"
+            android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
@@ -56,12 +59,11 @@
         android:id="@+id/search_results1"
         android:layout_width="332dp"
         android:layout_height="38dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="55dp"
         android:background="@drawable/search_results"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/categ">
 
@@ -72,6 +74,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/chairs"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -87,7 +90,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results1">
 
@@ -98,6 +100,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/game_consoles"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -112,7 +115,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results2">
 
@@ -123,6 +125,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="Joysticicks"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -137,7 +140,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results3">
 
@@ -148,6 +150,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="Accessories"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -162,7 +165,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results4">
 
@@ -173,6 +175,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/tables"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -187,7 +190,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results5">
 
@@ -198,6 +200,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/tvs"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -212,7 +215,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results6">
 
@@ -223,6 +225,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/drones"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -237,7 +240,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results7">
 
@@ -248,6 +250,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/mats"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -262,7 +265,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results8">
 
@@ -273,6 +275,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/loudspeakers"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -287,7 +290,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results9">
 
@@ -298,6 +300,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/charges"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -312,7 +315,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results10">
 
@@ -323,10 +325,12 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/microphones"
             android:textColor="@color/black"
             android:textSize="15sp" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/search_results12"
         android:layout_width="332dp"
@@ -336,7 +340,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/search_results11">
 
@@ -347,6 +350,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
             android:text="@string/wires"
             android:textColor="@color/black"
             android:textSize="15sp" />

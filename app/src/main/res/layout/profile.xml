@@ -4,52 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/bluegray">
+    android:background="@color/bluegray"
+    tools:context=".MainActivity">
+
     <LinearLayout
-        android:id="@+id/Image"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:background="@drawable/backgroud_around"
-        android:layout_marginTop="54dp"
+        android:id="@+id/arrow_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="14dp"
-        app:layout_constraintHorizontal_bias="0."
+        android:layout_marginTop="54dp"
+        android:background="@drawable/arrow_background2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:id="@+id/arrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:background="@drawable/backArrow"
-            />
+            android:layout_marginStart="-10dp"
+            android:background="@null"
+            android:contentDescription="@string/back_button"
+            android:src="@drawable/arrow_back1" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/FirstText"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="0dp"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Image">
+        app:layout_constraintTop_toTopOf="@id/arrow_back">
+
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/profile"
             android:background="@null"
-            />
+            android:contentDescription="@string/image_button"
+            android:src="@drawable/profile" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/Buttons"
         android:layout_width="380dp"
         android:layout_height="118dp"
         android:layout_marginTop="145dp"
         android:background="@drawable/profile_arround"
-        android:orientation="vertical"
         android:gravity="center_vertical"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/FirstText">
@@ -77,14 +84,15 @@
             android:textSize="13sp"
             app:layout_constraintTop_toTopOf="@id/Buttons" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/Buttons1"
         android:layout_width="380dp"
         android:layout_height="118dp"
         android:layout_marginTop="125dp"
         android:background="@drawable/profile_arround"
-        android:orientation="vertical"
         android:gravity="center_vertical"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Buttons">
@@ -112,14 +120,15 @@
             android:textSize="13sp"
             app:layout_constraintTop_toTopOf="@id/Buttons1" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/Buttons2"
         android:layout_width="380dp"
         android:layout_height="118dp"
         android:layout_marginTop="125dp"
         android:background="@drawable/profile_arround"
-        android:orientation="vertical"
         android:gravity="center_vertical"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Buttons1">
@@ -147,14 +156,15 @@
             android:textSize="13sp"
             app:layout_constraintTop_toTopOf="@id/Buttons2" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/Buttons3"
         android:layout_width="380dp"
         android:layout_height="118dp"
         android:layout_marginTop="125dp"
         android:background="@drawable/profile_arround"
-        android:orientation="vertical"
         android:gravity="center_vertical"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Buttons2">
@@ -188,12 +198,13 @@
         android:layout_width="380dp"
         android:layout_height="50dp"
         android:layout_marginTop="125dp"
-        android:gravity="center"
         android:background="@drawable/edit_arround"
         android:backgroundTint="@color/white"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Buttons3">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -205,17 +216,19 @@
             app:layout_constraintTop_toTopOf="@id/Buttons3" />
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/Exit"
         android:layout_width="380dp"
         android:layout_height="50dp"
         android:layout_marginTop="57dp"
-        android:gravity="center"
         android:background="@drawable/edit_arround"
         android:backgroundTint="@color/red"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Edit">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

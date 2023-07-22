@@ -94,5 +94,21 @@
     <string name="name">Name</string>
     <string name="sign_up">Sign up</string>
     <string name="login1">Login</string>
+    <string name="back_button">Back button</string>
+    <string name="search_button">search_button</string>
+    <string name="image_button">image_button</string>
+    <string name="button">button</string>
+    <string name="_680_000_t">680 000 T</string>
+    <string name="lenovo_2023_legion_5">LENOVO 2023 LEGION 5</string>
+    <string name="_111111">#111111</string>
+    <string name="_5_0">5.0</string>
+    <string name="color">Color</string>
+    <string name="characteristic3">Characteristic</string>
+    <string name="oc1">OC</string>
+    <string name="cpu1">CPU</string>
+    <string name="fps1">FPS</string>
+    <string name="screen_size1">Screen size</string>
+    <string name="screen_diagonal1">Screen diagonal</string>
+    <string name="buy_now">Buy Now</string>
 
 </resources>

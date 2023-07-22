@@ -34,9 +34,9 @@
 
             <LinearLayout
                 android:id="@+id/arrow_back"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginEnd="8dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/arrow_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -44,19 +44,19 @@
 
                 <ImageButton
                     android:id="@+id/arrow"
-                    android:layout_width="8dp"
-                    android:layout_height="14dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
-                    android:layout_marginHorizontal="9dp"
-                    android:src="@drawable/arrow_back" />
+                    android:layout_marginStart="-10dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_back1" />
             </LinearLayout>
 
             <EditText
                 android:id="@+id/Search_type"
-                android:layout_width="250dp"
-                android:layout_height="36dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="7dp"
+                android:layout_width="240dp"
+                android:layout_height="48dp"
                 android:hint="Type here..."
                 android:inputType="textMultiLine"
                 android:lines="4"
@@ -64,10 +64,10 @@
 
             <ImageButton
                 android:id="@+id/search_button"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:layout_marginEnd="5dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:background="@null"
+                android:contentDescription="@string/search_button"
                 android:src="@drawable/search_page" />
         </LinearLayout>
     </LinearLayout>
@@ -99,6 +99,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -152,6 +153,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -223,6 +225,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -275,6 +278,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -346,6 +350,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -398,6 +403,7 @@
                 android:layout_height="112dp"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="9dp"
+                android:contentDescription="@string/image_button"
                 android:src="@drawable/prod1" />
 
             <TextView
@@ -437,11 +443,10 @@
 
     <LinearLayout
         android:id="@+id/cart"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="640dp"
-        android:background="@drawable/cart_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="650dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="0.1"
@@ -449,10 +454,11 @@
 
         <ImageButton
             android:id="@+id/CButton"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginStart="2dp"
-            android:background="@drawable/cart" />
+            android:background="@drawable/cart1"
+            android:contentDescription="@string/image_button" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
