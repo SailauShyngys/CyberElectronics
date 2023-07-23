@@ -55,305 +55,196 @@
             app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/search_results1"
+    <Button
+        android:id="@+id/BTNcateg13"
         android:layout_width="332dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/chairs"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/categ">
+        app:layout_constraintTop_toTopOf="@id/categ" />
 
-        <TextView
-            android:id="@+id/SRTW1"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/chairs"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results2"
+    <Button
+        android:id="@+id/BTNcateg14"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/game_consoles"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results1">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg13" />
 
-        <TextView
-            android:id="@+id/SRTW2"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/game_consoles"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results3"
+    <Button
+        android:id="@+id/BTNcateg15"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/joysticks"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results2">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg14" />
 
-        <TextView
-            android:id="@+id/SRTW3"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="Joysticicks"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results4"
+    <Button
+        android:id="@+id/BTNcateg16"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/accessories"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results3">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg15" />
 
-        <TextView
-            android:id="@+id/SRTW4"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="Accessories"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results5"
+    <Button
+        android:id="@+id/BTNcateg17"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/tablets"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results4">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg16" />
 
-        <TextView
-            android:id="@+id/SRTW5"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/tables"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results6"
+    <Button
+        android:id="@+id/BTNcateg18"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/tvs"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results5">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg17" />
 
-        <TextView
-            android:id="@+id/SRTW6"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/tvs"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results7"
+    <Button
+        android:id="@+id/BTNcateg19"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/drones"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results6">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg18" />
 
-        <TextView
-            android:id="@+id/SRTW7"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/drones"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results8"
+    <Button
+        android:id="@+id/BTNcateg20"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/mats"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results7">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg19" />
 
-        <TextView
-            android:id="@+id/SRTW8"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/mats"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results9"
+    <Button
+        android:id="@+id/BTNcateg21"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/loudspeakers"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results8">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg20" />
 
-        <TextView
-            android:id="@+id/SRTW9"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/loudspeakers"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results10"
+    <Button
+        android:id="@+id/BTNcateg22"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/charges"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results9">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg21" />
 
-        <TextView
-            android:id="@+id/SRTW10"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/charges"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results11"
+    <Button
+        android:id="@+id/BTNcateg23"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/microphones"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results10">
+        app:layout_constraintTop_toTopOf="@id/BTNcateg22" />
 
-        <TextView
-            android:id="@+id/SRTW11"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/microphones"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/search_results12"
+    <Button
+        android:id="@+id/BTNcateg24"
         android:layout_width="332dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:backgroundTint="@color/bluegray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:letterSpacing="0.05"
+        android:text="@string/wires"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results11">
-
-        <TextView
-            android:id="@+id/SRTW12"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/wires"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="@id/BTNcateg23" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

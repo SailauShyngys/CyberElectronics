@@ -110,5 +110,18 @@
     <string name="screen_size1">Screen size</string>
     <string name="screen_diagonal1">Screen diagonal</string>
     <string name="buy_now">Buy Now</string>
+    <string name="bin">BIN</string>
+    <string name="_709990_tg">709990 TG</string>
+    <string name="laptop">Laptop</string>
+    <string name="_1">1</string>
+    <string name="pay">Pay</string>
+    <string name="joysticks">Joysticks</string>
+    <string name="accessories">Accessories</string>
+    <string name="tablets">Tablets</string>
+    <string name="no">NO</string>
+    <string name="yes_pay">YES, PAY</string>
+    <string name="are_you_sure_you_want_to_pay">Are You Sure You Want To Pay?</string>
+    <string name="completed">Completed</string>
+    <string name="back1">Back</string>
 
 </resources>
