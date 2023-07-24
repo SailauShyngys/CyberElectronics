@@ -3,47 +3,74 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:background="@drawable/payed_back"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/done"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
         android:src="@drawable/done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/Text"
-        android:layout_width="180dp"
-        android:layout_height="93dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
         android:fontFamily="@font/montserrat_medium"
         android:letterSpacing="0.05"
         android:text="@string/completed"
-        android:textColor="@color/green"
-        android:textSize="26sp"
+        android:textColor="@color/green2"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/done" />
 
-    <Button
-        android:id="@+id/BTN_No"
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="10dp"
-        android:backgroundTint="@color/bluegray"
-        android:fontFamily="@font/montserrat_semibold"
-        android:letterSpacing="0.05"
-        android:text="@string/back1"
-        android:textColor="@color/purple"
-        android:textSize="15sp"
+    <LinearLayout
+        android:id="@+id/categ"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/back_background"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Text" />
+        app:layout_constraintTop_toTopOf="@id/Text">
 
+        <ImageButton
+            android:id="@+id/BTN_No"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="none"
+            android:contentDescription="@string/image_button"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:letterSpacing="0.05"
+            android:text="Back"
+            android:textColor="@color/purple"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -123,5 +123,11 @@
     <string name="are_you_sure_you_want_to_pay">Are You Sure You Want To Pay?</string>
     <string name="completed">Completed</string>
     <string name="back1">Back</string>
+    <string name="password1">PASSWORD</string>
+    <string name="recovery">RECOVERY</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+    <string name="Login">Login</string>
+
 
 </resources>

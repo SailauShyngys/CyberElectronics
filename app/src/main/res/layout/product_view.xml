@@ -510,14 +510,22 @@
             app:layout_constraintTop_toTopOf="@id/view_all">
 
             <Button
-                android:layout_width="330dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:backgroundTint="@color/orange"
                 android:contentDescription="@string/button"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="@string/buy_now"
+                android:text="Add in bin"
                 android:textColor="@color/white"
                 android:textSize="22dp" />
+
+            <ImageButton
+                android:id="@+id/CButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/cart1"
+                android:contentDescription="@string/image_button" />
         </LinearLayout>
     </LinearLayout>
 
