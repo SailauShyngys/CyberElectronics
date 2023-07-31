@@ -18,23 +18,155 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.cyberelectronics"
+        android:name="com.example.cyberelectronics.presentation.mvvm.AutorithationFragment"
         android:label="game"
         tools:layout="@layout/autorithation">
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.EmailFragment"
+        android:label="game"
+        tools:layout="@layout/email">
+        <action
+            android:id="@+id/action_emailFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_emailFragment_to_codeFragment"
+            app:destination="@id/codeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.EmailCodeFragment"
+        android:label="game"
+        tools:layout="@layout/email_code">
+        <action
+            android:id="@+id/action_codeFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+        <action
+            android:id="@+id/action_codeFragment_to_newPassFragment"
+            app:destination="@id/newPassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPassFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.NewPassFragment"
+        android:label="game"
+        tools:layout="@layout/new_password">
+        <action
+            android:id="@+id/action_newPassFragment_to_codeFragment"
+            app:destination="@id/codeFragment" />
         <action
             android:id="@+id/action_loginFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.cyberelectronics"
+        android:name="com.example.cyberelectronics.presentation.mvvm.RegistrationFragment"
         android:label="game"
         tools:layout="@layout/registration">
         <action
-            android:id="@+id/action_loginFragment_to_menuFragment"
+            android:id="@+id/action_registrationFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
         <action
             android:id="@+id/action_menuFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:label="game"
+        tools:layout="@layout/main_page">
+        <action
+            android:id="@+id/action_MainFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_binFragment"
+            app:destination="@id/binFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_CategoryList1Fragment"
+            app:destination="@id/CategoryList1Fragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_CategoryFragment"
+            app:destination="@id/CategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:label="game"
+        tools:layout="@layout/profile">
+        <action
+            android:id="@+id/action_profileFragment_to_EditProfileFragment"
+            app:destination="@id/EditProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EditProfileFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:label="game"
+        tools:layout="@layout/edit_profile">
+        <action
+            android:id="@+id/action_EditProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/binFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:label="game"
+        tools:layout="@layout/bin_page">
+        <action
+            android:id="@+id/action_binFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_binFragment_to_payedFragment"
+            app:destination="@id/payedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payedFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:label="game"
+        tools:layout="@layout/payed_page">
+        <action
+            android:id="@+id/action_payedFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CategoryList1Fragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:label="game"
+        tools:layout="@layout/category_list1">
+        <action
+            android:id="@+id/action_CategoryList1Fragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_CategoryList1Fragment_to_CategoryList2Fragment"
+            app:destination="@id/CategoryList2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CategoryList2Fragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:label="game"
+        tools:layout="@layout/category_list2">
+        <action
+            android:id="@+id/action_CategoryList2Fragment_to_CategoryList1Fragment"
+            app:destination="@id/CategoryList1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CategoryFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:label="game"
+        tools:layout="@layout/category_page">
+        <action
+            android:id="@+id/action_CategoryFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
     </fragment>
 </navigation>

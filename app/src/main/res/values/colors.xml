@@ -15,5 +15,6 @@
     <color name="brown">#808080</color>
     <color name="profile">#9085DE</color>
     <color name="darkgrey">#404040</color>
+    <color name="transparent">none</color>
 
 </resources>

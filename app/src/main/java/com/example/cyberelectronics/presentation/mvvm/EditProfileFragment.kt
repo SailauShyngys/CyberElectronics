@@ -6,22 +6,17 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.example.cyberelectronics.R
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.example.cyberelectronics.databinding.MenuBinding
+import com.example.cyberelectronics.databinding.EditProfileBinding
 
-class MenuFragment : Fragment(R.layout.menu) {
-    private val binding: MenuBinding by viewBinding()
+class EditProfileFragment : Fragment(R.layout.edit_profile) {
+
+    private val binding: EditProfileBinding by viewBinding()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnSignIn.setOnClickListener {
-            findNavController().navigate(R.id.action_menuFragment_to_registerFragment)
-        }
-
-        binding.btnLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_menuFragment_to_loginFragment)
+        binding.Save.setOnClickListener {
+            findNavController().navigate(R.id.action_EditProfileFragment_to_profileFragment)
         }
     }
 }
-
-

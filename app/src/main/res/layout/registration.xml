@@ -80,7 +80,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/arrow"
+            android:id="@+id/regBack"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
@@ -201,6 +201,7 @@
             app:layout_constraintTop_toTopOf="@id/Buttons" />
 
         <Button
+            android:id="@+id/register"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:layout_marginTop="95dp"

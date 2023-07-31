@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/arrow"
+                android:id="@+id/binBack"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
@@ -467,7 +467,7 @@
         app:layout_constraintTop_toBottomOf="@id/llThirdLine" />
 
     <LinearLayout
-        android:id="@+id/buy"
+        android:id="@+id/binBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"

@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/arrow"
+                android:id="@+id/categoryBack"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
@@ -428,11 +428,10 @@
         android:id="@+id/cart"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginHorizontal="35dp"
+        android:layout_marginHorizontal="50dp"
         android:layout_marginTop="650dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="0.1"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton

@@ -6,22 +6,21 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.example.cyberelectronics.R
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.example.cyberelectronics.databinding.MenuBinding
+import com.example.cyberelectronics.databinding.EmailCodeBinding
 
-class MenuFragment : Fragment(R.layout.menu) {
-    private val binding: MenuBinding by viewBinding()
+class EmailCodeFragment : Fragment(R.layout.email_code) {
+
+    private val binding: EmailCodeBinding by viewBinding()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnSignIn.setOnClickListener {
-            findNavController().navigate(R.id.action_menuFragment_to_registerFragment)
+        binding.CodeBack.setOnClickListener {
+            findNavController().navigate(R.id.action_codeFragment_to_emailFragment)
         }
 
-        binding.btnLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_menuFragment_to_loginFragment)
+        binding.CodeBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_codeFragment_to_newPassFragment)
         }
     }
 }
-
-
