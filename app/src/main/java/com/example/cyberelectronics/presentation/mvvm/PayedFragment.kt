@@ -16,7 +16,7 @@ class PayedFragment : Fragment(R.layout.payed_page) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.payBtn.setOnClickListener {
+        binding.btnPayedBack.setOnClickListener {
             findNavController().navigate(R.id.action_payedFragment_to_MainFragment)
         }
     }

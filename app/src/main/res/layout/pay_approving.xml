@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="217dp"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".presentation.mvvm.PayApprovingFragment">
 
     <LinearLayout
         android:id="@+id/TopLine"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toTopOf="@id/Text">
 
         <Button
-            android:id="@+id/BTN_No"
+            android:id="@+id/btnNo"
             android:layout_width="106dp"
             android:layout_height="48dp"
             android:layout_marginTop="150dp"
@@ -56,7 +56,7 @@
             android:textSize="15sp" />
 
         <Button
-            android:id="@+id/BTN_Yes"
+            android:id="@+id/btnYes"
             android:layout_width="206dp"
             android:layout_height="48dp"
             android:layout_marginTop="150dp"

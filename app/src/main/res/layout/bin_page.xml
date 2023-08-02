@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".presentation.mvvm.BinFragment">
 
     <LinearLayout
         android:id="@+id/bin_page"
@@ -466,26 +466,22 @@
         app:layout_constraintStart_toStartOf="@id/llThirdLine"
         app:layout_constraintTop_toBottomOf="@id/llThirdLine" />
 
-    <LinearLayout
-        android:id="@+id/binBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:gravity="center"
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="130dp"
+        android:backgroundTint="@color/orange"
+        android:contentDescription="@string/button"
+        android:fontFamily="@font/montserrat_medium"
+        android:letterSpacing="0.05"
+        android:text="@string/pay"
+        android:textColor="@color/white"
+        android:textSize="22dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view_divider_third">
+        app:layout_constraintTop_toTopOf="@id/view_divider_third" />
 
-        <Button
-            android:layout_width="330dp"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/orange"
-            android:contentDescription="@string/button"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/pay"
-            android:textColor="@color/white"
-            android:textSize="22dp" />
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

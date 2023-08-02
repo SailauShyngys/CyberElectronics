@@ -30,5 +30,28 @@ class MainFragment : Fragment(R.layout.main_page) {
         binding.PowerUnit.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
         }
+        binding.Lamps.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.Keyboards.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.Stands.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.Humidifiers.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.Mouses.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.Watches.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.RGB.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+
+
     }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/payed_back"
-    tools:context=".MainActivity">
+    tools:context=".presentation.mvvm.PayedFragment">
 
     <ImageView
         android:id="@+id/done"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="@id/done" />
 
     <LinearLayout
-        android:id="@+id/categ"
+        android:id="@+id/btnPayedBack"
         android:layout_width="325dp"
         android:layout_height="50dp"
         android:layout_marginTop="70dp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".presentation.mvvm.EmailCodeFragment"
     android:background="@color/purple">
 
         <LinearLayout
@@ -86,6 +86,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
+            android:id="@+id/CodeBack"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
@@ -160,6 +161,7 @@
             />
 
         <Button
+            android:id="@+id/CodeBtn"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:layout_marginTop="230dp"

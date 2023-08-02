@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple"
-    tools:context=".MainActivity">
+    tools:context=".presentation.mvvm.MainFragment">
 
     <LinearLayout
         android:id="@+id/Header"
@@ -258,6 +258,7 @@
         app:layout_constraintTop_toTopOf="@id/TopSecond">
 
         <LinearLayout
+            android:id="@+id/PowerUnit"
             android:layout_width="209dp"
             android:layout_height="100dp"
             android:background="@drawable/categ_block"
@@ -292,6 +293,7 @@
             android:layout_marginHorizontal="2dp" />
 
         <LinearLayout
+            android:id="@+id/Lamps"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/categ_block"
@@ -342,6 +344,7 @@
         app:layout_constraintTop_toBottomOf="@id/view_divider_first">
 
         <LinearLayout
+            android:id="@+id/Keyboards"
             android:layout_width="204dp"
             android:layout_height="100dp"
             android:background="@drawable/categ_block"
@@ -374,6 +377,7 @@
             android:layout_marginHorizontal="2dp" />
 
         <LinearLayout
+            android:id="@+id/Stands"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/categ_block"
@@ -425,6 +429,7 @@
         app:layout_constraintTop_toBottomOf="@id/view_divider_second">
 
         <LinearLayout
+            android:id="@+id/Humidifiers"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/categ_block"
@@ -459,6 +464,7 @@
             android:layout_marginHorizontal="2dp" />
 
         <LinearLayout
+            android:id="@+id/Mouses"
             android:layout_width="204dp"
             android:layout_height="100dp"
             android:background="@drawable/categ_block">
@@ -507,6 +513,7 @@
         app:layout_constraintTop_toBottomOf="@id/view_divider_third">
 
         <LinearLayout
+            android:id="@+id/Watches"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/categ_block"
@@ -541,6 +548,7 @@
             android:layout_marginHorizontal="2dp" />
 
         <LinearLayout
+            android:id="@+id/RGB"
             android:layout_width="204dp"
             android:layout_height="100dp"
             android:background="@drawable/categ_block"

@@ -99,7 +99,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.ProfileFragment"
         android:label="game"
         tools:layout="@layout/profile">
         <action
@@ -111,7 +111,7 @@
     </fragment>
     <fragment
         android:id="@+id/EditProfileFragment"
-        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.EditProfileFragment"
         android:label="game"
         tools:layout="@layout/edit_profile">
         <action
@@ -120,7 +120,7 @@
     </fragment>
     <fragment
         android:id="@+id/binFragment"
-        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.BinFragment"
         android:label="game"
         tools:layout="@layout/bin_page">
         <action
@@ -132,7 +132,7 @@
     </fragment>
     <fragment
         android:id="@+id/payedFragment"
-        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.PayedFragment"
         android:label="game"
         tools:layout="@layout/payed_page">
         <action
@@ -141,7 +141,7 @@
     </fragment>
     <fragment
         android:id="@+id/CategoryList1Fragment"
-        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.CategoryList1Fragment"
         android:label="game"
         tools:layout="@layout/category_list1">
         <action
@@ -153,7 +153,7 @@
     </fragment>
     <fragment
         android:id="@+id/CategoryList2Fragment"
-        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.CategoryList2Fragment"
         android:label="game"
         tools:layout="@layout/category_list2">
         <action
@@ -162,11 +162,23 @@
     </fragment>
     <fragment
         android:id="@+id/CategoryFragment"
-        android:name="com.example.cyberelectronics.presentation.mvvm.MainFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.CategoryFragment"
         android:label="game"
         tools:layout="@layout/category_page">
         <action
             android:id="@+id/action_CategoryFragment_to_MainFragment"
             app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PayApprovingFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.PayApprovingFragment"
+        android:label="game"
+        tools:layout="@layout/pay_approving">
+        <action
+            android:id="@+id/action_payapprovingFragment_to_binFragment"
+            app:destination="@id/binFragment" />
+        <action
+            android:id="@+id/action_payapprovingFragment_to_payedFragment"
+            app:destination="@id/payedFragment" />
     </fragment>
 </navigation>
