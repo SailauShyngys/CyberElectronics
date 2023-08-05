@@ -6,7 +6,6 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.example.cyberelectronics.R
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.example.cyberelectronics.databinding.BinPageBinding
 import com.example.cyberelectronics.databinding.PayedPageBinding
 
 class PayedFragment : Fragment(R.layout.payed_page) {

@@ -128,6 +128,10 @@
     <string name="next">Next</string>
     <string name="save">Save</string>
     <string name="Login">Login</string>
+    <string name="order_11111111">ORDER №11111111</string>
+    <string name="payment_check">Payment Check</string>
+    <string name="check_number">№ Check number</string>
+    <string name="_11111111">11111111</string>
 
 
 </resources>
