@@ -42,13 +42,13 @@
             android:id="@+id/Htext"
             android:layout_width="wrap_content"
             android:layout_height="38dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="85dp"
             android:layout_marginTop="-1dp"
             android:fontFamily="@font/montserrat_semibold"
             android:letterSpacing="0.05"
-            android:text="@string/order_11111111"
+            android:text="@string/refund"
             android:textColor="@color/purple"
-            android:textSize="20sp"
+            android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -57,7 +57,7 @@
     <LinearLayout
         android:id="@+id/order_body"
         android:layout_width="320dp"
-        android:layout_height="570dp"
+        android:layout_height="395dp"
         android:layout_marginTop="54dp"
         android:background="@drawable/fback_background"
         android:orientation="vertical"
@@ -478,187 +478,72 @@
             app:layout_constraintStart_toStartOf="@id/check_line7"
             app:layout_constraintTop_toTopOf="@id/check_line7" />
 
-        <Button
-            android:id="@+id/RepeatBTN"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/orange"
-            android:contentDescription="@string/button"
-            android:fontFamily="@font/montserrat_medium"
-            android:gravity="center"
-            android:text="@string/repeat_order"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="@id/view9"
-            app:layout_constraintStart_toStartOf="@id/view9"
-            app:layout_constraintTop_toTopOf="@id/view9" />
-
-        <Button
-            android:id="@+id/RefundBTN"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/purple"
-            android:contentDescription="@string/button"
-            android:fontFamily="@font/montserrat_medium"
-            android:gravity="center"
-            android:text="@string/refund_of_purchase"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="@id/RepeatBTN"
-            app:layout_constraintStart_toStartOf="@id/RepeatBTN"
-            app:layout_constraintTop_toTopOf="@id/RepeatBTN" />
-
-        <Button
-            android:id="@+id/FeedbackBTN"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/green"
-            android:contentDescription="@string/button"
-            android:fontFamily="@font/montserrat_medium"
-            android:gravity="center"
-            android:text="@string/feedback"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="@id/RefundBTN"
-            app:layout_constraintStart_toStartOf="@id/RefundBTN"
-            app:layout_constraintTop_toTopOf="@id/RefundBTN" />
-
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ordered_prods"
+        android:id="@+id/reason_body"
         android:layout_width="320dp"
-        android:layout_height="190dp"
-        android:layout_marginTop="550dp"
-        android:orientation="horizontal"
+        android:layout_height="250dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/ordered_back"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="@id/order_body"
         app:layout_constraintStart_toStartOf="@id/order_body"
         app:layout_constraintTop_toTopOf="@id/order_body">
 
-        <LinearLayout
-            android:id="@+id/TopLine"
-            android:layout_width="162dp"
-            android:layout_height="171dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/prod_background"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tvType">
-
-            <ImageButton
-                android:id="@+id/ibtnFFirst"
-                android:layout_width="110dp"
-                android:layout_height="112dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="9dp"
-                android:contentDescription="@string/image_button"
-                android:src="@drawable/prod1" />
-
-            <TextView
-                android:id="@+id/FFtext1"
-                android:layout_width="110dp"
-                android:layout_height="10dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/hyper_x_cloud_stinger"
-                android:textColor="@color/purple"
-                android:textSize="8sp"
-                app:layout_constraintTop_toTopOf="@id/ibtnFFirst" />
-
-            <TextView
-                android:id="@+id/FFtext2"
-                android:layout_width="95dp"
-                android:layout_height="8dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_light"
-                android:text="@string/headphones_and_headsets"
-                android:textColor="@color/black"
-                android:textSize="6sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext1" />
-
-            <TextView
-                android:id="@+id/FFtext3"
-                android:layout_width="95dp"
-                android:layout_height="9.5dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/_24795tg"
-                android:textColor="@color/black"
-                android:textSize="7sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext2" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/reason_head"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing="0.05"
+            android:text="@string/reason_for_return"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
 
         <LinearLayout
-            android:id="@+id/TopLine2"
-            android:layout_width="162dp"
-            android:layout_height="171dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/prod_background"
+            android:id="@+id/reason_text_body"
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_back"
             android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/TopLine"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintEnd_toEndOf="@id/order_body"
+            app:layout_constraintStart_toStartOf="@id/order_body"
+            app:layout_constraintTop_toTopOf="@id/order_body">
 
-            <ImageButton
-                android:id="@+id/ibtnFFirst2"
-                android:layout_width="110dp"
-                android:layout_height="112dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="9dp"
-                android:contentDescription="@string/image_button"
-                android:src="@drawable/prod1" />
+            <EditText
+                android:id="@+id/reason_typing"
+                android:layout_width="280dp"
+                android:layout_height="198dp"
+                android:hint="Type here..."
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:textSize="15sp">
 
-            <TextView
-                android:id="@+id/FFtext12"
-                android:layout_width="110dp"
-                android:layout_height="10dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/hyper_x_cloud_stinger"
-                android:textColor="@color/purple"
-                android:textSize="8sp"
-                app:layout_constraintTop_toTopOf="@id/ibtnFFirst" />
-
-            <TextView
-                android:id="@+id/FFtext22"
-                android:layout_width="95dp"
-                android:layout_height="8dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_light"
-                android:text="@string/headphones_and_headsets"
-                android:textColor="@color/black"
-                android:textSize="6sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext12" />
-
-            <TextView
-                android:id="@+id/FFtext32"
-                android:layout_width="95dp"
-                android:layout_height="9.5dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/_24795tg"
-                android:textColor="@color/black"
-                android:textSize="7sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext22" />
+            </EditText>
         </LinearLayout>
+
     </LinearLayout>
 
-
-<!--    <LinearLayout-->
-<!--        android:id="@+id/ordered_prods"-->
-<!--        android:layout_width="320dp"-->
-<!--        android:layout_height="180dp"-->
-<!--        android:layout_marginTop="580dp"-->
-<!--        android:background="@drawable/ordered_back"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/order_body"-->
-<!--        app:layout_constraintStart_toStartOf="@id/order_body"-->
-<!--        app:layout_constraintTop_toTopOf="@id/order_body">-->
-<!--    </LinearLayout>-->
+    <Button
+        android:id="@+id/RefundBTN"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="270dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple"
+        android:contentDescription="@string/button"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:text="@string/refund_of_purchase"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@id/reason_body"
+        app:layout_constraintStart_toStartOf="@id/reason_body"
+        app:layout_constraintTop_toTopOf="@id/reason_body" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

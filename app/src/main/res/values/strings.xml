@@ -132,6 +132,22 @@
     <string name="payment_check">Payment Check</string>
     <string name="check_number">№ Check number</string>
     <string name="_11111111">11111111</string>
+    <string name="date_of_payment">Date of payment</string>
+    <string name="_01_01_2023_13_00_00">01.01.2023 13:00:00</string>
+    <string name="customer_name">Customer name</string>
+    <string name="sailau_sh">Sailau Sh.</string>
+    <string name="support_number">Support number</string>
+    <string name="_7_777_7777777">+7(777)7777777</string>
+    <string name="way_of_payment">Way of payment</string>
+    <string name="adress">Adress</string>
+    <string name="almaty_c_68_abay_av">Almaty c. 68 Abay av.</string>
+    <string name="total">Total</string>
+    <string name="_704_795_tg">704 795 tg.</string>
+    <string name="repeat_order">Repeat order</string>
+    <string name="refund_of_purchase">Refund of purchase</string>
+    <string name="feedback">Feedback</string>
+    <string name="refund">REFUND</string>
+    <string name="reason_for_return">REASON FOR RETURN</string>
 
 
 </resources>
