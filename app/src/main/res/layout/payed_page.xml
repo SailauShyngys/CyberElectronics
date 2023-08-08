@@ -62,13 +62,29 @@
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/montserrat_medium"
             android:letterSpacing="0.05"
-            android:text="Back"
+            android:text="@string/back_payed"
             android:textColor="@color/purple"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/order_status_btn"
+        android:layout_width="325dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/bluegray"
+        android:contentDescription="@string/button"
+        android:fontFamily="@font/montserrat_medium"
+        android:letterSpacing="0.05"
+        android:text="@string/order_status"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnPayedBack" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

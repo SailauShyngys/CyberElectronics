@@ -4,239 +4,439 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.mvvm.EditProfileFragment"
-    android:background="@color/bluegray">
+    android:background="@color/bluegray"
+    tools:context=".presentation.mvvm.ProfileFragment">
+
     <LinearLayout
-        android:id="@+id/Image"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:background="@drawable/backgroud_around"
+        android:id="@+id/arrow_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="54dp"
-        android:layout_marginStart="14dp"
-        app:layout_constraintHorizontal_bias="0."
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/arrow_background2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:id="@+id/arrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:background="@drawable/back_arrow"
+            android:layout_marginStart="-10dp"
+            android:background="@null"
             android:contentDescription="@string/back_button"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:src="@drawable/arrow_back1" />
     </LinearLayout>
+
     <LinearLayout
-        android:id="@+id/FirstText"
+        android:id="@+id/profile_logo"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="0dp"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Image">
+        app:layout_constraintTop_toTopOf="@id/arrow_back">
+
         <ImageButton
+            android:id="@+id/profile_image"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/profile"
-            android:contentDescription="@string/back_button"
             android:background="@null"
-            />
+            android:contentDescription="@string/image_button"
+            android:src="@drawable/profile" />
     </LinearLayout>
+
     <LinearLayout
-        android:id="@+id/Buttons"
+        android:id="@+id/login"
         android:layout_width="380dp"
-        android:layout_height="118dp"
+        android:layout_height="85dp"
         android:layout_marginTop="145dp"
         android:background="@drawable/profile_arround"
-        android:orientation="vertical"
         android:gravity="center_vertical"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/FirstText">
+        app:layout_constraintTop_toTopOf="@id/profile_logo">
 
         <TextView
+            android:id="@+id/login_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="Nikita"
+            android:text="nikita_n"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons" />
+            android:textSize="22sp" />
 
         <TextView
+            android:id="@+id/login_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="*name"
+            android:text="@string/login_prpfile"
             android:textColor="@color/grey"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons" />
+            android:textSize="13sp" />
         <View
             android:layout_width="345dp"
             android:layout_height="2dp"
-            android:background="@color/green"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="15dp"/>
+            android:layout_marginStart="15dp"
+            android:background="@color/green" />
     </LinearLayout>
+
     <LinearLayout
-        android:id="@+id/Buttons1"
+        android:id="@+id/name"
         android:layout_width="380dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="125dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/profile_arround"
-        android:orientation="vertical"
         android:gravity="center_vertical"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Buttons">
+        app:layout_constraintTop_toTopOf="@id/login">
 
         <TextView
+            android:id="@+id/name_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="Nikitonis"
+            android:text="@string/nikita"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons1" />
+            android:textSize="22sp" />
 
         <TextView
+            android:id="@+id/name_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="*surname"
+            android:text="@string/name_profile"
             android:textColor="@color/grey"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons1" />
+            android:textSize="13sp" />
         <View
             android:layout_width="345dp"
             android:layout_height="2dp"
-            android:background="@color/green"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="15dp"/>
+            android:layout_marginStart="15dp"
+            android:background="@color/green" />
     </LinearLayout>
+
     <LinearLayout
-        android:id="@+id/Buttons2"
+        android:id="@+id/surname"
         android:layout_width="380dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="125dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/profile_arround"
-        android:orientation="vertical"
         android:gravity="center_vertical"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Buttons1">
+        app:layout_constraintTop_toTopOf="@id/name">
 
         <TextView
+            android:id="@+id/surname_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="Nikita23@mail.ru"
+            android:text="@string/nikitin"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons2" />
+            android:textSize="22sp" />
 
         <TextView
+            android:id="@+id/surname_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="*email"
+            android:text="@string/surname"
             android:textColor="@color/grey"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons2" />
+            android:textSize="13sp" />
         <View
             android:layout_width="345dp"
             android:layout_height="2dp"
-            android:background="@color/green"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="15dp"/>
+            android:layout_marginStart="15dp"
+            android:background="@color/green" />
     </LinearLayout>
+
     <LinearLayout
-        android:id="@+id/Buttons3"
+        android:id="@+id/email"
         android:layout_width="380dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="125dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/profile_arround"
-        android:orientation="vertical"
         android:gravity="center_vertical"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Buttons2">
+        app:layout_constraintTop_toTopOf="@id/surname">
 
         <TextView
+            android:id="@+id/email_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="******************"
+            android:text="@string/nikita23_mail_ru"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+            android:textSize="22sp" />
 
         <TextView
+            android:id="@+id/email_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="*password"
+            android:text="@string/email_profile"
             android:textColor="@color/grey"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+            android:textSize="13sp" />
         <View
             android:layout_width="345dp"
             android:layout_height="2dp"
-            android:background="@color/green"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="15dp"/>
+            android:layout_marginStart="15dp"
+            android:background="@color/green" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/binBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="125dp"
-        android:gravity="center"
+        android:id="@+id/password_block"
+        android:layout_width="380dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Buttons3">
+        app:layout_constraintTop_toTopOf="@id/email">
 
-        <Button
-            android:id="@+id/Save"
+        <LinearLayout
+            android:id="@+id/password"
             android:layout_width="380dp"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/green"
-            android:contentDescription="@string/button"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/save"
-            android:textColor="@color/white"
-            android:textSize="22dp" />
+            android:layout_height="85dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/password_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/password_profile"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/password_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/password_profile1"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+            <View
+                android:layout_width="345dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="15dp"
+                android:background="@color/green" />
+        </LinearLayout>
+
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/payment_block"
+        android:layout_width="380dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/password_block">
+
+        <LinearLayout
+            android:id="@+id/payment"
+            android:layout_width="380dp"
+            android:layout_height="85dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/payment_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/_1234"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/payment_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/payment_method"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+            <View
+                android:layout_width="345dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="15dp"
+                android:background="@color/green" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_number"
+        android:layout_width="380dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/profile_arround"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/payment_block">
+
+        <TextView
+            android:id="@+id/phone_number_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:text="@string/phone_num"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/phone_number_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:text="@string/phone_number"
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="345dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address_block"
+        android:layout_width="380dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/phone_number">
+
+        <LinearLayout
+            android:id="@+id/address"
+            android:layout_width="380dp"
+            android:layout_height="85dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/address_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/almaty_c_68_abay_av"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/address_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/address"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+            <View
+                android:layout_width="345dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="15dp"
+                android:background="@color/green" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/green"
+        android:contentDescription="@string/button"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/address_block" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-

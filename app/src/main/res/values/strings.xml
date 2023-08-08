@@ -148,6 +148,23 @@
     <string name="feedback">Feedback</string>
     <string name="refund">REFUND</string>
     <string name="reason_for_return">REASON FOR RETURN</string>
+    <string name="login_prpfile">login</string>
+    <string name="nikita">Nikita</string>
+    <string name="name_profile">name</string>
+    <string name="nikitin">Nikitin</string>
+    <string name="surname">surname</string>
+    <string name="nikita23_mail_ru">Nikita23@mail.ru</string>
+    <string name="email_profile">email</string>
+    <string name="password_profile">******************</string>
+    <string name="password_profile1">password</string>
+    <string name="_1234">****1234</string>
+    <string name="payment_method">payment method</string>
+    <string name="phone_num">+7(777)7777777</string>
+    <string name="phone_number">phone number</string>
+    <string name="address">address</string>
+    <string name="order_status">Order status</string>
+    <string name="back_payed">Back</string>
+    <string name="payment">PAYMENT</string>
 
 
 </resources>

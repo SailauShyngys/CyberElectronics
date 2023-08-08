@@ -11,11 +11,9 @@
         android:id="@+id/arrow_back"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginStart="14dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="54dp"
         android:background="@drawable/arrow_background2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -31,7 +29,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/FirstText"
+        android:id="@+id/profile_logo"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="0dp"
@@ -42,6 +40,7 @@
         app:layout_constraintTop_toTopOf="@id/arrow_back">
 
         <ImageButton
+            android:id="@+id/profile_image"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:background="@null"
@@ -50,194 +49,420 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Buttons"
+        android:id="@+id/profile_nav"
+        android:layout_width="35dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/profile_logo"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/exit_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="@string/image_button"
+            android:src="@drawable/exit_btn" />
+
+        <ImageButton
+            android:id="@+id/history_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-7dp"
+            android:background="@null"
+            android:contentDescription="@string/image_button"
+            android:src="@drawable/history_btn" />
+
+        <ImageButton
+            android:id="@+id/edit_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-7dp"
+            android:background="@null"
+            android:contentDescription="@string/image_button"
+            android:src="@drawable/edit_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login"
         android:layout_width="380dp"
-        android:layout_height="118dp"
+        android:layout_height="85dp"
         android:layout_marginTop="145dp"
         android:background="@drawable/profile_arround"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/FirstText">
+        app:layout_constraintTop_toTopOf="@id/profile_nav">
 
         <TextView
+            android:id="@+id/login_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="Nikita"
+            android:text="nikita_n"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons" />
+            android:textSize="22sp" />
 
         <TextView
+            android:id="@+id/login_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="name"
+            android:text="@string/login_prpfile"
             android:textColor="@color/grey"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons" />
+            android:textSize="13sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Buttons1"
+        android:id="@+id/name"
         android:layout_width="380dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="125dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/profile_arround"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Buttons">
+        app:layout_constraintTop_toTopOf="@id/login">
 
         <TextView
+            android:id="@+id/name_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="Nikitonis"
+            android:text="@string/nikita"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons1" />
+            android:textSize="22sp" />
 
         <TextView
+            android:id="@+id/name_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="surname"
+            android:text="@string/name_profile"
             android:textColor="@color/grey"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons1" />
+            android:textSize="13sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Buttons2"
+        android:id="@+id/surname"
         android:layout_width="380dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="125dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/profile_arround"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Buttons1">
+        app:layout_constraintTop_toTopOf="@id/name">
 
         <TextView
+            android:id="@+id/surname_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="Nikita23@mail.ru"
+            android:text="@string/nikitin"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons2" />
+            android:textSize="22sp" />
 
         <TextView
+            android:id="@+id/surname_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="email"
+            android:text="@string/surname"
             android:textColor="@color/grey"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons2" />
+            android:textSize="13sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Buttons3"
+        android:id="@+id/email"
         android:layout_width="380dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="125dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/profile_arround"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Buttons2">
+        app:layout_constraintTop_toTopOf="@id/surname">
 
         <TextView
+            android:id="@+id/email_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="******************"
+            android:text="@string/nikita23_mail_ru"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+            android:textSize="22sp" />
 
         <TextView
+            android:id="@+id/email_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="password"
+            android:text="@string/email_profile"
             android:textColor="@color/grey"
-            android:textSize="13sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+            android:textSize="13sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Edit"
+        android:id="@+id/password_block"
         android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="125dp"
-        android:background="@drawable/edit_arround"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Buttons3">
+        app:layout_constraintTop_toTopOf="@id/email">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
-            android:letterSpacing="0.05"
-            android:text="Edit profile"
-            android:textColor="@color/purple"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+        <LinearLayout
+            android:id="@+id/password"
+            android:layout_width="280dp"
+            android:layout_height="85dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/password_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/password_profile"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/password_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/password_profile1"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/password_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:background="@null"
+            android:contentDescription="@string/image_button"
+            android:src="@drawable/password_lock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/password"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Exit"
+        android:id="@+id/payment_block"
         android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="57dp"
-        android:background="@drawable/edit_arround"
-        android:backgroundTint="@color/red"
-        android:gravity="center"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Edit">
+        app:layout_constraintTop_toTopOf="@id/password_block">
+
+        <LinearLayout
+            android:id="@+id/payment"
+            android:layout_width="280dp"
+            android:layout_height="85dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/payment_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/_1234"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/payment_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/payment_method"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/payment_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:background="@null"
+            android:contentDescription="@string/image_button"
+            android:src="@drawable/arrow_back_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/payment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_number"
+        android:layout_width="380dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/profile_arround"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/payment_block">
 
         <TextView
+            android:id="@+id/phone_number_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="Exit account"
+            android:text="@string/phone_num"
             android:textColor="@color/white"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="@id/Buttons3" />
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/phone_number_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:text="@string/phone_number"
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address_block"
+        android:layout_width="380dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/profile_arround"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/phone_number">
+
+        <LinearLayout
+            android:id="@+id/address"
+            android:layout_width="280dp"
+            android:layout_height="85dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/address_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/almaty_c_68_abay_av"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/address_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/address"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/address_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:background="@null"
+            android:contentDescription="@string/image_button"
+            android:src="@drawable/arrow_back_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/payment"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
 
