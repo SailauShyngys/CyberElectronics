@@ -103,17 +103,34 @@
         android:label="game"
         tools:layout="@layout/profile">
         <action
-            android:id="@+id/action_profileFragment_to_EditProfileFragment"
-            app:destination="@id/EditProfileFragment" />
+            android:id="@+id/action_profileFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
         <action
             android:id="@+id/action_profileFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_OrderHistoryFragment"
+            app:destination="@id/OrderHistoryFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_EditProfileFragment"
+            app:destination="@id/EditProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_PaymentMethodsFragment"
+            app:destination="@id/PaymentMethodsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_AddressAddFragment"
+            app:destination="@id/AddressAddFragment" />
+
+
     </fragment>
     <fragment
         android:id="@+id/EditProfileFragment"
         android:name="com.example.cyberelectronics.presentation.mvvm.EditProfileFragment"
         android:label="game"
         tools:layout="@layout/edit_profile">
+        <action
+            android:id="@+id/action_EditProfileFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
         <action
             android:id="@+id/action_EditProfileFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -180,5 +197,29 @@
         <action
             android:id="@+id/action_payapprovingFragment_to_payedFragment"
             app:destination="@id/payedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OrderDetailsFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.OrderDetailsFragment"
+        android:label="game"
+        tools:layout="@layout/check_page">
+        <action
+            android:id="@+id/action_OrderDetailsFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_OrderDetailsFragment_to_BinFragment"
+            app:destination="@id/binFragment" />
+        <action
+            android:id="@+id/action_OrderDetailsFragment_to_RefundFragment"
+            app:destination="@id/RefundFragment" />
+        <action
+            android:id="@+id/action_OrderDetailsFragment_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+        <action
+            android:id="@+id/action_OrderDetailsFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment" />
+        <action
+            android:id="@+id/action_OrderDetailsFragment_to_profileFragment"
+            app:destination="@id/ProductFragment" />
     </fragment>
 </navigation>

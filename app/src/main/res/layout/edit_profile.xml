@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bluegray"
-    tools:context=".presentation.mvvm.ProfileFragment">
+    tools:context=".presentation.mvvm.EditProfileFragment">
 
     <LinearLayout
-        android:id="@+id/arrow_back"
+        android:id="@+id/arrow"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/arrow"
+            android:id="@+id/arrow_back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
@@ -37,7 +37,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/arrow_back">
+        app:layout_constraintTop_toTopOf="@id/arrow">
 
         <ImageButton
             android:id="@+id/profile_image"
@@ -68,7 +68,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="nikita_n"
+            android:text="@string/nikita_n"
             android:textColor="@color/white"
             android:textSize="22sp" />
 
@@ -84,6 +84,7 @@
             android:text="@string/login_prpfile"
             android:textColor="@color/grey"
             android:textSize="13sp" />
+
         <View
             android:layout_width="345dp"
             android:layout_height="2dp"
@@ -127,6 +128,7 @@
             android:text="@string/name_profile"
             android:textColor="@color/grey"
             android:textSize="13sp" />
+
         <View
             android:layout_width="345dp"
             android:layout_height="2dp"
@@ -170,6 +172,7 @@
             android:text="@string/surname"
             android:textColor="@color/grey"
             android:textSize="13sp" />
+
         <View
             android:layout_width="345dp"
             android:layout_height="2dp"
@@ -213,6 +216,7 @@
             android:text="@string/email_profile"
             android:textColor="@color/grey"
             android:textSize="13sp" />
+
         <View
             android:layout_width="345dp"
             android:layout_height="2dp"
@@ -265,6 +269,7 @@
                 android:text="@string/password_profile1"
                 android:textColor="@color/grey"
                 android:textSize="13sp" />
+
             <View
                 android:layout_width="345dp"
                 android:layout_height="2dp"
@@ -319,6 +324,7 @@
                 android:text="@string/payment_method"
                 android:textColor="@color/grey"
                 android:textSize="13sp" />
+
             <View
                 android:layout_width="345dp"
                 android:layout_height="2dp"
@@ -417,6 +423,7 @@
                 android:text="@string/address"
                 android:textColor="@color/grey"
                 android:textSize="13sp" />
+
             <View
                 android:layout_width="345dp"
                 android:layout_height="2dp"
@@ -439,4 +446,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/address_block" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

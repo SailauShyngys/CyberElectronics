@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bluegray"
-    tools:context=".presentation.mvvm.CategoryFragment">
+    tools:context=".presentation.mvvm.OrderDetailsFragment">
 
     <LinearLayout
         android:id="@+id/head"

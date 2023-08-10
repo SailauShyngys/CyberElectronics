@@ -8,7 +8,7 @@
     tools:context=".presentation.mvvm.ProfileFragment">
 
     <LinearLayout
-        android:id="@+id/arrow_back"
+        android:id="@+id/arrow"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/arrow"
+            android:id="@+id/arrow_back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
@@ -37,7 +37,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/arrow_back">
+        app:layout_constraintTop_toTopOf="@id/arrow">
 
         <ImageButton
             android:id="@+id/profile_image"
