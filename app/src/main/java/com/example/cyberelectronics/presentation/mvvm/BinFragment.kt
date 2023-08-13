@@ -18,9 +18,11 @@ class BinFragment : Fragment(R.layout.bin_page) {
         binding.binBack.setOnClickListener {
             findNavController().navigate(R.id.action_binFragment_to_MainFragment)
         }
-
+        binding.FLBT1.setOnClickListener {
+            findNavController().navigate(R.id.action_binFragment_to_ProductFragment)
+        }
         binding.btnPay.setOnClickListener {
-            findNavController().navigate(R.id.action_binFragment_to_payedFragment)
+            findNavController().navigate(R.id.action_binFragment_to_PaymentFragment)
         }
     }
 }

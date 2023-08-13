@@ -18,5 +18,27 @@ class CategoryFragment : Fragment(R.layout.category_list2) {
         binding.categoryBack.setOnClickListener {
             findNavController().navigate(R.id.action_CategoryFragment_to_MainFragment)
         }
+        binding.ibtnFFirst1.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.ibtnFFirst2.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.ibtnFFirst3.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.ibtnFFirst4.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.ibtnFFirst5.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.ibtnFFirst6.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.cart.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_BinFragment)
+        }
+
     }
 }

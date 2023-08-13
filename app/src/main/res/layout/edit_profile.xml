@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/arrow_back"
+            android:id="@+id/arrowback"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
@@ -433,7 +433,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/save_btn"
+        android:id="@+id/savebtn"
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginTop="88dp"

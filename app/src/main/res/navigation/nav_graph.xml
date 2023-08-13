@@ -85,11 +85,17 @@
         android:label="game"
         tools:layout="@layout/main_page">
         <action
-            android:id="@+id/action_MainFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
-        <action
-            android:id="@+id/action_MainFragment_to_binFragment"
+            android:id="@+id/action_MainFragment_to_BinFragment"
             app:destination="@id/binFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment" />
         <action
             android:id="@+id/action_MainFragment_to_CategoryList1Fragment"
             app:destination="@id/CategoryList1Fragment" />
@@ -98,7 +104,7 @@
             app:destination="@id/CategoryFragment" />
     </fragment>
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/ProfileFragment"
         android:name="com.example.cyberelectronics.presentation.mvvm.ProfileFragment"
         android:label="game"
         tools:layout="@layout/profile">
@@ -120,8 +126,6 @@
         <action
             android:id="@+id/action_profileFragment_to_AddressAddFragment"
             app:destination="@id/AddressAddFragment" />
-
-
     </fragment>
     <fragment
         android:id="@+id/EditProfileFragment"
@@ -133,7 +137,7 @@
             app:destination="@id/MainFragment" />
         <action
             android:id="@+id/action_EditProfileFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
+            app:destination="@id/ProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/binFragment"
@@ -144,8 +148,11 @@
             android:id="@+id/action_binFragment_to_MainFragment"
             app:destination="@id/MainFragment" />
         <action
-            android:id="@+id/action_binFragment_to_payedFragment"
-            app:destination="@id/payedFragment" />
+            android:id="@+id/action_binFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment" />
+        <action
+            android:id="@+id/action_binFragment_to_PaymentFragment"
+            app:destination="@id/PaymentFragment" />
     </fragment>
     <fragment
         android:id="@+id/payedFragment"
@@ -155,6 +162,9 @@
         <action
             android:id="@+id/action_payedFragment_to_MainFragment"
             app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_payedFragment_to_OrderHistoryFragment"
+            app:destination="@id/OrderHistoryFragment" />
     </fragment>
     <fragment
         android:id="@+id/CategoryList1Fragment"
@@ -164,6 +174,9 @@
         <action
             android:id="@+id/action_CategoryList1Fragment_to_MainFragment"
             app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_CategoryList1Fragment_to_CategoryFragment"
+            app:destination="@id/CategoryFragment" />
         <action
             android:id="@+id/action_CategoryList1Fragment_to_CategoryList2Fragment"
             app:destination="@id/CategoryList2Fragment" />
@@ -176,6 +189,9 @@
         <action
             android:id="@+id/action_CategoryList2Fragment_to_CategoryList1Fragment"
             app:destination="@id/CategoryList1Fragment" />
+        <action
+            android:id="@+id/action_CategoryList2Fragment_to_CategoryFragment"
+            app:destination="@id/CategoryFragment" />
     </fragment>
     <fragment
         android:id="@+id/CategoryFragment"
@@ -185,6 +201,12 @@
         <action
             android:id="@+id/action_CategoryFragment_to_MainFragment"
             app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_CategoryFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment" />
+        <action
+            android:id="@+id/action_CategoryFragment_to_BinFragment"
+            app:destination="@id/binFragment" />
     </fragment>
     <fragment
         android:id="@+id/PayApprovingFragment"
@@ -192,8 +214,8 @@
         android:label="game"
         tools:layout="@layout/pay_approving">
         <action
-            android:id="@+id/action_payapprovingFragment_to_binFragment"
-            app:destination="@id/binFragment" />
+            android:id="@+id/action_payapprovingFragment_to_PaymentFragment"
+            app:destination="@id/PaymentFragment" />
         <action
             android:id="@+id/action_payapprovingFragment_to_payedFragment"
             app:destination="@id/payedFragment" />
@@ -202,10 +224,10 @@
         android:id="@+id/OrderDetailsFragment"
         android:name="com.example.cyberelectronics.presentation.mvvm.OrderDetailsFragment"
         android:label="game"
-        tools:layout="@layout/check_page">
+        tools:layout="@layout/order_details">
         <action
-            android:id="@+id/action_OrderDetailsFragment_to_MainFragment"
-            app:destination="@id/MainFragment" />
+            android:id="@+id/action_OrderDetailsFragment_to_OrderHistoryFragment"
+            app:destination="@id/OrderHistoryFragment" />
         <action
             android:id="@+id/action_OrderDetailsFragment_to_BinFragment"
             app:destination="@id/binFragment" />
@@ -218,8 +240,142 @@
         <action
             android:id="@+id/action_OrderDetailsFragment_to_ProductFragment"
             app:destination="@id/ProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OrderHistoryFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.OrderHistoryFragment"
+        android:label="game"
+        tools:layout="@layout/order_history">
         <action
-            android:id="@+id/action_OrderDetailsFragment_to_profileFragment"
+            android:id="@+id/action_OrderHistoryFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_OrderHistoryFragment_to_OrderDetailsFragment"
+            app:destination="@id/OrderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.SearchFragment"
+        android:label="game"
+        tools:layout="@layout/search_page">
+        <action
+            android:id="@+id/action_SearchFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_SearchFragment_to_SearchResultsFragment"
+            app:destination="@id/SearchResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SearchResultsFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.SearchResultsFragment"
+        android:label="game"
+        tools:layout="@layout/search_results">
+        <action
+            android:id="@+id/action_SearchResultsFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment" />
+        <action
+            android:id="@+id/action_SearchResultsFragment_to_ProductFragment"
             app:destination="@id/ProductFragment" />
+        <action
+            android:id="@+id/action_SearchResultsFragment_to_BinFragment"
+            app:destination="@id/binFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProductFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.ProductFragment"
+        android:label="game"
+        tools:layout="@layout/product_view">
+        <action
+            android:id="@+id/action_ProductFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_ProductFragment_to_ProductCharachFragment"
+            app:destination="@id/ProductCharachFragment" />
+        <action
+            android:id="@+id/action_ProductFragment_to_BinFragment_add"
+            app:destination="@id/binFragment" />
+        <action
+            android:id="@+id/action_ProductFragment_to_BinFragment"
+            app:destination="@id/binFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProductCharachFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.ProductCharachFragment"
+        android:label="game"
+        tools:layout="@layout/product_view_characteristic">
+        <action
+            android:id="@+id/action_ProductCharachFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PaymentMethodsFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.PaymentMethodsFragment"
+        android:label="game"
+        tools:layout="@layout/pay_methods">
+        <action
+            android:id="@+id/action_PaymentMethodsFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_PaymentMethodsFragment_to_AddressAddFragment"
+            app:destination="@id/AddressAddFragment" />
+        <action
+            android:id="@+id/action_PaymentMethodsFragment_to_ProfileFragmentsave"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddressAddFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.AddressAddFragment"
+        android:label="game"
+        tools:layout="@layout/add_address">
+        <action
+            android:id="@+id/action_AddressAddFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_AddressAddFragment_to_ProfileFragmentsave"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RefundFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.RefundFragment"
+        android:label="game"
+        tools:layout="@layout/refund_page">
+        <action
+            android:id="@+id/action_RefundFragment_to_OrderDetailsFragment"
+            app:destination="@id/OrderDetailsFragment" />
+        <action
+            android:id="@+id/action_RefundFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FeedbackFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.FeedbackFragment"
+        android:label="game"
+        tools:layout="@layout/feedback">
+        <action
+            android:id="@+id/action_FeedbackFragment_to_OrderDetailsFragment"
+            app:destination="@id/OrderDetailsFragment" />
+        <action
+            android:id="@+id/action_FeedbackFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PaymentFragment"
+        android:name="com.example.cyberelectronics.presentation.mvvm.PaymentFragment"
+        android:label="game"
+        tools:layout="@layout/payment">
+        <action
+            android:id="@+id/action_PaymentFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment" />
+        <action
+            android:id="@+id/action_PaymentFragment_to_AddressAddFragment"
+            app:destination="@id/AddressAddFragment" />
+        <action
+            android:id="@+id/action_PaymentFragment_to_PaymentMethodsFragment"
+            app:destination="@id/PaymentMethodsFragment" />
+        <action
+            android:id="@+id/action_PaymentFragment_to_PayApprovingFragment"
+            app:destination="@id/PayApprovingFragment" />
     </fragment>
 </navigation>

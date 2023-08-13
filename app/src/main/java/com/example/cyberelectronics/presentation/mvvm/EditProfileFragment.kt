@@ -14,10 +14,10 @@ class EditProfileFragment : Fragment(R.layout.edit_profile) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.arrow.setOnClickListener {
+        binding.arrowback.setOnClickListener {
             findNavController().navigate(R.id.action_EditProfileFragment_to_MainFragment)
         }
-        binding.save_btn.setOnClickListener {
+        binding.savebtn.setOnClickListener {
             findNavController().navigate(R.id.action_EditProfileFragment_to_profileFragment)
         }
     }

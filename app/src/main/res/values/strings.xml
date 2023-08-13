@@ -166,6 +166,10 @@
     <string name="back_payed">Back</string>
     <string name="payment">PAYMENT</string>
     <string name="nikita_n">nikita_n</string>
-
+    <string name="exit_button">exit_button</string>
+    <string name="history_button">history_button</string>
+    <string name="order_history">ORDER HISTORY</string>
+    <string name="_01_01_2023">01.01.2023</string>
+    <string name="_13_00">13:00</string>
 
 </resources>

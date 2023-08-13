@@ -16,11 +16,11 @@ class MainFragment : Fragment(R.layout.main_page) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.Himage1.setOnClickListener {
-            findNavController().navigate(R.id.action_MainFragment_to_binFragment)
+            findNavController().navigate(R.id.action_MainFragment_to_BinFragment)
         }
 
         binding.Himage3.setOnClickListener {
-            findNavController().navigate(R.id.action_MainFragment_to_profileFragment)
+            findNavController().navigate(R.id.action_MainFragment_to_ProfileFragment)
         }
 
         binding.tvViewAll.setOnClickListener {
@@ -50,6 +50,9 @@ class MainFragment : Fragment(R.layout.main_page) {
         }
         binding.RGB.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.Himage2.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_SearchFragment)
         }
 
 

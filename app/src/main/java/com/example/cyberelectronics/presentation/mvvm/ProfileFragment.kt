@@ -14,22 +14,22 @@ class ProfileFragment : Fragment(R.layout.profile) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.arrow_back.setOnClickListener {
+        binding.Back.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_MainFragment)
         }
-        binding.exit_btn.setOnClickListener {
+        binding.exitbtn.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_menuFragment)
         }
-        binding.history_btn.setOnClickListener {
+        binding.historybtn.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_OrderHistoryFragment)
         }
-        binding.edit_btn.setOnClickListener {
+        binding.editbtn.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_EditProfileFragment)
         }
-        binding.payment_btn.setOnClickListener {
+        binding.paymentbtn.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_PaymentMethodsFragment)
         }
-        binding.address_btn.setOnClickListener {
+        binding.addressbtn.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_AddressAddFragment)
         }
     }
