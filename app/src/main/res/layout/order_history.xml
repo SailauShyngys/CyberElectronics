@@ -18,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
+            android:id="@+id/orderhistoryBack"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/backarrow"
@@ -95,6 +96,7 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/historybtn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -205,6 +207,7 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/historybtn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -306,6 +309,7 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/historybtn3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"

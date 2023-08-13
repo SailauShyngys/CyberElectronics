@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/arrow_back"
+            android:id="@+id/CharacteristicBack"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="0dp"

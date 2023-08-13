@@ -43,7 +43,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageButton
-                    android:id="@+id/arrow"
+                    android:id="@+id/SearchBack"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
@@ -73,7 +73,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/search_results1"
+        android:id="@+id/searchResults1"
         android:layout_width="332dp"
         android:layout_height="41dp"
         android:layout_marginTop="54dp"
@@ -120,7 +120,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/search_results2"
+        android:id="@+id/searchResults2"
         android:layout_width="332dp"
         android:layout_height="41dp"
         android:layout_marginTop="45dp"
@@ -130,7 +130,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results1">
+        app:layout_constraintTop_toTopOf="@id/searchResults1">
 
         <TextView
             android:id="@+id/SRTW2"
@@ -167,7 +167,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/search_results3"
+        android:id="@+id/searchResults3"
         android:layout_width="332dp"
         android:layout_height="41dp"
         android:layout_marginTop="45dp"
@@ -177,7 +177,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results2">
+        app:layout_constraintTop_toTopOf="@id/searchResults2">
 
         <TextView
             android:id="@+id/SRTW3"
@@ -214,7 +214,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/search_results4"
+        android:id="@+id/searchResults4"
         android:layout_width="332dp"
         android:layout_height="41dp"
         android:layout_marginTop="45dp"
@@ -224,7 +224,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results3">
+        app:layout_constraintTop_toTopOf="@id/searchResults3">
 
         <TextView
             android:id="@+id/SRTW4"
@@ -261,7 +261,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/search_results5"
+        android:id="@+id/searchResults5"
         android:layout_width="332dp"
         android:layout_height="41dp"
         android:layout_marginTop="45dp"
@@ -271,7 +271,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results4">
+        app:layout_constraintTop_toTopOf="@id/searchResults4">
 
         <TextView
             android:id="@+id/SRTW5"
@@ -308,7 +308,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/search_results6"
+        android:id="@+id/searchResults6"
         android:layout_width="332dp"
         android:layout_height="41dp"
         android:layout_marginTop="45dp"
@@ -318,7 +318,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results5">
+        app:layout_constraintTop_toTopOf="@id/searchResults5">
 
         <TextView
             android:id="@+id/SRTW6"
@@ -355,7 +355,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/search_results7"
+        android:id="@+id/searchResults7"
         android:layout_width="332dp"
         android:layout_height="41dp"
         android:layout_marginTop="45dp"
@@ -365,7 +365,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results6">
+        app:layout_constraintTop_toTopOf="@id/searchResults6">
 
         <TextView
             android:id="@+id/SRTW7"
@@ -402,7 +402,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/search_results8"
+        android:id="@+id/searchResults8"
         android:layout_width="332dp"
         android:layout_height="41dp"
         android:layout_marginTop="45dp"
@@ -412,7 +412,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results7">
+        app:layout_constraintTop_toTopOf="@id/searchResults7">
 
         <TextView
             android:id="@+id/SRTW8"
@@ -449,7 +449,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/search_results9"
+        android:id="@+id/searchResults9"
         android:layout_width="332dp"
         android:layout_height="41dp"
         android:layout_marginTop="45dp"
@@ -459,7 +459,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_results8">
+        app:layout_constraintTop_toTopOf="@id/searchResults8">
 
         <TextView
             android:id="@+id/SRTW9"

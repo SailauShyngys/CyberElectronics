@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:id="@+id/feedbackHead"
-        android:layout_width="420dp"
+        android:layout_width="380dp"
         android:layout_height="55dp"
         android:layout_marginTop="55dp"
         android:gravity="center_vertical"
@@ -19,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
+            android:id="@+id/addressBack"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/backarrow"
@@ -29,17 +30,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="-3dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="Payment Methods"
             android:textAllCaps="true"
             android:textColor="@color/purple"
-            android:textSize="25sp"
+            android:textSize="23sp"
             app:layout_constraintTop_toTopOf="@id/feedbackHead" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/address_text"
-        android:layout_width="420dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
@@ -57,12 +61,13 @@
             app:layout_constraintTop_toTopOf="@id/address_text" />
 
         <EditText
-            android:layout_width="420dp"
+            android:layout_width="380dp"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/address_arround"
             android:fontFamily="@font/montserrat_medium"
             android:letterSpacing="0.05"
+            android:hint="Type here..."
             android:paddingStart="15dp"
             android:textColor="@color/purple"
             android:textSize="16sp"
@@ -79,13 +84,14 @@
             app:layout_constraintTop_toTopOf="@id/address_text" />
 
         <EditText
-            android:layout_width="420dp"
+            android:layout_width="380dp"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/address_arround"
             android:fontFamily="@font/montserrat_medium"
             android:letterSpacing="0.05"
             android:paddingStart="15dp"
+            android:hint="Type here..."
             android:textColor="@color/purple"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
@@ -101,13 +107,14 @@
             app:layout_constraintTop_toTopOf="@id/address_text" />
 
         <EditText
-            android:layout_width="420dp"
+            android:layout_width="380dp"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/address_arround"
             android:fontFamily="@font/montserrat_medium"
             android:letterSpacing="0.05"
             android:paddingStart="15dp"
+            android:hint="Type here..."
             android:textColor="@color/purple"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
@@ -123,21 +130,23 @@
             app:layout_constraintTop_toTopOf="@id/address_text" />
 
         <EditText
-            android:layout_width="420dp"
+            android:layout_width="380dp"
             android:layout_height="200dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/address_comment"
             android:fontFamily="@font/montserrat_medium"
             android:letterSpacing="0.05"
             android:paddingStart="15dp"
+            android:hint="Type here..."
             android:textColor="@color/purple"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
 
         <Button
             android:id="@+id/addressBtn"
-            android:layout_width="420dp"
+            android:layout_width="380dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_marginTop="65dp"
             android:backgroundTint="@color/green"
             android:fontFamily="@font/montserrat_medium"

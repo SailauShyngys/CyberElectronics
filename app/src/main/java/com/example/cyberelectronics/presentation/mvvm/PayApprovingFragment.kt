@@ -15,7 +15,7 @@ class PayApprovingFragment : Fragment(R.layout.pay_approving) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnNo.setOnClickListener {
-            findNavController().navigate(R.id.action_payapprovingFragment_to_binFragment)
+            findNavController().navigate(R.id.action_payapprovingFragment_to_PaymentFragment)
         }
 
         binding.btnYes.setOnClickListener {

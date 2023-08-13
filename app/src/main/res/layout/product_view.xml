@@ -8,7 +8,7 @@
     tools:context=".presentation.mvvm.ProfileFragment">
 
     <LinearLayout
-        android:id="@+id/arrow_back"
+        android:id="@+id/ProductBack"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="14dp"
@@ -27,7 +27,7 @@
             android:layout_marginStart="-10dp"
             android:background="@null"
             android:contentDescription="@string/back_button"
-            android:src="@drawable/arrow_back1" />
+            android:src="@drawable/arrow_back" />
     </LinearLayout>
 
     <LinearLayout
@@ -39,7 +39,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/arrow_back">
+        app:layout_constraintTop_toTopOf="@id/ProductBack">
 
         <ImageButton
             android:layout_width="250dp"
@@ -480,7 +480,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/view_all"
+            android:id="@+id/viewAll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="-12dp"
@@ -496,7 +496,7 @@
                 android:text="@string/view_all"
                 android:textColor="@color/brown"
                 android:textSize="17sp"
-                app:layout_constraintTop_toTopOf="@id/view_all" />
+                app:layout_constraintTop_toTopOf="@id/viewAll" />
         </LinearLayout>
 
         <LinearLayout
@@ -507,9 +507,10 @@
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/view_all">
+            app:layout_constraintTop_toTopOf="@id/viewAll">
 
             <Button
+                android:id="@+id/AddProductBtn"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:backgroundTint="@color/orange"
@@ -520,7 +521,7 @@
                 android:textSize="22dp" />
 
             <ImageButton
-                android:id="@+id/CButton"
+                android:id="@+id/ProductBtn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="5dp"
