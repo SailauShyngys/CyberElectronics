@@ -171,5 +171,37 @@
     <string name="order_history">ORDER HISTORY</string>
     <string name="_01_01_2023">01.01.2023</string>
     <string name="_13_00">13:00</string>
+    <string name="type_here">Type here...</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="city">City</string>
+    <string name="street">Street</string>
+    <string name="home_number">Home Number</string>
+    <string name="comments">Comments</string>
+    <string name="feddback_lenovo">Lenovo 2023 Legion 5</string>
+    <string name="assess_product">Assess product</string>
+    <string name="benefits">Benefits</string>
+    <string name="drawbacks">Drawbacks</string>
+    <string name="sent">Sent</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="cyber_electronics_product">Cyber Electronics Product</string>
+    <string name="payment_cart">Payment Cart</string>
+    <string name="your_order_has_been_paid">Your order has been paid</string>
+    <string name="order_details">Order details</string>
+    <string name="your_order_will_be_delivered">Your order will be delivered</string>
+    <string name="today_from_15_00_to_18_00">today from 15:00 to 18:00.</string>
+    <string name="_13_02">13:02</string>
+    <string name="your_order_is_completed">Your order is completed</string>
+    <string name="_16_00">16:00</string>
+    <string name="card">Card</string>
+    <string name="card_number">Card number</string>
+    <string name="_1234_1234">1234 **** **** 1234</string>
+    <string name="nikitin_nikita">NIKITIN NIKITA</string>
+    <string name="card_expiry_date">Card Expiry Date</string>
+    <string name="cv_code">CV code</string>
+    <string name="cash">Cash</string>
+    <string name="add_address">+ Add Address</string>
+    <string name="add_in_bin">Add in bin</string>
+    <string name="operation_memory">Operation memory:</string>
 
 </resources>

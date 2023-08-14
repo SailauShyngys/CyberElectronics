@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.mvvm.AddressAddFragment"
-    android:background="@color/bluegray">
+    android:background="@color/bluegray"
+    tools:context=".presentation.mvvm.AddressAddFragment">
 
     <LinearLayout
         android:id="@+id/feedbackHead"
@@ -29,12 +29,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
             android:layout_gravity="center"
-            android:gravity="center"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="-3dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="Payment Methods"
+            android:gravity="center"
+            android:text="@string/payment_methods"
             android:textAllCaps="true"
             android:textColor="@color/purple"
             android:textSize="23sp"
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_medium"
-            android:text="City"
+            android:text="@string/city"
             android:textColor="@color/purple"
             android:textSize="20sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
@@ -66,8 +66,8 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/address_arround"
             android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/type_here"
             android:letterSpacing="0.05"
-            android:hint="Type here..."
             android:paddingStart="15dp"
             android:textColor="@color/purple"
             android:textSize="16sp"
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/montserrat_medium"
-            android:text="Street"
+            android:text="@string/street"
             android:textColor="@color/purple"
             android:textSize="20sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
@@ -89,9 +89,9 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/address_arround"
             android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/type_here"
             android:letterSpacing="0.05"
             android:paddingStart="15dp"
-            android:hint="Type here..."
             android:textColor="@color/purple"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
@@ -101,7 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/montserrat_medium"
-            android:text="Home Number"
+            android:text="@string/home_number"
             android:textColor="@color/purple"
             android:textSize="20sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
@@ -112,9 +112,9 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/address_arround"
             android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/type_here"
             android:letterSpacing="0.05"
             android:paddingStart="15dp"
-            android:hint="Type here..."
             android:textColor="@color/purple"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
@@ -124,7 +124,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/montserrat_medium"
-            android:text="Comments"
+            android:text="@string/comments"
             android:textColor="@color/purple"
             android:textSize="20sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
@@ -135,9 +135,9 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/address_comment"
             android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/type_here"
             android:letterSpacing="0.05"
             android:paddingStart="15dp"
-            android:hint="Type here..."
             android:textColor="@color/purple"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="@id/address_text" />
@@ -146,10 +146,10 @@
             android:id="@+id/addressBtn"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="65dp"
             android:backgroundTint="@color/green"
             android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
             android:letterSpacing="0.1"
             android:text="Continue"
             android:textSize="20sp"

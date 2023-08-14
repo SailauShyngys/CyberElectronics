@@ -107,7 +107,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
             android:letterSpacing="0.05"
-            android:text="nikita_n"
+            android:text="@string/nikita_n"
             android:textColor="@color/white"
             android:textSize="22sp" />
 

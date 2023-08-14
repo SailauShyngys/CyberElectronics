@@ -57,7 +57,7 @@
                 android:id="@+id/Search_type"
                 android:layout_width="240dp"
                 android:layout_height="48dp"
-                android:hint="Type here..."
+                android:hint="@string/type_here"
                 android:inputType="textMultiLine"
                 android:lines="4"
                 android:textSize="15sp" />

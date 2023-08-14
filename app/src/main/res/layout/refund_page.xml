@@ -117,7 +117,7 @@
                 android:layout_marginTop="3dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:letterSpacing="0.05"
-                android:text="Cyber Electronics Product"
+                android:text="@string/cyber_electronics_product"
                 android:textAlignment="textStart"
                 android:textColor="@color/darkgrey"
                 android:textSize="14sp"
@@ -365,7 +365,7 @@
                 android:layout_marginTop="3dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:letterSpacing="0.05"
-                android:text="Payment Cart"
+                android:text="@string/payment_cart"
                 android:textColor="@color/black"
                 android:textSize="11sp" />
 
@@ -519,7 +519,7 @@
                 android:id="@+id/reason_typing"
                 android:layout_width="280dp"
                 android:layout_height="198dp"
-                android:hint="Type here..."
+                android:hint="@string/type_here"
                 android:inputType="textMultiLine"
                 android:maxLines="6"
                 android:textSize="15sp">

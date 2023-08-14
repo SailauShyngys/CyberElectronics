@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="Payment Methods"
+            android:text="@string/payment_methods"
             android:textAllCaps="true"
             android:textColor="@color/purple"
             android:textSize="25sp"
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Card"
+                android:text="@string/card"
                 android:textColor="@color/purple"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -83,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Card number"
+                android:text="@string/card_number"
                 android:textColor="@color/purple"
                 android:textSize="16sp"
                 app:layout_constraintTop_toTopOf="@id/CardModel" />
@@ -94,7 +94,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/edit_text_arround"
                 android:fontFamily="@font/montserrat_medium"
-                android:hint="1234   ****   ****   1234"
+                android:hint="@string/_1234_1234"
                 android:letterSpacing="0.05"
                 android:paddingStart="15dp"
                 android:textColor="@color/purple"
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Name"
+                android:text="@string/name"
                 android:textColor="@color/purple"
                 android:textSize="16sp"
                 app:layout_constraintTop_toTopOf="@id/CardModel" />
@@ -117,7 +117,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/edit_text_arround"
                 android:fontFamily="@font/montserrat_medium"
-                android:hint="NIKITIN NIKITA"
+                android:hint="@string/nikitin_nikita"
                 android:letterSpacing="0.05"
                 android:paddingStart="15dp"
                 android:textAllCaps="true"
@@ -136,7 +136,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Card Expiry Date"
+                    android:text="@string/card_expiry_date"
                     android:textColor="@color/purple"
                     android:textSize="16sp"
                     app:layout_constraintTop_toTopOf="@id/CardText" />
@@ -147,7 +147,7 @@
                     android:layout_marginStart="140dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="CV code"
+                    android:text="@string/cv_code"
                     android:textColor="@color/purple"
                     android:textSize="16sp"
 
@@ -170,28 +170,26 @@
                     <EditText
                         android:layout_width="55dp"
                         android:layout_height="48dp"
+                        android:background="@color/grey"
                         android:hint="."
-                        android:inputType="textMultiLine"
-
-                        android:background="@color/grey" />
+                        android:inputType="textMultiLine" />
 
                     <EditText
                         android:layout_width="55dp"
                         android:layout_height="48dp"
                         android:layout_marginStart="5dp"
+                        android:background="@color/grey"
                         android:hint="."
-                        android:inputType="textMultiLine"
-
-                        android:background="@color/grey" />
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
 
                 <EditText
                     android:layout_width="55dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="165dp"
+                    android:background="@color/grey"
                     android:hint="."
-                    android:inputType="textMultiLine"
-                    android:background="@color/grey" />
+                    android:inputType="textMultiLine" />
             </LinearLayout>
         </LinearLayout>
 
@@ -214,7 +212,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Cash"
+                android:text="@string/cash"
                 android:textColor="@color/purple"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -245,7 +243,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Almaty c. 68 Abay av."
+                android:text="@string/almaty_c_68_abay_av"
                 android:textColor="@color/purple"
                 android:textSize="20sp" />
 
@@ -253,7 +251,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="address"
+                android:text="@string/address"
                 android:textColor="@color/purple"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -275,7 +273,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="+ Add Address"
+                android:text="@string/add_address"
                 android:textColor="@color/purple"
                 android:textSize="20sp" />
         </LinearLayout>

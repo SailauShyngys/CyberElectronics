@@ -68,7 +68,7 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Your order has been paid"
+                android:text="@string/your_order_has_been_paid"
                 android:textSize="14sp" />
 
             <LinearLayout
@@ -103,7 +103,7 @@
                 android:layout_marginTop="-13dp"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="Order details"
+                android:text="@string/order_details"
                 android:textColor="@color/purple"
                 android:textSize="14sp" />
 
@@ -122,8 +122,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
-                    android:text="01.01.2023"
-                    android:textColor="@color/brown"
+                    android:text="@string/_01_01_2023"
+                    android:textColor="@color/gray"
                     android:textSize="14sp" />
 
                 <TextView
@@ -131,8 +131,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="120dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="13:00"
-                    android:textColor="@color/brown"
+                    android:text="@string/_13_00"
+                    android:textColor="@color/gray"
                     android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
@@ -170,7 +170,7 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Your order will be delivered"
+                android:text="@string/your_order_will_be_delivered"
                 android:textSize="14sp" />
 
             <TextView
@@ -179,7 +179,7 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="-7dp"
                 android:fontFamily="@font/montserrat"
-                android:text="today from 15:00 to 18:00."
+                android:text="@string/today_from_15_00_to_18_00"
                 android:textSize="14sp" />
 
             <LinearLayout
@@ -214,7 +214,7 @@
                 android:layout_marginTop="-13dp"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="Order details"
+                android:text="@string/order_details"
                 android:textColor="@color/purple"
                 android:textSize="14sp" />
 
@@ -233,8 +233,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
-                    android:text="01.01.2023"
-                    android:textColor="@color/brown"
+                    android:text="@string/_01_01_2023"
+                    android:textColor="@color/gray"
                     android:textSize="14sp" />
 
                 <TextView
@@ -242,8 +242,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="120dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="13:02"
-                    android:textColor="@color/brown"
+                    android:text="@string/_13_02"
+                    android:textColor="@color/gray"
                     android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
@@ -281,7 +281,7 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Your order is completed"
+                android:text="@string/your_order_is_completed"
                 android:textSize="14sp" />
 
             <LinearLayout
@@ -316,7 +316,7 @@
                 android:layout_marginTop="-13dp"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="Order details"
+                android:text="@string/order_details"
                 android:textColor="@color/purple"
                 android:textSize="14sp" />
 
@@ -335,8 +335,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
-                    android:text="01.01.2023"
-                    android:textColor="@color/brown"
+                    android:text="@string/_01_01_2023"
+                    android:textColor="@color/gray"
                     android:textSize="14sp" />
 
                 <TextView
@@ -344,8 +344,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="120dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="16:00"
-                    android:textColor="@color/brown"
+                    android:text="@string/_16_00"
+                    android:textColor="@color/gray"
                     android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
