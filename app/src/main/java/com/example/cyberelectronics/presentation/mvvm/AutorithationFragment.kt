@@ -20,7 +20,7 @@ class AutorithationFragment : Fragment(R.layout.autorithation) {
         }
 
         binding.signIn.setOnClickListener {
-            findNavController().navigate(R.id.action_menuFragment_to_loginFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_MainFragment)
         }
     }
 }
