@@ -1,549 +1,554 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bluegray"
-    tools:context=".presentation.mvvm.CategoryFragment">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/head"
-        android:layout_width="325dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="54dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bluegray"
+        tools:context=".presentation.mvvm.CategoryFragment">
 
         <LinearLayout
-            android:id="@+id/arrow_back"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="0dp"
-            android:background="@drawable/arrow_background2"
+            android:id="@+id/head"
+            android:layout_width="325dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageButton
-                android:id="@+id/RefundBack"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="-10dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_back1" />
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/arrow_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/arrow_background2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/Htext"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_marginStart="85dp"
-            android:layout_marginTop="-1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/refund"
-            android:textColor="@color/purple"
-            android:textSize="22sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/order_body"
-        android:layout_width="320dp"
-        android:layout_height="395dp"
-        android:layout_marginTop="54dp"
-        android:background="@drawable/fback_background"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/head">
-
-        <TextView
-            android:id="@+id/Payment"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:gravity="center"
-            android:letterSpacing="0.05"
-            android:text="@string/payment_check"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <View
-            android:id="@+id/view1"
-            android:layout_width="250dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/head" />
-
-        <LinearLayout
-            android:id="@+id/CEP"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/view1">
-
-            <ImageView
-                android:layout_width="34dp"
-                android:layout_height="34dp"
-                android:layout_gravity="center"
-                android:src="@drawable/check_logo"></ImageView>
+                <ImageButton
+                    android:id="@+id/RefundBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-10dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_back1" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/TextCEP"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="3dp"
+                android:id="@+id/Htext"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="-1dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:letterSpacing="0.05"
-                android:text="@string/cyber_electronics_product"
-                android:textAlignment="textStart"
-                android:textColor="@color/darkgrey"
-                android:textSize="14sp"
+                android:text="@string/refund"
+                android:textColor="@color/purple"
+                android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
 
-        <View
-            android:id="@+id/view2"
-            android:layout_width="250dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="@id/CEP"
-            app:layout_constraintStart_toStartOf="@id/CEP"
-            app:layout_constraintTop_toTopOf="@id/CEP" />
-
         <LinearLayout
-            android:id="@+id/check_line1"
-            android:layout_width="250dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/view2"
-            app:layout_constraintStart_toStartOf="@id/view2"
-            app:layout_constraintTop_toTopOf="@id/view2">
+            android:id="@+id/order_body"
+            android:layout_width="320dp"
+            android:layout_height="395dp"
+            android:layout_marginTop="54dp"
+            android:background="@drawable/fback_background"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/head">
 
             <TextView
-                android:id="@+id/line1_tw1"
+                android:id="@+id/Payment"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
+                android:layout_height="38dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
                 android:letterSpacing="0.05"
-                android:text="@string/check_number"
-                android:textColor="@color/gray"
-                android:textSize="11sp" />
-
-            <TextView
-                android:id="@+id/line1_tw2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="104dp"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/_11111111"
+                android:text="@string/payment_check"
                 android:textColor="@color/black"
-                android:textSize="11sp" />
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/head" />
+
+            <LinearLayout
+                android:id="@+id/CEP"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/check_logo"></ImageView>
+
+                <TextView
+                    android:id="@+id/TextCEP"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/cyber_electronics_product"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/CEP"
+                app:layout_constraintStart_toStartOf="@id/CEP"
+                app:layout_constraintTop_toTopOf="@id/CEP" />
+
+            <LinearLayout
+                android:id="@+id/check_line1"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/view2"
+                app:layout_constraintStart_toStartOf="@id/view2"
+                app:layout_constraintTop_toTopOf="@id/view2">
+
+                <TextView
+                    android:id="@+id/line1_tw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/check_number"
+                    android:textColor="@color/gray"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/line1_tw2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="104dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/_11111111"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/check_line1"
+                app:layout_constraintStart_toStartOf="@id/check_line1"
+                app:layout_constraintTop_toTopOf="@id/check_line1" />
+
+            <LinearLayout
+                android:id="@+id/check_line2"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/view3"
+                app:layout_constraintStart_toStartOf="@id/view3"
+                app:layout_constraintTop_toTopOf="@id/view3">
+
+                <TextView
+                    android:id="@+id/line2_tw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/date_of_payment"
+                    android:textColor="@color/gray"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/line2_tw2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/_01_01_2023_13_00_00"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/check_line2"
+                app:layout_constraintStart_toStartOf="@id/check_line2"
+                app:layout_constraintTop_toTopOf="@id/check_line2" />
+
+            <LinearLayout
+                android:id="@+id/check_line3"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/view4"
+                app:layout_constraintStart_toStartOf="@id/view4"
+                app:layout_constraintTop_toTopOf="@id/view4">
+
+                <TextView
+                    android:id="@+id/line3_tw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/customer_name"
+                    android:textColor="@color/gray"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/line3_tw2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/sailau_sh"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/check_line3"
+                app:layout_constraintStart_toStartOf="@id/check_line3"
+                app:layout_constraintTop_toTopOf="@id/check_line3" />
+
+            <LinearLayout
+                android:id="@+id/check_line4"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/view5"
+                app:layout_constraintStart_toStartOf="@id/view5"
+                app:layout_constraintTop_toTopOf="@id/view5">
+
+                <TextView
+                    android:id="@+id/line4_tw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/support_number"
+                    android:textColor="@color/gray"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/line4_tw2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/_7_777_7777777"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/check_line4"
+                app:layout_constraintStart_toStartOf="@id/check_line4"
+                app:layout_constraintTop_toTopOf="@id/check_line4" />
+
+            <LinearLayout
+                android:id="@+id/check_line5"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/view6"
+                app:layout_constraintStart_toStartOf="@id/view6"
+                app:layout_constraintTop_toTopOf="@id/view6">
+
+                <TextView
+                    android:id="@+id/line5_tw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/way_of_payment"
+                    android:textColor="@color/gray"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/line5_tw2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/payment_cart"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/check_line5"
+                app:layout_constraintStart_toStartOf="@id/check_line5"
+                app:layout_constraintTop_toTopOf="@id/check_line5" />
+
+            <LinearLayout
+                android:id="@+id/check_line6"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/view7"
+                app:layout_constraintStart_toStartOf="@id/view7"
+                app:layout_constraintTop_toTopOf="@id/view7">
+
+                <TextView
+                    android:id="@+id/line6_tw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/adress"
+                    android:textColor="@color/gray"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/line6_tw2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/almaty_c_68_abay_av"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/check_line6"
+                app:layout_constraintStart_toStartOf="@id/check_line6"
+                app:layout_constraintTop_toTopOf="@id/check_line6" />
+
+            <LinearLayout
+                android:id="@+id/check_line7"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/view8"
+                app:layout_constraintStart_toStartOf="@id/view8"
+                app:layout_constraintTop_toTopOf="@id/view8">
+
+                <TextView
+                    android:id="@+id/line7_tw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/total"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/line7_tw2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="116dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/_704_795_tg"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/check_line7"
+                app:layout_constraintStart_toStartOf="@id/check_line7"
+                app:layout_constraintTop_toTopOf="@id/check_line7" />
 
         </LinearLayout>
 
-        <View
-            android:id="@+id/view3"
-            android:layout_width="250dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="@id/check_line1"
-            app:layout_constraintStart_toStartOf="@id/check_line1"
-            app:layout_constraintTop_toTopOf="@id/check_line1" />
-
         <LinearLayout
-            android:id="@+id/check_line2"
-            android:layout_width="250dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/view3"
-            app:layout_constraintStart_toStartOf="@id/view3"
-            app:layout_constraintTop_toTopOf="@id/view3">
-
-            <TextView
-                android:id="@+id/line2_tw1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/date_of_payment"
-                android:textColor="@color/gray"
-                android:textSize="11sp" />
-
-            <TextView
-                android:id="@+id/line2_tw2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/_01_01_2023_13_00_00"
-                android:textColor="@color/black"
-                android:textSize="11sp" />
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/view4"
-            android:layout_width="250dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="@id/check_line2"
-            app:layout_constraintStart_toStartOf="@id/check_line2"
-            app:layout_constraintTop_toTopOf="@id/check_line2" />
-
-        <LinearLayout
-            android:id="@+id/check_line3"
-            android:layout_width="250dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/view4"
-            app:layout_constraintStart_toStartOf="@id/view4"
-            app:layout_constraintTop_toTopOf="@id/view4">
-
-            <TextView
-                android:id="@+id/line3_tw1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/customer_name"
-                android:textColor="@color/gray"
-                android:textSize="11sp" />
-
-            <TextView
-                android:id="@+id/line3_tw2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="92dp"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/sailau_sh"
-                android:textColor="@color/black"
-                android:textSize="11sp" />
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/view5"
-            android:layout_width="250dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="@id/check_line3"
-            app:layout_constraintStart_toStartOf="@id/check_line3"
-            app:layout_constraintTop_toTopOf="@id/check_line3" />
-
-        <LinearLayout
-            android:id="@+id/check_line4"
-            android:layout_width="250dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/view5"
-            app:layout_constraintStart_toStartOf="@id/view5"
-            app:layout_constraintTop_toTopOf="@id/view5">
-
-            <TextView
-                android:id="@+id/line4_tw1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/support_number"
-                android:textColor="@color/gray"
-                android:textSize="11sp" />
-
-            <TextView
-                android:id="@+id/line4_tw2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="54dp"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/_7_777_7777777"
-                android:textColor="@color/black"
-                android:textSize="11sp" />
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/view6"
-            android:layout_width="250dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="@id/check_line4"
-            app:layout_constraintStart_toStartOf="@id/check_line4"
-            app:layout_constraintTop_toTopOf="@id/check_line4" />
-
-        <LinearLayout
-            android:id="@+id/check_line5"
-            android:layout_width="250dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/view6"
-            app:layout_constraintStart_toStartOf="@id/view6"
-            app:layout_constraintTop_toTopOf="@id/view6">
-
-            <TextView
-                android:id="@+id/line5_tw1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/way_of_payment"
-                android:textColor="@color/gray"
-                android:textSize="11sp" />
-
-            <TextView
-                android:id="@+id/line5_tw2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="66dp"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/payment_cart"
-                android:textColor="@color/black"
-                android:textSize="11sp" />
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/view7"
-            android:layout_width="250dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="@id/check_line5"
-            app:layout_constraintStart_toStartOf="@id/check_line5"
-            app:layout_constraintTop_toTopOf="@id/check_line5" />
-
-        <LinearLayout
-            android:id="@+id/check_line6"
-            android:layout_width="250dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/view7"
-            app:layout_constraintStart_toStartOf="@id/view7"
-            app:layout_constraintTop_toTopOf="@id/view7">
-
-            <TextView
-                android:id="@+id/line6_tw1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/adress"
-                android:textColor="@color/gray"
-                android:textSize="11sp" />
-
-            <TextView
-                android:id="@+id/line6_tw2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="77dp"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/almaty_c_68_abay_av"
-                android:textColor="@color/black"
-                android:textSize="11sp" />
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/view8"
-            android:layout_width="250dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="@id/check_line6"
-            app:layout_constraintStart_toStartOf="@id/check_line6"
-            app:layout_constraintTop_toTopOf="@id/check_line6" />
-
-        <LinearLayout
-            android:id="@+id/check_line7"
-            android:layout_width="250dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/view8"
-            app:layout_constraintStart_toStartOf="@id/view8"
-            app:layout_constraintTop_toTopOf="@id/view8">
-
-            <TextView
-                android:id="@+id/line7_tw1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/total"
-                android:textColor="@color/gray"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/line7_tw2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="116dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/_704_795_tg"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/view9"
-            android:layout_width="250dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="@id/check_line7"
-            app:layout_constraintStart_toStartOf="@id/check_line7"
-            app:layout_constraintTop_toTopOf="@id/check_line7" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/reason_body"
-        android:layout_width="320dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="410dp"
-        android:background="@drawable/ordered_back"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="@id/order_body"
-        app:layout_constraintStart_toStartOf="@id/order_body"
-        app:layout_constraintTop_toTopOf="@id/order_body">
-
-        <TextView
-            android:id="@+id/reason_head"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="7dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/reason_for_return"
-            android:textColor="@color/black"
-            android:textSize="12sp" />
-
-        <LinearLayout
-            android:id="@+id/reason_text_body"
-            android:layout_width="280dp"
-            android:layout_height="190dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edit_back"
+            android:id="@+id/reason_body"
+            android:layout_width="320dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="410dp"
+            android:background="@drawable/ordered_back"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="@id/order_body"
             app:layout_constraintStart_toStartOf="@id/order_body"
             app:layout_constraintTop_toTopOf="@id/order_body">
 
-            <EditText
-                android:id="@+id/reason_typing"
-                android:layout_width="280dp"
-                android:layout_height="198dp"
-                android:hint="@string/type_here"
-                android:inputType="textMultiLine"
-                android:maxLines="6"
-                android:textSize="15sp">
+            <TextView
+                android:id="@+id/reason_head"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/reason_for_return"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
 
-            </EditText>
+            <LinearLayout
+                android:id="@+id/reason_text_body"
+                android:layout_width="280dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_back"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/order_body"
+                app:layout_constraintStart_toStartOf="@id/order_body"
+                app:layout_constraintTop_toTopOf="@id/order_body">
+
+                <EditText
+                    android:id="@+id/reason_typing"
+                    android:layout_width="280dp"
+                    android:layout_height="198dp"
+                    android:hint="@string/type_here"
+                    android:inputType="textMultiLine"
+                    android:maxLines="6"
+                    android:textSize="15sp">
+
+                </EditText>
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/RefundBTN"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="270dp"
+            android:backgroundTint="@color/purple"
+            android:contentDescription="@string/button"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="@string/refund_of_purchase"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@id/reason_body"
+            app:layout_constraintStart_toStartOf="@id/reason_body"
+            app:layout_constraintTop_toTopOf="@id/reason_body" />
 
-    <Button
-        android:id="@+id/RefundBTN"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="270dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/purple"
-        android:contentDescription="@string/button"
-        android:fontFamily="@font/montserrat_medium"
-        android:gravity="center"
-        android:text="@string/refund_of_purchase"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="@id/reason_body"
-        app:layout_constraintStart_toStartOf="@id/reason_body"
-        app:layout_constraintTop_toTopOf="@id/reason_body" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

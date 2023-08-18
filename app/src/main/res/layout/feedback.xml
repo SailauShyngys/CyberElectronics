@@ -1,224 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    tools:context=".presentation.mvvm.FeedbackFragment"
-    android:layout_height="match_parent"
-    android:background="@color/bluegray">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/feedbackHead"
-        android:layout_width="380dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="55dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageButton
-            android:id="@+id/feedbackBackbtn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/backarrow"
-            android:contentDescription="@string/back_button"
-            app:layout_constraintTop_toTopOf="@id/feedbackHead" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="90dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="@string/feedback"
-            android:textAllCaps="true"
-            android:textColor="@color/purple"
-            android:textSize="27sp"
-            app:layout_constraintTop_toTopOf="@id/feedbackHead" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/feedBackCheack"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/feedback_arround"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/feedbackHead">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bluegray"
+        tools:context=".presentation.mvvm.FeedbackFragment">
 
         <LinearLayout
-            android:id="@+id/feedBackProduct"
-            android:layout_width="355dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/feedBackCheack">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@drawable/product" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="@string/feddback_lenovo"
-                android:textSize="19sp" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/grey" />
-
-        <LinearLayout
-            android:id="@+id/feedBackAssess"
-            android:layout_width="355dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/feedBackCheack">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="@string/assess_product"
-                android:textSize="14sp" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="100dp"
-                android:background="@drawable/rate_star" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/rate_star" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/rate_star" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/rate_star" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/rate_star" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/grey" />
-
-        <LinearLayout
-            android:id="@+id/feedBackBenefits"
-            android:layout_width="355dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/feedBackCheack">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="@string/benefits"
-                android:textAllCaps="true"
-                android:textSize="14sp" />
-
-            <EditText
-                android:layout_width="355dp"
-                android:layout_height="140dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/benefits_arround"
-                android:fontFamily="@font/montserrat_medium"
-                android:letterSpacing="0.05"
-                android:hint="@string/type_here"
-                android:textColor="@color/purple"
-                android:textSize="16sp"
-                app:layout_constraintTop_toTopOf="@id/Buttons" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/grey" />
-
-        <LinearLayout
-            android:id="@+id/feedDrawbacks"
-            android:layout_width="355dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/feedBackCheack">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="@string/drawbacks"
-                android:textAllCaps="true"
-                android:textSize="14sp" />
-
-            <EditText
-                android:layout_width="355dp"
-                android:layout_height="140dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/benefits_arround"
-                android:fontFamily="@font/montserrat_medium"
-                android:hint="@string/type_here"
-                android:letterSpacing="0.05"
-                android:textColor="@color/purple"
-                android:textSize="16sp"
-                app:layout_constraintTop_toTopOf="@id/Buttons" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/grey" />
-
-        <Button
-            android:id="@+id/feedbackBtn"
-            android:layout_width="355dp"
+            android:id="@+id/feedbackHead"
+            android:layout_width="380dp"
             android:layout_height="55dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="@color/purple"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/sent"
-            android:textSize="20sp" />
-    </LinearLayout>
+            android:layout_marginTop="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageButton
+                android:id="@+id/feedbackBackbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/backarrow"
+                android:contentDescription="@string/back_button"
+                app:layout_constraintTop_toTopOf="@id/feedbackHead" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/feedback"
+                android:textAllCaps="true"
+                android:textColor="@color/purple"
+                android:textSize="27sp"
+                app:layout_constraintTop_toTopOf="@id/feedbackHead" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedBackCheack"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/feedback_arround"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/feedbackHead">
+
+            <LinearLayout
+                android:id="@+id/feedBackProduct"
+                android:layout_width="355dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/feedBackCheack">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/product" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/feddback_lenovo"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/feedBackAssess"
+                android:layout_width="355dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/feedBackCheack">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/assess_product"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="100dp"
+                    android:background="@drawable/rate_star" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rate_star" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rate_star" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rate_star" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rate_star" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/feedBackBenefits"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/feedBackCheack">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/benefits"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="355dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/benefits_arround"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:hint="@string/type_here"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="@id/Buttons" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/feedDrawbacks"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/feedBackCheack">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/drawbacks"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="355dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/benefits_arround"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:hint="@string/type_here"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="@id/Buttons" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey" />
+
+            <Button
+                android:id="@+id/feedbackBtn"
+                android:layout_width="355dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/sent"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

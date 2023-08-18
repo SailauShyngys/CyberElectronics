@@ -1,489 +1,493 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".presentation.mvvm.BinFragment">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/bin_page"
-        android:layout_width="325dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="54dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".presentation.mvvm.BinFragment">
 
         <LinearLayout
-            android:id="@+id/arrow_back"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="0dp"
-            android:background="@drawable/arrow_background"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/binBack"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="-10dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_back1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/bin_text"
+            android:id="@+id/bin_page"
             android:layout_width="325dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="40dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="54dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/Htext"
-                android:layout_width="wrap_content"
-                android:layout_height="38dp"
-                android:layout_marginStart="55dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/bin"
-                android:textColor="@color/purple"
-                android:textSize="20sp"
+            <LinearLayout
+                android:id="@+id/arrow_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/arrow_background"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/bin"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                <ImageButton
+                    android:id="@+id/binBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-10dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_back1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bin_text"
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/Htext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="55dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/bin"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/bin"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:background="@null"
+                    android:src="@drawable/bin_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFirstLine"
+            android:layout_width="360dp"
+            android:layout_height="170dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bin_prod"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bin_page">
+
+            <ImageButton
+                android:id="@+id/FLBT1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="-10dp"
-                android:background="@null"
-                android:src="@drawable/bin_icon" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llFirstLine"
-        android:layout_width="360dp"
-        android:layout_height="170dp"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/bin_prod"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/bin_page">
-
-        <ImageButton
-            android:id="@+id/FLBT1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/bin_prod_image"
-            android:contentDescription="@string/image_button" />
-
-        <LinearLayout
-            android:id="@+id/descrip"
-            android:layout_width="200dp"
-            android:layout_height="130dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="7dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="@id/FLBT1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/FLT1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginEnd="58dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/_709990_tg"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/FLT2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginEnd="73dp"
-                android:fontFamily="@font/montserrat_light"
-                android:letterSpacing="0.05"
-                android:text="@string/laptop"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/FLT1" />
-
-            <TextView
-                android:id="@+id/FLT3"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginEnd="9dp"
-                android:fontFamily="@font/montserrat_light"
-                android:letterSpacing="0.05"
-                android:text="@string/lenovo_2023_legion_5"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/FLT2" />
+                android:layout_marginStart="20dp"
+                android:background="@drawable/bin_prod_image"
+                android:contentDescription="@string/image_button" />
 
             <LinearLayout
-                android:id="@+id/delete"
-                android:layout_width="150dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/descrip"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/FLBT1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/FLT3">
-
-                <ImageButton
-                    android:id="@+id/delete_button"
-                    android:layout_width="23dp"
-                    android:layout_height="23dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="22dp"
-                    android:background="@drawable/delete"
-                    android:contentDescription="@string/image_button"
-                    tools:ignore="TouchTargetSizeCheck" />
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/quantity"
+                    android:id="@+id/FLT1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginEnd="58dp"
                     android:fontFamily="@font/montserrat_semibold"
-                    android:text="@string/_1"
+                    android:letterSpacing="0.05"
+                    android:text="@string/_709990_tg"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    app:layout_constraintEnd_toEndOf="@id/delete_button"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:textSize="14sp" />
 
-                <ImageButton
-                    android:id="@+id/add_button"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/add"
-                    android:contentDescription="@string/image_button"
-                    app:layout_constraintEnd_toEndOf="@id/quantity"
+                <TextView
+                    android:id="@+id/FLT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="73dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:letterSpacing="0.05"
+                    android:text="@string/laptop"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    app:layout_constraintTop_toTopOf="@id/FLT1" />
+
+                <TextView
+                    android:id="@+id/FLT3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="9dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:letterSpacing="0.05"
+                    android:text="@string/lenovo_2023_legion_5"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/FLT2" />
+
+                <LinearLayout
+                    android:id="@+id/delete"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/FLT3">
+
+                    <ImageButton
+                        android:id="@+id/delete_button"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="22dp"
+                        android:background="@drawable/delete"
+                        android:contentDescription="@string/image_button"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/_1"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="@id/delete_button"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/add_button"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/add"
+                        android:contentDescription="@string/image_button"
+                        app:layout_constraintEnd_toEndOf="@id/quantity"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_divider_first"
+            android:layout_width="0dp"
+            android:layout_height="7dp"
+            app:layout_constraintEnd_toEndOf="@id/llFirstLine"
+            app:layout_constraintStart_toStartOf="@id/llFirstLine"
+            app:layout_constraintTop_toBottomOf="@id/llFirstLine" />
+
+        <LinearLayout
+            android:id="@+id/llSecondLine"
+            android:layout_width="360dp"
+            android:layout_height="170dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/bin_prod"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view_divider_first">
+
+            <ImageButton
+                android:id="@+id/SLBT1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/bin_prod_image"
+                android:contentDescription="@string/image_button" />
+
+            <LinearLayout
+                android:id="@+id/descrip2"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/SLBT1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/SLT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="58dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/_709990_tg"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/SLT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="73dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:letterSpacing="0.05"
+                    android:text="@string/laptop"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/FLT1" />
+
+                <TextView
+                    android:id="@+id/SLT3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="9dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:letterSpacing="0.05"
+                    android:text="@string/lenovo_2023_legion_5"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/FLT2" />
+
+                <LinearLayout
+                    android:id="@+id/delete2"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/FLT3">
+
+                    <ImageButton
+                        android:id="@+id/delete_button2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="22dp"
+                        android:background="@drawable/delete"
+                        android:contentDescription="@string/image_button"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/quantity2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/_1"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="@id/delete_button"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/add_button2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/add"
+                        android:contentDescription="@string/image_button"
+                        app:layout_constraintEnd_toEndOf="@id/quantity"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
-    </LinearLayout>
-
-    <View
-        android:id="@+id/view_divider_first"
-        android:layout_width="0dp"
-        android:layout_height="7dp"
-        app:layout_constraintEnd_toEndOf="@id/llFirstLine"
-        app:layout_constraintStart_toStartOf="@id/llFirstLine"
-        app:layout_constraintTop_toBottomOf="@id/llFirstLine" />
-
-    <LinearLayout
-        android:id="@+id/llSecondLine"
-        android:layout_width="360dp"
-        android:layout_height="170dp"
-        android:layout_marginHorizontal="16dp"
-        android:background="@drawable/bin_prod"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view_divider_first">
-
-        <ImageButton
-            android:id="@+id/SLBT1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/bin_prod_image"
-            android:contentDescription="@string/image_button" />
+        <View
+            android:id="@+id/view_divider_second"
+            android:layout_width="0dp"
+            android:layout_height="7dp"
+            app:layout_constraintEnd_toEndOf="@id/llSecondLine"
+            app:layout_constraintStart_toStartOf="@id/llSecondLine"
+            app:layout_constraintTop_toBottomOf="@id/llSecondLine" />
 
         <LinearLayout
-            android:id="@+id/descrip2"
-            android:layout_width="200dp"
-            android:layout_height="130dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="7dp"
+            android:id="@+id/llThirdLine"
+            android:layout_width="360dp"
+            android:layout_height="170dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/bin_prod"
             android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="@id/SLBT1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/view_divider_second">
 
-            <TextView
-                android:id="@+id/SLT1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginEnd="58dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/_709990_tg"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/SLT2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginEnd="73dp"
-                android:fontFamily="@font/montserrat_light"
-                android:letterSpacing="0.05"
-                android:text="@string/laptop"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/FLT1" />
-
-            <TextView
-                android:id="@+id/SLT3"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginEnd="9dp"
-                android:fontFamily="@font/montserrat_light"
-                android:letterSpacing="0.05"
-                android:text="@string/lenovo_2023_legion_5"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/FLT2" />
+            <ImageButton
+                android:id="@+id/TLBT1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/bin_prod_image"
+                android:contentDescription="@string/image_button" />
 
             <LinearLayout
-                android:id="@+id/delete2"
-                android:layout_width="150dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/descrip3"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/SLBT1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/FLT3">
-
-                <ImageButton
-                    android:id="@+id/delete_button2"
-                    android:layout_width="23dp"
-                    android:layout_height="23dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="22dp"
-                    android:background="@drawable/delete"
-                    android:contentDescription="@string/image_button"
-                    tools:ignore="TouchTargetSizeCheck" />
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/quantity2"
+                    android:id="@+id/TLT1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginEnd="58dp"
                     android:fontFamily="@font/montserrat_semibold"
-                    android:text="@string/_1"
+                    android:letterSpacing="0.05"
+                    android:text="@string/_709990_tg"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    app:layout_constraintEnd_toEndOf="@id/delete_button"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:textSize="14sp" />
 
-                <ImageButton
-                    android:id="@+id/add_button2"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/add"
-                    android:contentDescription="@string/image_button"
-                    app:layout_constraintEnd_toEndOf="@id/quantity"
+                <TextView
+                    android:id="@+id/TLT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="73dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:letterSpacing="0.05"
+                    android:text="@string/laptop"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    app:layout_constraintTop_toTopOf="@id/FLT1" />
+
+                <TextView
+                    android:id="@+id/TLT3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="9dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:letterSpacing="0.05"
+                    android:text="@string/lenovo_2023_legion_5"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/FLT2" />
+
+                <LinearLayout
+                    android:id="@+id/delete3"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/FLT3">
+
+                    <ImageButton
+                        android:id="@+id/delete_button3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="22dp"
+                        android:background="@drawable/delete"
+                        android:contentDescription="@string/image_button"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/quantity3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/_1"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="@id/delete_button"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/add_button3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/add"
+                        android:contentDescription="@string/image_button"
+                        app:layout_constraintEnd_toEndOf="@id/quantity"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-    <View
-        android:id="@+id/view_divider_second"
-        android:layout_width="0dp"
-        android:layout_height="7dp"
-        app:layout_constraintEnd_toEndOf="@id/llSecondLine"
-        app:layout_constraintStart_toStartOf="@id/llSecondLine"
-        app:layout_constraintTop_toBottomOf="@id/llSecondLine" />
+        <View
+            android:id="@+id/view_divider_third"
+            android:layout_width="0dp"
+            android:layout_height="7dp"
+            app:layout_constraintEnd_toEndOf="@id/llThirdLine"
+            app:layout_constraintStart_toStartOf="@id/llThirdLine"
+            app:layout_constraintTop_toBottomOf="@id/llThirdLine" />
 
-    <LinearLayout
-        android:id="@+id/llThirdLine"
-        android:layout_width="360dp"
-        android:layout_height="170dp"
-        android:layout_marginHorizontal="16dp"
-        android:background="@drawable/bin_prod"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view_divider_second">
-
-        <ImageButton
-            android:id="@+id/TLBT1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/bin_prod_image"
-            android:contentDescription="@string/image_button" />
-
-        <LinearLayout
-            android:id="@+id/descrip3"
-            android:layout_width="200dp"
-            android:layout_height="130dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="7dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="@id/SLBT1"
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="@color/orange"
+            android:contentDescription="@string/button"
+            android:fontFamily="@font/montserrat_medium"
+            android:letterSpacing="0.05"
+            android:text="@string/pay"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/view_divider_third" />
 
-            <TextView
-                android:id="@+id/TLT1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginEnd="58dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:letterSpacing="0.05"
-                android:text="@string/_709990_tg"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/TLT2"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginEnd="73dp"
-                android:fontFamily="@font/montserrat_light"
-                android:letterSpacing="0.05"
-                android:text="@string/laptop"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/FLT1" />
-
-            <TextView
-                android:id="@+id/TLT3"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginEnd="9dp"
-                android:fontFamily="@font/montserrat_light"
-                android:letterSpacing="0.05"
-                android:text="@string/lenovo_2023_legion_5"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/FLT2" />
-
-            <LinearLayout
-                android:id="@+id/delete3"
-                android:layout_width="150dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/FLT3">
-
-                <ImageButton
-                    android:id="@+id/delete_button3"
-                    android:layout_width="23dp"
-                    android:layout_height="23dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="22dp"
-                    android:background="@drawable/delete"
-                    android:contentDescription="@string/image_button"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <TextView
-                    android:id="@+id/quantity3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:text="@string/_1"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    app:layout_constraintEnd_toEndOf="@id/delete_button"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageButton
-                    android:id="@+id/add_button3"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/add"
-                    android:contentDescription="@string/image_button"
-                    app:layout_constraintEnd_toEndOf="@id/quantity"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="TouchTargetSizeCheck" />
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-    <View
-        android:id="@+id/view_divider_third"
-        android:layout_width="0dp"
-        android:layout_height="7dp"
-        app:layout_constraintEnd_toEndOf="@id/llThirdLine"
-        app:layout_constraintStart_toStartOf="@id/llThirdLine"
-        app:layout_constraintTop_toBottomOf="@id/llThirdLine" />
-
-    <Button
-        android:id="@+id/btnPay"
-        android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="130dp"
-        android:backgroundTint="@color/orange"
-        android:contentDescription="@string/button"
-        android:fontFamily="@font/montserrat_medium"
-        android:letterSpacing="0.05"
-        android:text="@string/pay"
-        android:textColor="@color/white"
-        android:textSize="22dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view_divider_third" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 
 
 

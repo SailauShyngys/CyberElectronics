@@ -1,75 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="217dp"
-    android:background="@color/white"
-    tools:context=".presentation.mvvm.PayApprovingFragment">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/TopLine"
-        android:layout_width="360dp"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="217dp"
-        android:background="@drawable/approve_back"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:background="@color/white"
+        tools:context=".presentation.mvvm.PayApprovingFragment">
 
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/TopLine"
+            android:layout_width="360dp"
+            android:layout_height="217dp"
+            android:background="@drawable/approve_back"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/Text"
-        android:layout_width="180dp"
-        android:layout_height="93dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="120dp"
-        android:fontFamily="@font/montserrat_medium"
-        android:letterSpacing="0.05"
-        android:text="@string/are_you_sure_you_want_to_pay"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/approving"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Text">
-
-        <Button
-            android:id="@+id/btnNo"
-            android:layout_width="106dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/red"
-            android:fontFamily="@font/montserrat_semibold"
+        <TextView
+            android:id="@+id/Text"
+            android:layout_width="180dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="120dp"
+            android:fontFamily="@font/montserrat_medium"
             android:letterSpacing="0.05"
-            android:text="@string/no"
+            android:text="@string/are_you_sure_you_want_to_pay"
             android:textColor="@color/white"
-            android:textSize="15sp" />
-
-        <Button
-            android:id="@+id/btnYes"
-            android:layout_width="206dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="150dp"
-            android:backgroundTint="@color/green"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/yes_pay"
-            android:textColor="@color/purple"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@id/BTN_No"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/approving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/Text">
+
+            <Button
+                android:id="@+id/btnNo"
+                android:layout_width="106dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/montserrat_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/no"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnYes"
+                android:layout_width="206dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="150dp"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/montserrat_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/yes_pay"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/BTN_No"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,446 +1,451 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bluegray"
-    tools:context=".presentation.mvvm.CategoryFragment">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/categ"
-        android:layout_width="325dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="54dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bluegray"
+        tools:context=".presentation.mvvm.CategoryFragment">
 
         <LinearLayout
-            android:id="@+id/arrow_back"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="0dp"
-            android:background="@drawable/arrow_background2"
+            android:id="@+id/categ"
+            android:layout_width="325dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageButton
-                android:id="@+id/categoryBack"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="-10dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_back1" />
+            <LinearLayout
+                android:id="@+id/arrow_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/arrow_background2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/categoryBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-10dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_back1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Htext"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="-1dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/power_units1"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/Htext"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_marginStart="55dp"
-            android:layout_marginTop="-1dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:letterSpacing="0.05"
-            android:text="@string/power_units1"
-            android:textColor="@color/purple"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/TopSellers1"
-        android:layout_width="320dp"
-        android:layout_height="190dp"
-        android:layout_marginTop="25dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/categ">
-
         <LinearLayout
-            android:id="@+id/TopLine1"
-            android:layout_width="162dp"
-            android:layout_height="171dp"
+            android:id="@+id/TopSellers1"
+            android:layout_width="320dp"
+            android:layout_height="190dp"
             android:layout_marginTop="25dp"
-            android:background="@drawable/prod_background"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/categ">
 
-            <ImageButton
-                android:id="@+id/ibtnFFirst1"
-                android:layout_width="110dp"
-                android:layout_height="112dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="9dp"
-                android:contentDescription="@string/image_button"
-                android:src="@drawable/prod1" />
+            <LinearLayout
+                android:id="@+id/TopLine1"
+                android:layout_width="162dp"
+                android:layout_height="171dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/prod_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/FFtext11"
-                android:layout_width="110dp"
-                android:layout_height="10dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/hyper_x_cloud_stinger"
-                android:textColor="@color/purple"
-                android:textSize="8sp"
-                app:layout_constraintTop_toTopOf="@id/ibtnFFirst1" />
+                <ImageButton
+                    android:id="@+id/ibtnFFirst1"
+                    android:layout_width="110dp"
+                    android:layout_height="112dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="9dp"
+                    android:contentDescription="@string/image_button"
+                    android:src="@drawable/prod1" />
 
-            <TextView
-                android:id="@+id/FFtext12"
-                android:layout_width="95dp"
-                android:layout_height="8dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_light"
-                android:text="@string/headphones_and_headsets"
-                android:textColor="@color/black"
-                android:textSize="6sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext11" />
+                <TextView
+                    android:id="@+id/FFtext11"
+                    android:layout_width="110dp"
+                    android:layout_height="10dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/hyper_x_cloud_stinger"
+                    android:textColor="@color/purple"
+                    android:textSize="8sp"
+                    app:layout_constraintTop_toTopOf="@id/ibtnFFirst1" />
 
-            <TextView
-                android:id="@+id/FFtext13"
-                android:layout_width="95dp"
-                android:layout_height="9.5dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/_24795tg"
-                android:textColor="@color/black"
-                android:textSize="7sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext12" />
+                <TextView
+                    android:id="@+id/FFtext12"
+                    android:layout_width="95dp"
+                    android:layout_height="8dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/headphones_and_headsets"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext11" />
+
+                <TextView
+                    android:id="@+id/FFtext13"
+                    android:layout_width="95dp"
+                    android:layout_height="9.5dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/_24795tg"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TopLine2"
+                android:layout_width="162dp"
+                android:layout_height="171dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/prod_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/TopLine"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/ibtnFFirst2"
+                    android:layout_width="110dp"
+                    android:layout_height="112dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="9dp"
+                    android:contentDescription="@string/image_button"
+                    android:src="@drawable/prod1" />
+
+                <TextView
+                    android:id="@+id/FFtext21"
+                    android:layout_width="110dp"
+                    android:layout_height="10dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/hyper_x_cloud_stinger"
+                    android:textColor="@color/purple"
+                    android:textSize="8sp"
+                    app:layout_constraintTop_toTopOf="@id/ibtnFFirst2" />
+
+                <TextView
+                    android:id="@+id/FFtext22"
+                    android:layout_width="95dp"
+                    android:layout_height="8dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/headphones_and_headsets"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext21" />
+
+                <TextView
+                    android:id="@+id/FFtext23"
+                    android:layout_width="95dp"
+                    android:layout_height="9.5dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/_24795tg"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext22" />
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/TopLine2"
-            android:layout_width="162dp"
-            android:layout_height="171dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/prod_background"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/TopLine"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/ibtnFFirst2"
-                android:layout_width="110dp"
-                android:layout_height="112dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="9dp"
-                android:contentDescription="@string/image_button"
-                android:src="@drawable/prod1" />
-
-            <TextView
-                android:id="@+id/FFtext21"
-                android:layout_width="110dp"
-                android:layout_height="10dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/hyper_x_cloud_stinger"
-                android:textColor="@color/purple"
-                android:textSize="8sp"
-                app:layout_constraintTop_toTopOf="@id/ibtnFFirst2" />
-
-            <TextView
-                android:id="@+id/FFtext22"
-                android:layout_width="95dp"
-                android:layout_height="8dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_light"
-                android:text="@string/headphones_and_headsets"
-                android:textColor="@color/black"
-                android:textSize="6sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext21" />
-
-            <TextView
-                android:id="@+id/FFtext23"
-                android:layout_width="95dp"
-                android:layout_height="9.5dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/_24795tg"
-                android:textColor="@color/black"
-                android:textSize="7sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext22" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <View
-        android:id="@+id/view_divider_first"
-        android:layout_width="0dp"
-        android:layout_height="5dp"
-        app:layout_constraintEnd_toEndOf="@id/TopSellers1"
-        app:layout_constraintStart_toStartOf="@id/TopSellers1"
-        app:layout_constraintTop_toBottomOf="@id/TopSellers1" />
-
-    <LinearLayout
-        android:id="@+id/TopSellers2"
-        android:layout_width="320dp"
-        android:layout_height="165dp"
-        android:layout_marginTop="5dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view_divider_first">
+        <View
+            android:id="@+id/view_divider_first"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            app:layout_constraintEnd_toEndOf="@id/TopSellers1"
+            app:layout_constraintStart_toStartOf="@id/TopSellers1"
+            app:layout_constraintTop_toBottomOf="@id/TopSellers1" />
 
         <LinearLayout
-            android:id="@+id/TopLine3"
-            android:layout_width="162dp"
-            android:layout_height="171dp"
-            android:background="@drawable/prod_background"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/ibtnFFirst3"
-                android:layout_width="110dp"
-                android:layout_height="112dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="9dp"
-                android:contentDescription="@string/image_button"
-                android:src="@drawable/prod1" />
-
-            <TextView
-                android:id="@+id/FFtext31"
-                android:layout_width="110dp"
-                android:layout_height="10dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/hyper_x_cloud_stinger"
-                android:textColor="@color/purple"
-                android:textSize="8sp"
-                app:layout_constraintTop_toTopOf="@id/ibtnFFirst3" />
-
-            <TextView
-                android:id="@+id/FFtext32"
-                android:layout_width="95dp"
-                android:layout_height="8dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_light"
-                android:text="@string/headphones_and_headsets"
-                android:textColor="@color/black"
-                android:textSize="6sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext31" />
-
-            <TextView
-                android:id="@+id/FFtext33"
-                android:layout_width="95dp"
-                android:layout_height="9.5dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/_24795tg"
-                android:textColor="@color/black"
-                android:textSize="7sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext32" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/TopLine4"
-            android:layout_width="162dp"
-            android:layout_height="171dp"
-            android:background="@drawable/prod_background"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/TopLine"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/ibtnFFirst4"
-                android:layout_width="110dp"
-                android:layout_height="112dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="9dp"
-                android:contentDescription="@string/image_button"
-                android:src="@drawable/prod1" />
-
-            <TextView
-                android:id="@+id/FFtext41"
-                android:layout_width="110dp"
-                android:layout_height="10dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/hyper_x_cloud_stinger"
-                android:textColor="@color/purple"
-                android:textSize="8sp"
-                app:layout_constraintTop_toTopOf="@id/ibtnFFirst4" />
-
-            <TextView
-                android:id="@+id/FFtext42"
-                android:layout_width="95dp"
-                android:layout_height="8dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_light"
-                android:text="@string/headphones_and_headsets"
-                android:textColor="@color/black"
-                android:textSize="6sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext41" />
-
-            <TextView
-                android:id="@+id/FFtext43"
-                android:layout_width="95dp"
-                android:layout_height="9.5dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/_24795tg"
-                android:textColor="@color/black"
-                android:textSize="7sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext42" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <View
-        android:id="@+id/view_divider_second"
-        android:layout_width="0dp"
-        android:layout_height="5dp"
-        app:layout_constraintEnd_toEndOf="@id/TopSellers2"
-        app:layout_constraintStart_toStartOf="@id/TopSellers2"
-        app:layout_constraintTop_toBottomOf="@id/TopSellers2" />
-
-    <LinearLayout
-        android:id="@+id/TopSellers3"
-        android:layout_width="320dp"
-        android:layout_height="165dp"
-        android:layout_marginTop="6dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view_divider_second">
-
-        <LinearLayout
-            android:id="@+id/TopLine5"
-            android:layout_width="162dp"
-            android:layout_height="171dp"
-            android:background="@drawable/prod_background"
-            android:orientation="vertical"
+            android:id="@+id/TopSellers2"
+            android:layout_width="320dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/view_divider_first">
 
-            <ImageButton
-                android:id="@+id/ibtnFFirst5"
-                android:layout_width="110dp"
-                android:layout_height="112dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="9dp"
-                android:contentDescription="@string/image_button"
-                android:src="@drawable/prod1" />
+            <LinearLayout
+                android:id="@+id/TopLine3"
+                android:layout_width="162dp"
+                android:layout_height="171dp"
+                android:background="@drawable/prod_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/FFtext51"
-                android:layout_width="110dp"
-                android:layout_height="10dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/hyper_x_cloud_stinger"
-                android:textColor="@color/purple"
-                android:textSize="8sp"
-                app:layout_constraintTop_toTopOf="@id/ibtnFFirst5" />
+                <ImageButton
+                    android:id="@+id/ibtnFFirst3"
+                    android:layout_width="110dp"
+                    android:layout_height="112dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="9dp"
+                    android:contentDescription="@string/image_button"
+                    android:src="@drawable/prod1" />
 
-            <TextView
-                android:id="@+id/FFtext52"
-                android:layout_width="95dp"
-                android:layout_height="8dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_light"
-                android:text="@string/headphones_and_headsets"
-                android:textColor="@color/black"
-                android:textSize="6sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext51" />
+                <TextView
+                    android:id="@+id/FFtext31"
+                    android:layout_width="110dp"
+                    android:layout_height="10dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/hyper_x_cloud_stinger"
+                    android:textColor="@color/purple"
+                    android:textSize="8sp"
+                    app:layout_constraintTop_toTopOf="@id/ibtnFFirst3" />
 
-            <TextView
-                android:id="@+id/FFtext53"
-                android:layout_width="95dp"
-                android:layout_height="9.5dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/_24795tg"
-                android:textColor="@color/black"
-                android:textSize="7sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext52" />
+                <TextView
+                    android:id="@+id/FFtext32"
+                    android:layout_width="95dp"
+                    android:layout_height="8dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/headphones_and_headsets"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext31" />
+
+                <TextView
+                    android:id="@+id/FFtext33"
+                    android:layout_width="95dp"
+                    android:layout_height="9.5dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/_24795tg"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext32" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TopLine4"
+                android:layout_width="162dp"
+                android:layout_height="171dp"
+                android:background="@drawable/prod_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/TopLine"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/ibtnFFirst4"
+                    android:layout_width="110dp"
+                    android:layout_height="112dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="9dp"
+                    android:contentDescription="@string/image_button"
+                    android:src="@drawable/prod1" />
+
+                <TextView
+                    android:id="@+id/FFtext41"
+                    android:layout_width="110dp"
+                    android:layout_height="10dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/hyper_x_cloud_stinger"
+                    android:textColor="@color/purple"
+                    android:textSize="8sp"
+                    app:layout_constraintTop_toTopOf="@id/ibtnFFirst4" />
+
+                <TextView
+                    android:id="@+id/FFtext42"
+                    android:layout_width="95dp"
+                    android:layout_height="8dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/headphones_and_headsets"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext41" />
+
+                <TextView
+                    android:id="@+id/FFtext43"
+                    android:layout_width="95dp"
+                    android:layout_height="9.5dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/_24795tg"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext42" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_divider_second"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            app:layout_constraintEnd_toEndOf="@id/TopSellers2"
+            app:layout_constraintStart_toStartOf="@id/TopSellers2"
+            app:layout_constraintTop_toBottomOf="@id/TopSellers2" />
+
+        <LinearLayout
+            android:id="@+id/TopSellers3"
+            android:layout_width="320dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view_divider_second">
+
+            <LinearLayout
+                android:id="@+id/TopLine5"
+                android:layout_width="162dp"
+                android:layout_height="171dp"
+                android:background="@drawable/prod_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/ibtnFFirst5"
+                    android:layout_width="110dp"
+                    android:layout_height="112dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="9dp"
+                    android:contentDescription="@string/image_button"
+                    android:src="@drawable/prod1" />
+
+                <TextView
+                    android:id="@+id/FFtext51"
+                    android:layout_width="110dp"
+                    android:layout_height="10dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/hyper_x_cloud_stinger"
+                    android:textColor="@color/purple"
+                    android:textSize="8sp"
+                    app:layout_constraintTop_toTopOf="@id/ibtnFFirst5" />
+
+                <TextView
+                    android:id="@+id/FFtext52"
+                    android:layout_width="95dp"
+                    android:layout_height="8dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/headphones_and_headsets"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext51" />
+
+                <TextView
+                    android:id="@+id/FFtext53"
+                    android:layout_width="95dp"
+                    android:layout_height="9.5dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/_24795tg"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext52" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TopLine6"
+                android:layout_width="162dp"
+                android:layout_height="171dp"
+                android:background="@drawable/prod_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/TopLine"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/ibtnFFirst6"
+                    android:layout_width="110dp"
+                    android:layout_height="112dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="9dp"
+                    android:contentDescription="@string/image_button"
+                    android:src="@drawable/prod1" />
+
+                <TextView
+                    android:id="@+id/FFtext61"
+                    android:layout_width="110dp"
+                    android:layout_height="10dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/hyper_x_cloud_stinger"
+                    android:textColor="@color/purple"
+                    android:textSize="8sp"
+                    app:layout_constraintTop_toTopOf="@id/ibtnFFirst6" />
+
+                <TextView
+                    android:id="@+id/FFtext62"
+                    android:layout_width="95dp"
+                    android:layout_height="8dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/headphones_and_headsets"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext61" />
+
+                <TextView
+                    android:id="@+id/FFtext63"
+                    android:layout_width="95dp"
+                    android:layout_height="9.5dp"
+                    android:layout_marginHorizontal="23.5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/_24795tg"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintTop_toTopOf="@id/FFtext62" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/TopLine6"
-            android:layout_width="162dp"
-            android:layout_height="171dp"
-            android:background="@drawable/prod_background"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/TopLine"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/ibtnFFirst6"
-                android:layout_width="110dp"
-                android:layout_height="112dp"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="9dp"
-                android:contentDescription="@string/image_button"
-                android:src="@drawable/prod1" />
-
-            <TextView
-                android:id="@+id/FFtext61"
-                android:layout_width="110dp"
-                android:layout_height="10dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/hyper_x_cloud_stinger"
-                android:textColor="@color/purple"
-                android:textSize="8sp"
-                app:layout_constraintTop_toTopOf="@id/ibtnFFirst6" />
-
-            <TextView
-                android:id="@+id/FFtext62"
-                android:layout_width="95dp"
-                android:layout_height="8dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_light"
-                android:text="@string/headphones_and_headsets"
-                android:textColor="@color/black"
-                android:textSize="6sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext61" />
-
-            <TextView
-                android:id="@+id/FFtext63"
-                android:layout_width="95dp"
-                android:layout_height="9.5dp"
-                android:layout_marginHorizontal="23.5dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/_24795tg"
-                android:textColor="@color/black"
-                android:textSize="7sp"
-                app:layout_constraintTop_toTopOf="@id/FFtext62" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/cart"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="650dp"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageButton
-            android:id="@+id/CButton"
+            android:id="@+id/cart"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="2dp"
-            android:background="@drawable/cart1"
-            android:contentDescription="@string/image_button" />
-    </LinearLayout>
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="650dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageButton
+                android:id="@+id/CButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/cart1"
+                android:contentDescription="@string/image_button" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
