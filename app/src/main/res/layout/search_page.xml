@@ -1,497 +1,496 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/search_line"
-        android:layout_width="332dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="54dp"
-        android:background="@drawable/search_line_background"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".MainActivity">
 
         <LinearLayout
-            android:id="@+id/inner_search_line"
-            android:layout_width="322dp"
-            android:layout_height="36dp"
-            android:background="@drawable/search_line"
+            android:id="@+id/search_line"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="54dp"
+            android:background="@drawable/search_line_background"
             android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:id="@+id/arrow_back"
+                android:id="@+id/inner_search_line"
+                android:layout_width="368dp"
+                android:layout_height="45dp"
+                android:background="@drawable/search_line"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/arrowBack"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/arrow_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/ResultBack"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="-7dp"
+                        android:background="@null"
+                        android:contentDescription="@string/back_button"
+                        android:src="@drawable/arrow_back1" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/Search_type"
+                    android:layout_width="280dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:hint="@string/search"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:letterSpacing="0.05"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/purple"
+                    android:textColorHint="@color/purple"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/search_button"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@null"
+                    android:contentDescription="@string/search_button"
+                    android:src="@drawable/search_page" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchResults1"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/search_results"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/search_line">
+
+            <TextView
+                android:id="@+id/SRTW1"
+                android:layout_width="330dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/hyper_x_12345"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/arrow_forward1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="5dp"
+                android:layout_marginEnd="3dp"
                 android:background="@drawable/arrow_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageButton
-                    android:id="@+id/SearchBack"
+                    android:id="@+id/arrow1"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="-10dp"
+                    android:layout_marginStart="-5dp"
                     android:background="@null"
                     android:contentDescription="@string/back_button"
-                    android:src="@drawable/arrow_back1" />
+                    android:src="@drawable/arrow_forward" />
             </LinearLayout>
-
-            <EditText
-                android:id="@+id/Search_type"
-                android:layout_width="240dp"
-                android:layout_height="48dp"
-                android:hint="@string/type_here"
-                android:inputType="textMultiLine"
-                android:lines="4"
-                android:textSize="15sp" />
-
-            <ImageButton
-                android:id="@+id/search_button"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="@null"
-                android:contentDescription="@string/search_button"
-                android:src="@drawable/search_page" />
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searchResults1"
-        android:layout_width="332dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="54dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/search_line">
-
-        <TextView
-            android:id="@+id/SRTW1"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/hyper_x_12345"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
 
         <LinearLayout
-            android:id="@+id/arrow_forward1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/arrow_background"
+            android:id="@+id/searchResults2"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/search_results"
+            android:gravity="center"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/searchResults1">
 
-            <ImageButton
-                android:id="@+id/arrow1"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+            <TextView
+                android:id="@+id/SRTW2"
+                android:layout_width="330dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="-5dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_forward" />
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/hyper_x_12345"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/arrow_forward2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/arrow_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/arrow2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_forward" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searchResults2"
-        android:layout_width="332dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/searchResults1">
-
-        <TextView
-            android:id="@+id/SRTW2"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/hyper_x_12345"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
 
         <LinearLayout
-            android:id="@+id/arrow_forward2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/arrow_background"
+            android:id="@+id/searchResults3"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/search_results"
+            android:gravity="center"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/searchResults2">
 
-            <ImageButton
-                android:id="@+id/arrow2"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+            <TextView
+                android:id="@+id/SRTW3"
+                android:layout_width="330dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="-5dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_forward" />
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/hyper_x_12345"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/arrow_forward3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/arrow_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/arrow3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_forward" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searchResults3"
-        android:layout_width="332dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/searchResults2">
-
-        <TextView
-            android:id="@+id/SRTW3"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/hyper_x_12345"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
 
         <LinearLayout
-            android:id="@+id/arrow_forward3"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/arrow_background"
+            android:id="@+id/searchResults4"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/search_results"
+            android:gravity="center"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/searchResults3">
 
-            <ImageButton
-                android:id="@+id/arrow3"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+            <TextView
+                android:id="@+id/SRTW4"
+                android:layout_width="330dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="-5dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_forward" />
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/hyper_x_12345"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/arrow_forward4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/arrow_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/arrow4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_forward" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searchResults4"
-        android:layout_width="332dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/searchResults3">
-
-        <TextView
-            android:id="@+id/SRTW4"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/hyper_x_12345"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
 
         <LinearLayout
-            android:id="@+id/arrow_forward4"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/arrow_background"
+            android:id="@+id/searchResults5"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/search_results"
+            android:gravity="center"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/searchResults4">
 
-            <ImageButton
-                android:id="@+id/arrow4"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+            <TextView
+                android:id="@+id/SRTW5"
+                android:layout_width="330dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="-5dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_forward" />
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/hyper_x_12345"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/arrow_forward5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/arrow_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/arrow5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_forward" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searchResults5"
-        android:layout_width="332dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/searchResults4">
-
-        <TextView
-            android:id="@+id/SRTW5"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/hyper_x_12345"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
 
         <LinearLayout
-            android:id="@+id/arrow_forward5"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/arrow_background"
+            android:id="@+id/searchResults6"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/search_results"
+            android:gravity="center"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/searchResults5">
 
-            <ImageButton
-                android:id="@+id/arrow5"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+            <TextView
+                android:id="@+id/SRTW6"
+                android:layout_width="330dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="-5dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_forward" />
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/hyper_x_12345"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/arrow_forward6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/arrow_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/arrow6"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_forward" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searchResults6"
-        android:layout_width="332dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/searchResults5">
-
-        <TextView
-            android:id="@+id/SRTW6"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/hyper_x_12345"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
 
         <LinearLayout
-            android:id="@+id/arrow_forward6"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/arrow_background"
+            android:id="@+id/searchResults7"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/search_results"
+            android:gravity="center"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/searchResults6">
 
-            <ImageButton
-                android:id="@+id/arrow6"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+            <TextView
+                android:id="@+id/SRTW7"
+                android:layout_width="330dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="-5dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_forward" />
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/hyper_x_12345"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/arrow_forward7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/arrow_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/arrow7"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_forward" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searchResults7"
-        android:layout_width="332dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/searchResults6">
-
-        <TextView
-            android:id="@+id/SRTW7"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/hyper_x_12345"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
 
         <LinearLayout
-            android:id="@+id/arrow_forward7"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/arrow_background"
+            android:id="@+id/searchResults8"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/search_results"
+            android:gravity="center"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/searchResults7">
 
-            <ImageButton
-                android:id="@+id/arrow7"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+            <TextView
+                android:id="@+id/SRTW8"
+                android:layout_width="330dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="-5dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_forward" />
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/hyper_x_12345"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/arrow_forward8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/arrow_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/arrow8"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_forward" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searchResults8"
-        android:layout_width="332dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/searchResults7">
-
-        <TextView
-            android:id="@+id/SRTW8"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/hyper_x_12345"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
 
         <LinearLayout
-            android:id="@+id/arrow_forward8"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/arrow_background"
+            android:id="@+id/searchResults9"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/search_results"
+            android:gravity="center"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/searchResults8">
 
-            <ImageButton
-                android:id="@+id/arrow8"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+            <TextView
+                android:id="@+id/SRTW9"
+                android:layout_width="330dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="-5dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_forward" />
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/hyper_x_12345"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/arrow_forward9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/arrow_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/arrow9"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-5dp"
+                    android:background="@null"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/arrow_forward" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searchResults9"
-        android:layout_width="332dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/search_results"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/searchResults8">
-
-        <TextView
-            android:id="@+id/SRTW9"
-            android:layout_width="280dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="1dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="@string/hyper_x_12345"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-
-        <LinearLayout
-            android:id="@+id/arrow_forward9"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/arrow_background"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/arrow9"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="-5dp"
-                android:background="@null"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_forward" />
-        </LinearLayout>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

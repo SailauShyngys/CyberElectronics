@@ -64,8 +64,8 @@
             android:id="@+id/action_newPassFragment_to_codeFragment"
             app:destination="@id/codeFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_menuFragment"
-            app:destination="@id/menuFragment" />
+            android:id="@+id/action_loginFragment_to_AutorithationFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"

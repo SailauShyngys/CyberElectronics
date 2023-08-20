@@ -17,8 +17,25 @@ class SearchResultsFragment : Fragment(R.layout.search_results) {
         binding.ResultBack.setOnClickListener {
             findNavController().navigate(R.id.action_SearchResultsFragment_to_SearchFragment)
         }
-
-        binding.ibtnFFirst1.setOnClickListener {
+        binding.TopLine.setOnClickListener {
+            findNavController().navigate(R.id.action_SearchResultsFragment_to_ProductFragment)
+        }
+        binding.TopLine2.setOnClickListener {
+            findNavController().navigate(R.id.action_SearchResultsFragment_to_ProductFragment)
+        }
+        binding.TopLine3.setOnClickListener {
+            findNavController().navigate(R.id.action_SearchResultsFragment_to_ProductFragment)
+        }
+        binding.TopLine4.setOnClickListener {
+            findNavController().navigate(R.id.action_SearchResultsFragment_to_ProductFragment)
+        }
+        binding.TopLine5.setOnClickListener {
+            findNavController().navigate(R.id.action_SearchResultsFragment_to_ProductFragment)
+        }
+        binding.TopLine6.setOnClickListener {
+            findNavController().navigate(R.id.action_SearchResultsFragment_to_ProductFragment)
+        }
+        binding.ibtnFFirst.setOnClickListener {
             findNavController().navigate(R.id.action_SearchResultsFragment_to_ProductFragment)
         }
         binding.ibtnFFirst2.setOnClickListener {
@@ -36,7 +53,6 @@ class SearchResultsFragment : Fragment(R.layout.search_results) {
         binding.ibtnFFirst6.setOnClickListener {
             findNavController().navigate(R.id.action_SearchResultsFragment_to_ProductFragment)
         }
-
         binding.CButton.setOnClickListener {
             findNavController().navigate(R.id.action_SearchResultsFragment_to_BinFragment)
         }

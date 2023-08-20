@@ -18,31 +18,61 @@ class MainFragment : Fragment(R.layout.main_page) {
         binding.Himage1.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_BinFragment)
         }
-
+        binding.TopLine.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_ProductFragment)
+        }
+        binding.ibtnFFirst.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_ProductFragment)
+        }
+        binding.TopLine2.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_ProductFragment)
+        }
+        binding.ibtnFFirst2.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_ProductFragment)
+        }
         binding.Himage3.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_ProfileFragment)
         }
-
         binding.tvViewAll.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryList1Fragment)
         }
-
         binding.PowerUnit.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.FLBT1.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
         }
         binding.Lamps.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
         }
+        binding.FLBT2.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
         binding.Keyboards.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.SLBT1.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
         }
         binding.Stands.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
         }
+        binding.SLBT2.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
         binding.Humidifiers.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
         }
+        binding.TLBT1.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
         binding.Mouses.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.TLBT2.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
+        binding.Watches.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
         }
         binding.Watches.setOnClickListener {
@@ -51,7 +81,13 @@ class MainFragment : Fragment(R.layout.main_page) {
         binding.RGB.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
         }
+        binding.FTLBT1.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_CategoryFragment)
+        }
         binding.Himage2.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_SearchFragment)
+        }
+        binding.FTLBT2.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_SearchFragment)
         }
 

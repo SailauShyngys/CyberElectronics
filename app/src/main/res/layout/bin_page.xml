@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:id="@+id/bin_page"
-            android:layout_width="325dp"
+            android:layout_width="380dp"
             android:layout_height="55dp"
             android:layout_marginTop="54dp"
             android:orientation="horizontal"
@@ -22,11 +22,12 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:id="@+id/arrow_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/arrow_background"
+                android:id="@+id/arrowBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="-1dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -39,14 +40,14 @@
                     android:layout_marginStart="-10dp"
                     android:background="@null"
                     android:contentDescription="@string/back_button"
-                    android:src="@drawable/arrow_back1" />
+                    android:src="@drawable/backarrow1" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/bin_text"
-                android:layout_width="325dp"
+                android:layout_width="380dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="55dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -57,13 +58,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="38dp"
                     android:layout_marginStart="55dp"
-                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
                     android:letterSpacing="0.05"
                     android:text="@string/bin"
                     android:textColor="@color/purple"
-                    android:textSize="20sp"
+                    android:textSize="22sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,7 +74,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="-10dp"
+                    android:gravity="center"
                     android:background="@null"
                     android:src="@drawable/bin_icon" />
             </LinearLayout>
@@ -80,10 +82,10 @@
 
         <LinearLayout
             android:id="@+id/llFirstLine"
-            android:layout_width="360dp"
-            android:layout_height="170dp"
+            android:layout_width="380dp"
+            android:layout_height="180dp"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/bin_prod"
             android:gravity="center"
             android:orientation="horizontal"
@@ -212,8 +214,8 @@
 
         <LinearLayout
             android:id="@+id/llSecondLine"
-            android:layout_width="360dp"
-            android:layout_height="170dp"
+            android:layout_width="380dp"
+            android:layout_height="180dp"
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/bin_prod"
             android:gravity="center"
@@ -342,8 +344,8 @@
 
         <LinearLayout
             android:id="@+id/llThirdLine"
-            android:layout_width="360dp"
-            android:layout_height="170dp"
+            android:layout_width="380dp"
+            android:layout_height="180dp"
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/bin_prod"
             android:gravity="center"
@@ -472,8 +474,8 @@
 
         <Button
             android:id="@+id/btnPay"
-            android:layout_width="330dp"
-            android:layout_height="60dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="130dp"
             android:backgroundTint="@color/orange"
             android:contentDescription="@string/button"
@@ -481,7 +483,7 @@
             android:letterSpacing="0.05"
             android:text="@string/pay"
             android:textColor="@color/white"
-            android:textSize="22dp"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view_divider_third" />

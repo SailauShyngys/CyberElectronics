@@ -15,10 +15,28 @@ class CategoryFragment : Fragment(R.layout.category_list2) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.categoryBack.setOnClickListener {
+        binding.arrowBack.setOnClickListener {
             findNavController().navigate(R.id.action_CategoryFragment_to_MainFragment)
         }
-        binding.ibtnFFirst1.setOnClickListener {
+        binding.TopLine.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.TopLine2.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.TopLine3.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.TopLine4.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.TopLine5.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.TopLine6.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
+        }
+        binding.ibtnFFirst.setOnClickListener {
             findNavController().navigate(R.id.action_CategoryFragment_to_ProductFragment)
         }
         binding.ibtnFFirst2.setOnClickListener {

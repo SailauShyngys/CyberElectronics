@@ -152,8 +152,8 @@
             app:layout_constraintTop_toTopOf="@id/FirstText">
 
             <EditText
-                android:layout_width="290dp"
-                android:layout_height="50dp"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
                 android:background="@drawable/edit_text_arround"
                 android:fontFamily="@font/montserrat_medium"
                 android:hint="@string/name"
@@ -165,14 +165,13 @@
                 app:layout_constraintTop_toTopOf="@id/Buttons" />
 
             <EditText
-                android:layout_width="290dp"
-                android:layout_height="50dp"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/edit_text_arround"
                 android:fontFamily="@font/montserrat_medium"
                 android:hint="@string/email"
                 android:letterSpacing="0.05"
-
                 android:paddingStart="15dp"
                 android:textColor="@color/purple"
                 android:textColorHint="@color/purple"
@@ -180,8 +179,8 @@
                 app:layout_constraintTop_toTopOf="@id/Buttons" />
 
             <EditText
-                android:layout_width="290dp"
-                android:layout_height="50dp"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/edit_text_arround"
                 android:fontFamily="@font/montserrat_medium"
@@ -195,8 +194,8 @@
                 app:layout_constraintTop_toTopOf="@id/Buttons" />
 
             <EditText
-                android:layout_width="290dp"
-                android:layout_height="50dp"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/edit_text_arround"
                 android:fontFamily="@font/montserrat_medium"
@@ -211,7 +210,7 @@
 
             <Button
                 android:id="@+id/register"
-                android:layout_width="290dp"
+                android:layout_width="340dp"
                 android:layout_height="55dp"
                 android:layout_marginTop="95dp"
                 android:backgroundTint="@color/purple"
@@ -219,7 +218,7 @@
                 android:letterSpacing="0.05"
                 android:text="@string/register1"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="19sp"
                 app:layout_constraintTop_toTopOf="@id/Buttons" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,8 +34,8 @@
 
     <LinearLayout
         android:id="@+id/btnPayedBack"
-        android:layout_width="325dp"
-        android:layout_height="50dp"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
         android:layout_marginTop="70dp"
         android:background="@drawable/back_background"
         android:gravity="center"
@@ -72,8 +72,8 @@
 
     <Button
         android:id="@+id/order_status_btn"
-        android:layout_width="325dp"
-        android:layout_height="56dp"
+        android:layout_width="360dp"
+        android:layout_height="62dp"
         android:layout_marginTop="56dp"
         android:backgroundTint="@color/bluegray"
         android:contentDescription="@string/button"

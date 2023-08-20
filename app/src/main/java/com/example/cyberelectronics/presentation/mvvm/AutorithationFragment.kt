@@ -18,6 +18,9 @@ class AutorithationFragment : Fragment(R.layout.autorithation) {
         binding.autorBack.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_menuFragment)
         }
+        binding.ForgetPass.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_emailFragment)
+        }
 
         binding.signIn.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_MainFragment)

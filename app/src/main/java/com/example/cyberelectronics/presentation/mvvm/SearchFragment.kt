@@ -14,7 +14,7 @@ class SearchFragment : Fragment(R.layout.search_page) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.SearchBack.setOnClickListener {
+        binding.arrowBack.setOnClickListener {
             findNavController().navigate(R.id.action_SearchFragment_to_MainFragment)
         }
 

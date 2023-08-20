@@ -7,15 +7,14 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/purple"
         tools:context=".presentation.mvvm.CategoryList2Fragment">
 
         <LinearLayout
             android:id="@+id/categ"
-            android:layout_width="325dp"
+            android:layout_width="380dp"
             android:layout_height="50dp"
-            android:layout_marginStart="-10dp"
             android:layout_marginTop="54dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -23,24 +22,23 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:id="@+id/arrow_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/arrow_background"
+                android:id="@+id/arrowBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageButton
-                    android:id="@+id/List2Back"
+                    android:id="@+id/binBack"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="-10dp"
                     android:background="@null"
                     android:contentDescription="@string/back_button"
-                    android:src="@drawable/arrow_back1" />
+                    android:src="@drawable/backarrow1" />
             </LinearLayout>
 
             <TextView
@@ -48,8 +46,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="38dp"
                 android:layout_marginStart="60dp"
-                android:layout_marginTop="-2dp"
-                android:fontFamily="@font/montserrat_semibold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_bold"
                 android:letterSpacing="0.05"
                 android:text="@string/categories12"
                 android:textColor="@color/orange"
@@ -61,24 +59,24 @@
 
         <Button
             android:id="@+id/BTNcateg13"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="50dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="70dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
             android:letterSpacing="0.05"
             android:text="@string/chairs"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/categ" />
 
         <Button
             android:id="@+id/BTNcateg14"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -86,15 +84,15 @@
             android:text="@string/game_consoles"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg13" />
 
         <Button
             android:id="@+id/BTNcateg15"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -102,15 +100,15 @@
             android:text="@string/joysticks"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg14" />
 
         <Button
             android:id="@+id/BTNcateg16"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -118,15 +116,15 @@
             android:text="@string/accessories"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg15" />
 
         <Button
             android:id="@+id/BTNcateg17"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -134,15 +132,15 @@
             android:text="@string/tablets"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg16" />
 
         <Button
             android:id="@+id/BTNcateg18"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -150,15 +148,15 @@
             android:text="@string/tvs"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg17" />
 
         <Button
             android:id="@+id/BTNcateg19"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -166,15 +164,15 @@
             android:text="@string/drones"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg18" />
 
         <Button
             android:id="@+id/BTNcateg20"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -182,15 +180,15 @@
             android:text="@string/mats"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg19" />
 
         <Button
             android:id="@+id/BTNcateg21"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -198,15 +196,15 @@
             android:text="@string/loudspeakers"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg20" />
 
         <Button
             android:id="@+id/BTNcateg22"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -214,15 +212,15 @@
             android:text="@string/charges"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg21" />
 
         <Button
             android:id="@+id/BTNcateg23"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -230,15 +228,15 @@
             android:text="@string/microphones"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg22" />
 
         <Button
             android:id="@+id/BTNcateg24"
-            android:layout_width="332dp"
-            android:layout_height="48dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="@color/bluegray"
             android:fontFamily="@font/montserrat_semibold"
@@ -246,7 +244,7 @@
             android:text="@string/wires"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/BTNcateg23" />

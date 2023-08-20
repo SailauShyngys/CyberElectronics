@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -13,14 +15,12 @@
 
         <LinearLayout
             android:id="@+id/Header"
-            android:layout_width="310dp"
+            android:layout_width="380dp"
             android:layout_height="35dp"
-            android:layout_marginHorizontal="47dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -28,17 +28,17 @@
                 android:id="@+id/Htext"
                 android:layout_width="wrap_content"
                 android:layout_height="38dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginEnd="11dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="30dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:letterSpacing="0.05"
                 android:text="@string/cyberelectronics"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:id="@+id/Nav_menu"
-                android:layout_width="95dp"
+                android:layout_width="115dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="3dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +49,7 @@
                     android:id="@+id/Himage1"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:layout_marginEnd="-20dp"
+                    android:layout_marginEnd="-10dp"
                     android:background="@null"
                     android:contentDescription="@string/image_button"
                     android:src="@drawable/cart3" />
@@ -58,7 +58,7 @@
                     android:id="@+id/Himage2"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:layout_marginEnd="-20dp"
+                    android:layout_marginEnd="-10dp"
                     android:background="@null"
                     android:contentDescription="@string/image_button"
                     android:src="@drawable/search" />
@@ -78,23 +78,22 @@
             android:id="@+id/tvType"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginHorizontal="23dp"
+            android:layout_marginEnd="232dp"
             android:layout_marginTop="60dp"
             android:fontFamily="@font/montserrat_semibold"
             android:letterSpacing="0.05"
             android:text="@string/topsellers"
             android:textColor="@color/orange"
-            android:textSize="18sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/TopSellers"
-            android:layout_width="320dp"
-            android:layout_height="190dp"
-            android:layout_marginTop="7dp"
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="35dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -102,9 +101,8 @@
 
             <LinearLayout
                 android:id="@+id/TopLine"
-                android:layout_width="162dp"
-                android:layout_height="171dp"
-                android:layout_marginTop="25dp"
+                android:layout_width="195dp"
+                android:layout_height="205dp"
                 android:background="@drawable/prod_background"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -113,8 +111,8 @@
 
                 <ImageButton
                     android:id="@+id/ibtnFFirst"
-                    android:layout_width="110dp"
-                    android:layout_height="112dp"
+                    android:layout_width="125dp"
+                    android:layout_height="129dp"
                     android:layout_marginHorizontal="25dp"
                     android:layout_marginTop="9dp"
                     android:contentDescription="@string/image_button"
@@ -122,43 +120,42 @@
 
                 <TextView
                     android:id="@+id/FFtext1"
-                    android:layout_width="110dp"
-                    android:layout_height="10dp"
-                    android:layout_marginHorizontal="23.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginHorizontal="20dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="@string/hyper_x_cloud_stinger"
                     android:textColor="@color/purple"
-                    android:textSize="8sp"
+                    android:textSize="11sp"
                     app:layout_constraintTop_toTopOf="@id/ibtnFFirst" />
 
                 <TextView
                     android:id="@+id/FFtext2"
-                    android:layout_width="95dp"
-                    android:layout_height="8dp"
-                    android:layout_marginHorizontal="23.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginHorizontal="20dp"
                     android:fontFamily="@font/montserrat_light"
                     android:text="@string/headphones_and_headsets"
                     android:textColor="@color/black"
-                    android:textSize="6sp"
+                    android:textSize="10sp"
                     app:layout_constraintTop_toTopOf="@id/FFtext1" />
 
                 <TextView
                     android:id="@+id/FFtext3"
-                    android:layout_width="95dp"
-                    android:layout_height="9.5dp"
-                    android:layout_marginHorizontal="23.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginHorizontal="20dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="@string/_24795tg"
                     android:textColor="@color/black"
-                    android:textSize="7sp"
+                    android:textSize="11sp"
                     app:layout_constraintTop_toTopOf="@id/FFtext2" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/TopLine2"
-                android:layout_width="162dp"
-                android:layout_height="171dp"
-                android:layout_marginTop="25dp"
+                android:layout_width="195dp"
+                android:layout_height="205dp"
                 android:background="@drawable/prod_background"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -167,8 +164,8 @@
 
                 <ImageButton
                     android:id="@+id/ibtnFFirst2"
-                    android:layout_width="110dp"
-                    android:layout_height="112dp"
+                    android:layout_width="125dp"
+                    android:layout_height="129dp"
                     android:layout_marginHorizontal="25dp"
                     android:layout_marginTop="9dp"
                     android:contentDescription="@string/image_button"
@@ -176,60 +173,60 @@
 
                 <TextView
                     android:id="@+id/FFtext12"
-                    android:layout_width="110dp"
-                    android:layout_height="10dp"
-                    android:layout_marginHorizontal="23.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginHorizontal="20dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="@string/hyper_x_cloud_stinger"
                     android:textColor="@color/purple"
-                    android:textSize="8sp"
+                    android:textSize="11sp"
                     app:layout_constraintTop_toTopOf="@id/ibtnFFirst" />
 
                 <TextView
                     android:id="@+id/FFtext22"
-                    android:layout_width="95dp"
-                    android:layout_height="8dp"
-                    android:layout_marginHorizontal="23.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginHorizontal="20dp"
                     android:fontFamily="@font/montserrat_light"
                     android:text="@string/headphones_and_headsets"
                     android:textColor="@color/black"
-                    android:textSize="6sp"
+                    android:textSize="10sp"
                     app:layout_constraintTop_toTopOf="@id/FFtext12" />
 
                 <TextView
                     android:id="@+id/FFtext32"
-                    android:layout_width="95dp"
-                    android:layout_height="9.5dp"
-                    android:layout_marginHorizontal="23.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginHorizontal="20dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="@string/_24795tg"
                     android:textColor="@color/black"
-                    android:textSize="7sp"
+                    android:textSize="11sp"
                     app:layout_constraintTop_toTopOf="@id/FFtext22" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/TopSecond"
-            android:layout_width="310dp"
+            android:layout_width="380dp"
             android:layout_height="40dp"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="230dp"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/TopSellers"
+            app:layout_constraintStart_toStartOf="@id/TopSellers"
             app:layout_constraintTop_toTopOf="@id/TopSellers">
 
             <TextView
                 android:id="@+id/tvCategoties"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
+                android:layout_marginEnd="170dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:letterSpacing="0.05"
                 android:text="@string/categories1"
                 android:textColor="@color/orange"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -237,22 +234,20 @@
                 android:id="@+id/tvViewAll"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
-                android:layout_marginStart="125dp"
                 android:fontFamily="@font/montserrat_medium"
                 android:letterSpacing="0.05"
                 android:text="@string/view_all"
                 android:textColor="@color/white"
-                android:textSize="12sp"
+                android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/llFirstLine"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_width="390dp"
+            android:layout_height="120dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="30dp"
             android:gravity="center"
@@ -263,8 +258,8 @@
 
             <LinearLayout
                 android:id="@+id/PowerUnit"
-                android:layout_width="209dp"
-                android:layout_height="100dp"
+                android:layout_width="260dp"
+                android:layout_height="120dp"
                 android:background="@drawable/categ_block"
                 android:orientation="horizontal">
 
@@ -298,8 +293,8 @@
 
             <LinearLayout
                 android:id="@+id/Lamps"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:background="@drawable/categ_block"
                 android:orientation="vertical">
 
@@ -338,8 +333,8 @@
 
         <LinearLayout
             android:id="@+id/llSecondLine"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_width="390dp"
+            android:layout_height="120dp"
             android:layout_marginHorizontal="16dp"
             android:gravity="center"
             android:orientation="horizontal"
@@ -349,8 +344,8 @@
 
             <LinearLayout
                 android:id="@+id/Keyboards"
-                android:layout_width="204dp"
-                android:layout_height="100dp"
+                android:layout_width="260dp"
+                android:layout_height="120dp"
                 android:background="@drawable/categ_block"
                 android:orientation="vertical">
 
@@ -382,8 +377,8 @@
 
             <LinearLayout
                 android:id="@+id/Stands"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:background="@drawable/categ_block"
                 android:orientation="vertical">
 
@@ -423,8 +418,8 @@
 
         <LinearLayout
             android:id="@+id/llThirdLine"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_width="390dp"
+            android:layout_height="120dp"
             android:layout_marginHorizontal="16dp"
             android:gravity="center"
             android:orientation="horizontal"
@@ -434,8 +429,8 @@
 
             <LinearLayout
                 android:id="@+id/Humidifiers"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:background="@drawable/categ_block"
                 android:orientation="vertical">
 
@@ -469,8 +464,8 @@
 
             <LinearLayout
                 android:id="@+id/Mouses"
-                android:layout_width="204dp"
-                android:layout_height="100dp"
+                android:layout_width="260dp"
+                android:layout_height="120dp"
                 android:background="@drawable/categ_block">
 
                 <TextView
@@ -507,8 +502,8 @@
 
         <LinearLayout
             android:id="@+id/llFourthLine"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_width="390dp"
+            android:layout_height="120dp"
             android:layout_marginHorizontal="16dp"
             android:gravity="center"
             android:orientation="horizontal"
@@ -518,8 +513,8 @@
 
             <LinearLayout
                 android:id="@+id/Watches"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:background="@drawable/categ_block"
                 android:orientation="vertical">
 
@@ -553,8 +548,8 @@
 
             <LinearLayout
                 android:id="@+id/RGB"
-                android:layout_width="204dp"
-                android:layout_height="100dp"
+                android:layout_width="260dp"
+                android:layout_height="120dp"
                 android:background="@drawable/categ_block"
                 android:orientation="vertical">
 
@@ -580,6 +575,15 @@
                     android:background="@drawable/rgb"
                     android:contentDescription="@string/image_button" />
             </LinearLayout>
+            <View
+                android:id="@+id/view_divider_fourth"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="100dp"
+                app:layout_constraintEnd_toEndOf="@id/llFourthLine"
+                app:layout_constraintStart_toStartOf="@id/llFourthLine"
+                app:layout_constraintTop_toBottomOf="@id/llFourthLine" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>

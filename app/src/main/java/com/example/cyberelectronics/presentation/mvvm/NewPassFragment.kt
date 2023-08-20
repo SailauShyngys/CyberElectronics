@@ -20,7 +20,7 @@ class NewPassFragment : Fragment(R.layout.new_password) {
         }
 
         binding.NewPassBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_menuFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_AutorithationFragment)
         }
     }
 }

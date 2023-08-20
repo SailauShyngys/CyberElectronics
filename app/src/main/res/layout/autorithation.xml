@@ -68,7 +68,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/arrow_back"
+        android:id="@+id/arrowBack"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="14dp"
@@ -98,7 +98,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/arrow_back">
+        app:layout_constraintTop_toTopOf="@id/arrowBack">
 
         <TextView
             android:id="@+id/MainText"
@@ -145,8 +145,8 @@
         app:layout_constraintTop_toTopOf="@id/FirstText">
 
         <EditText
-            android:layout_width="290dp"
-            android:layout_height="50dp"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
             android:background="@drawable/edit_text_arround"
             android:fontFamily="@font/montserrat_medium"
             android:letterSpacing="0.05"
@@ -157,8 +157,8 @@
             app:layout_constraintTop_toTopOf="@id/Buttons" />
 
         <EditText
-            android:layout_width="290dp"
-            android:layout_height="50dp"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_text_arround"
             android:fontFamily="@font/montserrat_medium"
@@ -170,6 +170,7 @@
             app:layout_constraintTop_toTopOf="@id/Buttons" />
 
         <TextView
+            android:id="@+id/ForgetPass"
             android:layout_width="290dp"
             android:layout_height="20dp"
             android:layout_marginTop="5dp"
@@ -182,15 +183,15 @@
 
         <Button
             android:id="@+id/signIn"
-            android:layout_width="290dp"
-            android:layout_height="50dp"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
             android:layout_marginTop="130dp"
             android:backgroundTint="@color/purple"
             android:fontFamily="@font/montserrat_medium"
             android:letterSpacing="0.05"
             android:text="@string/sign_in"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="19sp"
             app:layout_constraintTop_toTopOf="@id/Buttons" />
     </LinearLayout>
 

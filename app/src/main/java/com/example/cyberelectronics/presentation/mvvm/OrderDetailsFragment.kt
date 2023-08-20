@@ -15,7 +15,7 @@ class OrderDetailsFragment : Fragment(R.layout.order_details) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.Back.setOnClickListener {
+        binding.CharacteristicBack.setOnClickListener {
             findNavController().navigate(R.id.action_OrderDetailsFragment_to_OrderHistoryFragment)
         }
         binding.RepeatBTN.setOnClickListener {

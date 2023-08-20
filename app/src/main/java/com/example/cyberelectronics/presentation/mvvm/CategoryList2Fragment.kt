@@ -15,8 +15,44 @@ class CategoryList2Fragment : Fragment(R.layout.category_list2) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.List2Back.setOnClickListener {
+        binding.binBack.setOnClickListener {
             findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryList1Fragment)
+        }
+        binding.BTNcateg13.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg14.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg15.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg16.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg17.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg18.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg19.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg20.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg21.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg22.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg23.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
+        }
+        binding.BTNcateg24.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoryList2Fragment_to_CategoryFragment)
         }
     }
 }

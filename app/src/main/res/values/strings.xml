@@ -203,5 +203,6 @@
     <string name="add_address">+ Add Address</string>
     <string name="add_in_bin">Add in bin</string>
     <string name="operation_memory">Operation memory:</string>
+    <string name="search">Search</string>
 
 </resources>

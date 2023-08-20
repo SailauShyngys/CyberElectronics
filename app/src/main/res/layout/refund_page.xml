@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bluegray"
@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:id="@+id/head"
-            android:layout_width="325dp"
+            android:layout_width="380dp"
             android:layout_height="55dp"
             android:layout_marginTop="54dp"
             android:orientation="horizontal"
@@ -22,11 +22,9 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:id="@+id/arrow_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/arrow_background2"
+                android:id="@+id/arrowBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -36,10 +34,9 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="-10dp"
                     android:background="@null"
                     android:contentDescription="@string/back_button"
-                    android:src="@drawable/arrow_back1" />
+                    android:src="@drawable/backarrow" />
             </LinearLayout>
 
             <TextView
@@ -47,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="38dp"
                 android:layout_marginStart="85dp"
-                android:layout_marginTop="-1dp"
+                android:layout_gravity="center"
                 android:fontFamily="@font/montserrat_semibold"
                 android:letterSpacing="0.05"
                 android:text="@string/refund"
@@ -60,9 +57,9 @@
 
         <LinearLayout
             android:id="@+id/order_body"
-            android:layout_width="320dp"
+            android:layout_width="360dp"
             android:layout_height="395dp"
-            android:layout_marginTop="54dp"
+            android:layout_marginTop="70dp"
             android:background="@drawable/fback_background"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +84,7 @@
 
             <View
                 android:id="@+id/view1"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:background="@color/gray"
@@ -97,7 +94,7 @@
 
             <LinearLayout
                 android:id="@+id/CEP"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="15dp"
@@ -111,11 +108,11 @@
                     android:layout_width="34dp"
                     android:layout_height="34dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/check_logo"></ImageView>
+                    android:src="@drawable/check_logo"/>
 
                 <TextView
                     android:id="@+id/TextCEP"
-                    android:layout_width="150dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="3dp"
@@ -124,7 +121,7 @@
                     android:text="@string/cyber_electronics_product"
                     android:textAlignment="textStart"
                     android:textColor="@color/darkgrey"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -132,7 +129,7 @@
 
             <View
                 android:id="@+id/view2"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
@@ -143,7 +140,7 @@
 
             <LinearLayout
                 android:id="@+id/check_line1"
-                android:layout_width="250dp"
+                android:layout_width="280dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="2dp"
@@ -162,26 +159,26 @@
                     android:letterSpacing="0.05"
                     android:text="@string/check_number"
                     android:textColor="@color/gray"
-                    android:textSize="11sp" />
+                    android:textSize="13sp" />
 
                 <TextView
                     android:id="@+id/line1_tw2"
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="104dp"
+                    android:layout_marginStart="115dp"
                     android:layout_marginTop="3dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:letterSpacing="0.05"
                     android:text="@string/_11111111"
                     android:textColor="@color/black"
-                    android:textSize="11sp" />
+                    android:textSize="13sp" />
 
             </LinearLayout>
 
             <View
                 android:id="@+id/view3"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
@@ -192,7 +189,7 @@
 
             <LinearLayout
                 android:id="@+id/check_line2"
-                android:layout_width="250dp"
+                android:layout_width="280dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="2dp"
@@ -211,26 +208,24 @@
                     android:letterSpacing="0.05"
                     android:text="@string/date_of_payment"
                     android:textColor="@color/gray"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
                 <TextView
                     android:id="@+id/line2_tw2"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="28dp"
+                    android:layout_marginStart="88dp"
                     android:layout_marginTop="3dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:letterSpacing="0.05"
                     android:text="@string/_01_01_2023_13_00_00"
                     android:textColor="@color/black"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
             </LinearLayout>
 
             <View
                 android:id="@+id/view4"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
@@ -241,7 +236,7 @@
 
             <LinearLayout
                 android:id="@+id/check_line3"
-                android:layout_width="250dp"
+                android:layout_width="280dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="2dp"
@@ -260,26 +255,24 @@
                     android:letterSpacing="0.05"
                     android:text="@string/customer_name"
                     android:textColor="@color/gray"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
                 <TextView
                     android:id="@+id/line3_tw2"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="92dp"
+                    android:layout_marginStart="97dp"
                     android:layout_marginTop="3dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:letterSpacing="0.05"
                     android:text="@string/sailau_sh"
                     android:textColor="@color/black"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
             </LinearLayout>
 
             <View
                 android:id="@+id/view5"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
@@ -290,7 +283,7 @@
 
             <LinearLayout
                 android:id="@+id/check_line4"
-                android:layout_width="250dp"
+                android:layout_width="280dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="2dp"
@@ -309,8 +302,7 @@
                     android:letterSpacing="0.05"
                     android:text="@string/support_number"
                     android:textColor="@color/gray"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
                 <TextView
                     android:id="@+id/line4_tw2"
                     android:layout_width="wrap_content"
@@ -322,13 +314,12 @@
                     android:letterSpacing="0.05"
                     android:text="@string/_7_777_7777777"
                     android:textColor="@color/black"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
             </LinearLayout>
 
             <View
                 android:id="@+id/view6"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
@@ -339,7 +330,7 @@
 
             <LinearLayout
                 android:id="@+id/check_line5"
-                android:layout_width="250dp"
+                android:layout_width="280dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="2dp"
@@ -358,8 +349,7 @@
                     android:letterSpacing="0.05"
                     android:text="@string/way_of_payment"
                     android:textColor="@color/gray"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
                 <TextView
                     android:id="@+id/line5_tw2"
                     android:layout_width="wrap_content"
@@ -371,13 +361,12 @@
                     android:letterSpacing="0.05"
                     android:text="@string/payment_cart"
                     android:textColor="@color/black"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
             </LinearLayout>
 
             <View
                 android:id="@+id/view7"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
@@ -388,7 +377,7 @@
 
             <LinearLayout
                 android:id="@+id/check_line6"
-                android:layout_width="250dp"
+                android:layout_width="280dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="2dp"
@@ -407,8 +396,7 @@
                     android:letterSpacing="0.05"
                     android:text="@string/adress"
                     android:textColor="@color/gray"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
                 <TextView
                     android:id="@+id/line6_tw2"
                     android:layout_width="wrap_content"
@@ -420,13 +408,12 @@
                     android:letterSpacing="0.05"
                     android:text="@string/almaty_c_68_abay_av"
                     android:textColor="@color/black"
-                    android:textSize="11sp" />
-
+                    android:textSize="13sp" />
             </LinearLayout>
 
             <View
                 android:id="@+id/view8"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
@@ -437,8 +424,8 @@
 
             <LinearLayout
                 android:id="@+id/check_line7"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="2dp"
                 android:orientation="horizontal"
@@ -449,31 +436,31 @@
                 <TextView
                     android:id="@+id/line7_tw1"
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
+                    android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:fontFamily="@font/montserrat_semibold"
                     android:letterSpacing="0.05"
                     android:text="@string/total"
                     android:textColor="@color/gray"
-                    android:textSize="15sp" />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/line7_tw2"
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
+                    android:layout_height="25dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="116dp"
+                    android:layout_marginStart="125dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:letterSpacing="0.05"
                     android:text="@string/_704_795_tg"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
             <View
                 android:id="@+id/view9"
-                android:layout_width="250dp"
+                android:layout_width="290dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
@@ -486,8 +473,8 @@
 
         <LinearLayout
             android:id="@+id/reason_body"
-            android:layout_width="320dp"
-            android:layout_height="250dp"
+            android:layout_width="360dp"
+            android:layout_height="270dp"
             android:layout_marginTop="410dp"
             android:background="@drawable/ordered_back"
             android:orientation="vertical"
@@ -505,14 +492,14 @@
                 android:letterSpacing="0.05"
                 android:text="@string/reason_for_return"
                 android:textColor="@color/black"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:id="@+id/reason_text_body"
-                android:layout_width="280dp"
+                android:layout_width="320dp"
                 android:layout_height="190dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/edit_back"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="@id/order_body"
@@ -535,10 +522,10 @@
 
         <Button
             android:id="@+id/RefundBTN"
-            android:layout_width="310dp"
-            android:layout_height="50dp"
+            android:layout_width="360dp"
+            android:layout_height="55dp"
             android:layout_gravity="center"
-            android:layout_marginTop="270dp"
+            android:layout_marginTop="300dp"
             android:backgroundTint="@color/purple"
             android:contentDescription="@string/button"
             android:fontFamily="@font/montserrat_medium"

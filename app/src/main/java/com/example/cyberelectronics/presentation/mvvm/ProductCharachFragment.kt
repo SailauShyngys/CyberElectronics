@@ -13,13 +13,19 @@ class ProductCharachFragment : Fragment(R.layout.product_view_characteristic) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.CharacteristicBack.setOnClickListener {
+        binding.arrow.setOnClickListener {
             findNavController().navigate(R.id.action_ProductCharachFragment_to_ProductFragment)
         }
-        binding.ibtnFFirst1.setOnClickListener {
+        binding.ibtnFFirst.setOnClickListener {
             findNavController().navigate(R.id.action_ProductCharachFragment_to_ProductFragment)
         }
         binding.ibtnFFirst2.setOnClickListener {
+            findNavController().navigate(R.id.action_ProductCharachFragment_to_ProductFragment)
+        }
+        binding.TopLine.setOnClickListener {
+            findNavController().navigate(R.id.action_ProductCharachFragment_to_ProductFragment)
+        }
+        binding.TopLine2.setOnClickListener {
             findNavController().navigate(R.id.action_ProductCharachFragment_to_ProductFragment)
         }
     }

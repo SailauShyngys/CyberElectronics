@@ -16,6 +16,9 @@ class ProductFragment : Fragment(R.layout.product_view){
         binding.ProductBack.setOnClickListener {
             findNavController().navigate(R.id.action_ProductFragment_to_MainFragment)
         }
+        binding.arrow.setOnClickListener {
+            findNavController().navigate(R.id.action_ProductFragment_to_MainFragment)
+        }
         binding.viewAll.setOnClickListener {
             findNavController().navigate(R.id.action_ProductFragment_to_ProductCharachFragment)
         }

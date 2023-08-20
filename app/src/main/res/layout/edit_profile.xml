@@ -13,23 +13,24 @@
 
         <LinearLayout
             android:id="@+id/arrow"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="10dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="330dp"
+            android:gravity="center"
             android:layout_marginTop="54dp"
-            android:background="@drawable/arrow_background2"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/arrowback"
+                android:id="@+id/Back"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="-10dp"
                 android:background="@null"
                 android:contentDescription="@string/back_button"
-                android:src="@drawable/arrow_back1" />
+                android:src="@drawable/backarrow" />
         </LinearLayout>
 
         <LinearLayout
@@ -329,11 +330,6 @@
                     android:textColor="@color/grey"
                     android:textSize="13sp" />
 
-                <View
-                    android:layout_width="345dp"
-                    android:layout_height="2dp"
-                    android:layout_marginStart="15dp"
-                    android:background="@color/green" />
             </LinearLayout>
 
         </LinearLayout>
@@ -428,11 +424,6 @@
                     android:textColor="@color/grey"
                     android:textSize="13sp" />
 
-                <View
-                    android:layout_width="345dp"
-                    android:layout_height="2dp"
-                    android:layout_marginStart="15dp"
-                    android:background="@color/green" />
             </LinearLayout>
         </LinearLayout>
 
