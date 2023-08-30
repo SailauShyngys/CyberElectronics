@@ -87,9 +87,10 @@
 
     <LinearLayout
         android:id="@+id/chars"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="360dp"
+        android:paddingBottom="15dp"
         android:background="@drawable/char_arround"
         android:gravity="center_horizontal"
         android:orientation="vertical"
